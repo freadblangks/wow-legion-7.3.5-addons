@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: [|c52ABD473Alleidun|r]'s Hunter Pets Owned Frame
+## Title-zhTW: |cffFF7373[職業]|r 獵人寵物-獸欄
+## Notes-zhTW: [|c52ABD473Alleidun|r]'s Hunter Pets Owned Frame |n隨時隨地查看獵人角色的獸欄。|n|cffffd200使用方法：|r按 Shift+P 開啟收藏視窗 > 點右下角的 "獵人寵物" 標籤頁面 > 我的獸欄寵物。
+## DefaultState: disabled
+## Author: Alleidun
+## Version: 1
+## LoadOnDemand: 1
+## Dependencies: HunterPets
+
+HunterPets_Owned.lua
+HunterPets_Owned.xml

@@ -1,0 +1,22 @@
+## Interface: 70300
+## Title: Scrap Options
+## Notes: Load on demand options and tutorials.
+## Title-zhTW: |cffFFFF99[商人]|r 自動修裝/賣垃圾-設定選項
+## Notes-zhTW: Scrap Options |n需要時會自動載入的設定和教學模組。|n|cffffd200使用方法：|r從Esc>介面>插件>自動修裝/賣垃圾，進行設定。
+
+## Author: Jaliborc (João Cardoso)
+## X-License: GNU General Public License Version 3
+## X-Category: Inventory
+## Version: 13.6
+
+## OptionalDeps: Poncho-1.0, Sushi-3.0, CustomTutorials-2.1
+## Dependencies: Scrap
+## LoadOnDemand: 1
+
+..\Scrap\Libs\CustomTutorials-2.1\CustomTutorials-2.1.lua
+..\Scrap\Libs\Poncho-1.0\Poncho-1.0.xml
+..\Scrap\Libs\Sushi-3.0\Sushi-3.0.xml
+
+Dropdown.lua
+Options.lua
+Tutorials.lua

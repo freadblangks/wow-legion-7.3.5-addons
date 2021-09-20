@@ -1,0 +1,15 @@
+﻿## Interface: 70300
+## Title: Dominos Progress
+## Notes: Progress bars of all sorts
+## Title-zhTW: |cff00CCFF[快捷列]|r 達美樂-進度條
+## Notes-zhTW: Dominos Progress |n經驗、聲望、神兵之力等各種進度條。
+## Author: Tuller
+## Dependencies: Dominos
+localization.xml
+config.lua
+main.lua
+progressBar.lua
+xpBar.lua
+reputationBar.lua
+artifactBar.lua
+honorBar.lua

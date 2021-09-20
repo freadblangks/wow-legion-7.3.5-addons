@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: GladiatorlosSA_zhCN(Yike_Xia)
+## Title-zhCN:GladiatorlosSA_夏一可语音包
+## Notes: GSA plugin for Chinese voice set
+## Title-zhTW: |cffFF0000[PVP]|r 技能語音提示-中文語音
+## Notes-zhTW: GladiatorlosSA 夏一可語音包|nGSA夏一可中文語音包插件
+## DefaultState: disabled
+## Author: Yike Xia, Mini_Dragon
+## Version: 20160725
+## Dependencies: GladiatorlosSA2
+
+GladiatorlosSA_zhCN.lua

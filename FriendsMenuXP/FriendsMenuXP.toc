@@ -1,0 +1,12 @@
+## Interface: 70300
+## Author: Warbaby @ 网易有爱 w.163.com/163ui
+## Title: FriendsMenuXP
+## Title-zhCN: |cff880303[网易有爱]|r 玩家菜单增强
+## Notes: Greatly extends the player drop down menu without secure taint.
+## Notes-zhCN: 玩家超链接、查询列表、好友列表、工会列表中点击玩家名字增加更多选择。此外，按住alt点玩家链接可以邀请，按住ctrl点玩家链接选定目标。
+## Title-zhTW: |cffFF9999[聊天]|r 玩家右鍵選單增強
+## Notes-zhTW: FriendsMenuXP |n在聊天視窗中的玩家名字上點滑鼠右鍵會有更多方便的功能。此外，按住 Alt 點玩家鏈結可以邀請，按住 Ctrl 點玩家鏈結選定目標。
+localization.enUS.lua
+localization.zhCN.lua
+localization.zhTW.lua
+FriendsMenuXP.xml

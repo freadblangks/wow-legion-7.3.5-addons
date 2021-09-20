@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r86 | starslayer2 | 2016-09-06 07:14:44 +0000 (Tue, 06 Sep 2016) | 1 line
+Changed paths:
+   A /tags/v1.3.85 (from /trunk:85)
+
+Tagging as v1.3.85
+------------------------------------------------------------------------
+r85 | starslayer2 | 2016-09-06 07:04:12 +0000 (Tue, 06 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/main.lua
+
+- Fix and comment out debug line that was causing errors.
+------------------------------------------------------------------------
+r83 | starslayer2 | 2016-08-27 00:11:10 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/main.lua
+
+- Show border if spell start and duration are zero - for Absolute Corruption.
+------------------------------------------------------------------------

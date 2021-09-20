@@ -1,0 +1,9 @@
+﻿## Interface: 70300
+## Author: Shurshik
+## Title: Raid|cff7fff7fAchievement|r_OldModules
+## Notes: Raid|cff7fff7fAchievement|r_OldModules
+## Title-zhTW: |cffFFCC99[成就]|r 艾澤拉斯(經典)
+## Notes-zhTW: Raid|cff7fff7fAchievement|r OldModules |n舊副本成就模組。
+## Dependencies: RaidAchievement
+RaidAchievement_OldModules.lua
+RaidAchievement_OldModules.xml

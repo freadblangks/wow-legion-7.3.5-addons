@@ -1,0 +1,48 @@
+------------------------------------------------------------------------
+r398 | Zensunim | 2018-05-03 03:27:02 +0000 (Thu, 03 May 2018) | 8 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_BFA.lua
+   M /trunk/GTFO_Spells_BFA.lua
+   M /trunk/ReadMe.txt
+
+4.45.2
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Tol Dagor
+* Added BFA spells for The Underrot
+* Added BFA spells for Temple of Sethraliss
+* Added BFA spells for The MOTHERLODE!!
+* Added BFA spells for Atal'Dazar
+
+------------------------------------------------------------------------
+r397 | Zensunim | 2018-04-26 05:36:07 +0000 (Thu, 26 Apr 2018) | 3 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO_Fail_BFA.lua
+   M /trunk/GTFO_Spells_BFA.lua
+   M /trunk/ReadMe.txt
+
+* Added BFA spells for The Underrot
+* Added BFA spells for Temple of Sethraliss
+* Added BFA spells for The MOTHERLODE!!
+------------------------------------------------------------------------
+r396 | Zensunim | 2018-04-24 05:36:08 +0000 (Tue, 24 Apr 2018) | 1 line
+Changed paths:
+   M /trunk/GTFO_Fail_BFA.lua
+   M /trunk/GTFO_Spells_BFA.lua
+
+* Added Battle for Azeroth spells (world)
+------------------------------------------------------------------------
+r395 | Zensunim | 2018-04-22 02:41:56 +0000 (Sun, 22 Apr 2018) | 2 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_BFA.lua
+   M /trunk/GTFO_Spells_BFA.lua
+   M /trunk/ReadMe.txt
+
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Tol Dagor
+------------------------------------------------------------------------
+

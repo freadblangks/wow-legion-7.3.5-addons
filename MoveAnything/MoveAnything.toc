@@ -1,0 +1,38 @@
+## Interface: 70300
+## Title: MoveAnything
+## Version: 16.3.2
+## Author: Wagthaa
+## Notes: Move, scale, hide and adjust transparency of just about any screen element in the game.
+## Title-zhTW: |cffFF9900[進階]|r 版面配置
+## Notes-zhTW: MoveAnything |n萬物皆可動，移動、縮放、隱藏、調整遊戲畫面上的任何框架和介面元素。|n|cffffd200使用方法：|r從Esc>版面配置，選擇框架來調整移動。|n從Esc>介面>插件>版面配置，進行設定。
+## DefaultState: disabled
+## SavedVariables: MADB
+
+Libs\!NoTaint\!NoTaint.xml
+Libs\!NoTaint\!NoTaint.lua
+Libs\LibStub\LibStub.lua
+Libs\UIDropDownMenu\UIDropDownMenu.xml
+
+Localizations\Localization.en.lua
+Localizations\Localization.cn.lua
+Localizations\Localization.tw.lua
+
+MoveAnything.lua
+Profile.lua
+API.lua
+FrameEditor.lua
+PortDialog.lua
+VirtualMovers.lua
+
+Modules\Alpha.lua
+Modules\Backdrop.lua
+Modules\Layers.lua
+Modules\Misc.lua
+Modules\Position.lua
+Modules\Scale.lua
+Modules\Visibility.lua
+
+FrameList.lua
+
+MoveAnything.xml
+BlizzardOptions.xml

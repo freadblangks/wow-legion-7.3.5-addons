@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Cataclysm raids
+## Author: Shurshik
+## Notes: RaidAchievement Cataclysm Raids Module
+## Title-zhTW: |cffFFCC99[成就]|r 浩劫與重生團隊
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Cataclysm raids |n浩劫與重生的團隊副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: crraspisokon
+RaidAchievement_CataRaids.lua
+RaidAchievement_CataRaids.xml
+RaidAchievement_CataRaidsbosses.lua

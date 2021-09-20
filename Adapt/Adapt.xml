@@ -1,0 +1,401 @@
+<Ui>
+	<!-- Template so our created models can useParentLevel -->
+	<PlayerModel name="AdaptModelLevelTemplate" useParentLevel="true" virtual="true"/>
+
+	<!-- default's radio button is too low-res, creating our own -->
+	<CheckButton name="AdaptRadioButtonTemplate" virtual="true">
+		<Size x="22" y="22"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture file="Interface\Common\Indicator-Gray">
+					<Color r="0" g="0" b="0"/>
+				</Texture>
+			</Layer>
+		</Layers>
+		<NormalTexture file="Interface\Garrison\GarrLanding-TradeskilLTimerFill">
+			<Size x="16" y="16"/>
+			<Anchors>
+				<Anchor point="CENTER"/>
+			</Anchors>
+			<Color r="0.65" g="0.65" b="0.65"/>
+		</NormalTexture>
+		<HighlightTexture file="Interface\Buttons\UI-RadioButton" alphaMode="ADD">
+			<TexCoords left="0.5" right="0.75" top="0" bottom="1"/>
+		</HighlightTexture>
+		<CheckedTexture file="Interface\Common\Indicator-Yellow">
+			<Size x="16" y="16"/>
+			<Anchors>
+				<Anchor point="CENTER" x="0" y="-1"/>
+			</Anchors>
+		</CheckedTexture>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="Text" inherits="GameFontHighlight">
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="RIGHT"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self:GetNormalTexture():SetDesaturated(true)
+				if self.text then
+					self.Text:SetText(self.text)
+					self:SetHitRectInsets(0,-self.Text:GetStringWidth()-6,0,0)
+					self.text = nil
+				end
+			</OnLoad>
+			<OnClick>
+				Adapt.OptionsRadioOnClick(self)
+			</OnClick>
+			<OnEnter>
+				Adapt.OptionsOnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide()
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+
+	<CheckButton name="AdaptCheckButtonTemplate" virtual="true">
+		<Size x="24" y="24"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="Text" inherits="GameFontHighlight">
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="RIGHT"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
+		<PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
+		<HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
+		<CheckedTexture file="Interface\Buttons\UI-CheckBox-Check"/>
+		<DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>
+		<Scripts>
+			<OnLoad>
+				if self.text then
+					self.Text:SetText(self.text)
+					self:SetHitRectInsets(0,-self.Text:GetStringWidth()-6,0,0)
+					self.text = nil
+				end
+			</OnLoad>
+			<OnClick>
+				Adapt.OptionsCheckOnClick(self)
+			</OnClick>
+			<OnEnter>
+				Adapt.OptionsOnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide()
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+
+	<!-- This is a variation of the checkbutton with a red X for the CheckedTexture;
+			 it also has a fixed width intended to be used for the scrollframe -->
+	<CheckButton name="AdaptXCheckButtonTemplate" virtual="true">
+		<Size x="24" y="24"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="Text" inherits="GameFontHighlight">
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="RIGHT"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
+		<PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
+		<HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
+		<CheckedTexture file="Interface\RaidFrame\ReadyCheck-NotReady"/>
+		<HitRectInsets>
+			<AbsInset left="0" right="-250" top="0" bottom="0"/>
+		</HitRectInsets>
+		<Scripts>
+			<OnLoad>
+				if self.text then
+					self.Text:SetText(self.text)
+					self:SetHitRectInsets(0,-self.Text:GetStringWidth()-6,0,0)
+					self.text = nil
+				end
+			</OnLoad>
+			<OnClick>
+				Adapt.OptionsCheckOnClick(self)
+			</OnClick>
+			<OnEnter>
+				Adapt.OptionsOnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide()
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+
+	<Frame name="AdaptOptions" parent="InterfaceOptionsFramePanelContainer" hidden="true">
+		<KeyValues>
+			<KeyValue key="name" value="頭像-3D"/>
+		</KeyValues>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="Title" inherits="GameFontNormalLarge" text="3D動態頭像">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="16" y="-16"/>
+					</Anchors>
+				</FontString>
+				<FontString parentKey="Version" inherits="GameFontNormalSmall">
+					<Anchors>
+						<Anchor point="BOTTOMLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMRIGHT" x="4" y="0"/>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontHighlightSmall" text="將原本靜態的頭像變成3D動態，幾乎任何介面都可以使用。">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" x="0" y="-8"/>
+					</Anchors>
+				</FontString>
+				<FontString parentKey="DisplayHeader" inherits="GameFontNormal" text="這些選項會影響如何顯示頭像:">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" x="0" y="-40"/>
+					</Anchors>
+				</FontString>
+				<FontString parentKey="BlacklistHeader" inherits="GameFontNormal" text="這些選項會關閉某些頭像的動態效果:">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="0" y="-180"/>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontNormalSmall" text="有些插件的頭像沒有名稱。點一下打 |TInterface\RaidFrame\ReadyCheck-NotReady:16|t 啟用動態效果:">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.BlacklistHeader" relativePoint="BOTTOMLEFT" x="16" y="-16"/>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontNormalSmall" text="有名稱的頭像要停用動態效果，點一下名稱打 |TInterface\RaidFrame\ReadyCheck-NotReady:16|t:">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.BlacklistHeader" relativePoint="BOTTOMLEFT" x="16" y="-64"/>
+					</Anchors>
+				</FontString>
+				<Texture name="AdaptOptionsPortrait" parentKey="Portrait" file="Interface\Icons\INV_Misc_QuestionMark">
+					<Size x="112" y="112"/>
+					<Anchors>
+						<Anchor point="TOPRIGHT" x="-80" y="-80"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<!-- this is the overlay to the portrait  -->
+				<Texture parentKey="PortraitBorder" file="Interface\AddOns\Adapt\SquareBorder">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.Portrait" x="-8" y="8"/>
+						<Anchor point="BOTTOMRIGHT" relativeKey="$parent.Portrait" x="8" y="-8"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<CheckButton parentArray="Shape" inherits="AdaptRadioButtonTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="16" y="-16"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="圓形頭像"/>
+					<KeyValue key="radio" value="Shape"/>
+					<KeyValue key="tooltip" value="讓模組符合圓形的單位頭像，例如遊戲內建的介面。"/>
+				</KeyValues>
+			</CheckButton>
+			<CheckButton parentKey="UseMask" inherits="AdaptCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="32" y="-40"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="周圍淡出"/>
+					<KeyValue key="variable" value="UseMask"/>
+					<KeyValue key="tooltip" value="插件無法真的將模組淡出，在四方型的模組周圍加上圓形的淡出柔化效果。"/>
+				</KeyValues>
+			</CheckButton>
+			<CheckButton parentKey="TrueInset" inherits="AdaptCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="32" y="-64"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="小型頭像"/>
+					<KeyValue key="variable" value="TrueInset"/>
+					<KeyValue key="tooltip" value="停用這個選項時，會稍微放大模組讓它超出圓形頭像框架，但四個邊角也會被框架遮住。啟用這個選項讓邊角顯示在框架範圍內。"/>
+				</KeyValues>
+			</CheckButton>
+			<CheckButton parentArray="Shape" inherits="AdaptRadioButtonTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="16" y="-88"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="方形頭像"/>
+					<KeyValue key="radio" value="Shape"/>
+					<KeyValue key="tooltip" value="頭像框架是方形的時候請啟用這個選項。"/>
+				</KeyValues>
+			</CheckButton>
+
+			<CheckButton parentArray="Zoom" inherits="AdaptRadioButtonTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="220" y="-16"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="臉部頭像"/>
+					<KeyValue key="radio" value="Zoom"/>
+					<KeyValue key="tooltip" value="鏡頭放大，顯示臉和肩膀。"/>
+				</KeyValues>
+			</CheckButton>
+			<CheckButton parentArray="Zoom" inherits="AdaptRadioButtonTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="220" y="-40"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="半身頭像"/>
+					<KeyValue key="radio" value="Zoom"/>
+					<KeyValue key="tooltip" value="鏡頭拉遠一點，顯示更多一點。"/>
+				</KeyValues>
+			</CheckButton>
+			<CheckButton parentArray="Zoom" inherits="AdaptRadioButtonTemplate" id="3">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="220" y="-64"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="全身模組"/>
+					<KeyValue key="radio" value="Zoom"/>
+					<KeyValue key="tooltip" value="鏡頭拉得更遠，顯示整個單位。"/>
+				</KeyValues>
+			</CheckButton>
+
+			<CheckButton parentArray="Back" inherits="AdaptRadioButtonTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="160" y="-106"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="背景顏色"/>
+					<KeyValue key="radio" value="Back"/>
+					<KeyValue key="tooltip" value="將右方所選擇的顏色做為背景顏色。"/>
+				</KeyValues>
+				<Frames>
+					<Button parentKey="Swatch">
+						<Size x="22" y="22"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeKey="$parent.Text" relativePoint="RIGHT" x="2" y="-1"/>
+						</Anchors>
+						<Layers>
+							<Layer level="BACKGROUND">
+								<Texture file="Interface\FriendsFrame\Battlenet-WoWicon"/>
+							</Layer>
+							<Layer level="ARTWORK">
+								<Texture parentKey="Color" file="Interface\ChatFrame\ChatFrameColorSwatch">
+									<Color r="1" g="0.82" b="0"/>
+								</Texture>
+							</Layer>
+						</Layers>
+						<HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD">
+							<Anchors>
+								<Anchor point="TOPLEFT" x="-4" y="4"/>
+								<Anchor point="BOTTOMRIGHT" x="4" y="-4"/>
+							</Anchors>
+						</HighlightTexture>
+						<Scripts>
+							<OnClick>
+								Adapt:OptionsColorSwatchOnClick()
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+			</CheckButton>
+			<CheckButton parentArray="Back" inherits="AdaptRadioButtonTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.DisplayHeader" relativePoint="BOTTOMLEFT" x="160" y="-130"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="背景使用職業顏色"/>
+					<KeyValue key="radio" value="Back"/>
+					<KeyValue key="tooltip" value="使用單位的職業顏色做為背景顏色。戰士棕色、法師藍色...等等。"/>
+				</KeyValues>
+			</CheckButton>
+
+			<CheckButton parentKey="HideAnon" inherits="AdaptXCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.BlacklistHeader" relativePoint="BOTTOMLEFT" x="32" y="-32"/>
+				</Anchors>
+				<KeyValues>
+					<KeyValue key="text" value="沒有名稱的頭像"/>
+					<KeyValue key="variable" value="HideAnon"/>
+					<KeyValue key="tooltip" value="沒有名稱的頭像通常是插件所產生、沒有設定名稱的頭像。3D頭像可以將他們變為動態，但無法選擇性的停用其中一個，這個選項會影響所有沒有名稱的頭像。"/>
+				</KeyValues>
+			</CheckButton>
+
+			<Frame parentKey="Blacklist">
+				<Size x="320" y="182"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.BlacklistHeader" relativePoint="BOTTOMLEFT" x="28" y="-84"/>
+				</Anchors>
+				<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<TileSize val="16"/>
+					<EdgeSize val="16"/>
+					<BackgroundInsets>
+						<AbsInset left="3" right="3" top="3" bottom="3"/>
+					</BackgroundInsets>
+					<Color r="0" g="0" b="0"/>
+					<BorderColor r="0.5" g="0.5" b="0.5"/>
+				</Backdrop>
+				<Frames>
+					<ScrollFrame parentKey="ScrollFrame" name="AdaptBlacklistScrollFrame" inherits="FauxScrollFrameTemplateLight">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="5" y="-8"/>
+							<Anchor point="BOTTOMRIGHT" x="-31" y="6"/>
+						</Anchors>
+						<Scripts>
+							<OnVerticalScroll>
+								FauxScrollFrame_OnVerticalScroll(self, offset, 24, Adapt.OptionsBlacklistScrollFrameUpdate)
+							</OnVerticalScroll>
+						</Scripts>
+					</ScrollFrame>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="1">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-8"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="2">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-32"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="3">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-56"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="4">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-80"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="5">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-104"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="6">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-128"/>
+						</Anchors>
+					</CheckButton>
+					<CheckButton parentArray="Buttons" inherits="AdaptXCheckButtonTemplate" id="7">
+						<Anchors>
+							<Anchor point="TOPLEFT" x="6" y="-152"/>
+						</Anchors>
+					</CheckButton>
+				</Frames>
+			</Frame>
+
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self.Version:SetText(format("Adapt version %s",GetAddOnMetadata("Adapt","Version")))
+				InterfaceOptions_AddCategory(self)
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

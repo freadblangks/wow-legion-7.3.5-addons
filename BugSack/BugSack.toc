@@ -1,0 +1,26 @@
+## Interface: 70300
+## Version: v7.3.3
+## Title: BugSack
+## Notes: Toss those bugs inna sack.
+## Notes-zhCN: 错误信息收集器。
+## Title-zhTW: |cffFF9900[進階]|r 錯誤訊息袋
+## Notes-zhTW: BugSack |n集中顯示錯誤訊息，避免中斷遊戲。|n|cffffd200使用方法：|r點小地圖按鈕的紅色小袋子查看錯誤訊息。從Esc>介面>插件>錯誤訊息，開關錯誤提示音效和進行設定。
+## Author: Funkydude
+## SavedVariables: BugSackDB, BugSackLDBIconDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibDBIcon-1.0, !BugGrabber
+
+## X-Category: Development Tools
+## X-Credits: Archarodim, Zidomo, Rowne, Ramble, kergoth, ckknight, Gamefaq, thomasmo, damjau, Fritti, Rabbit
+## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
+## X-Website: https://github.com/funkydude/BugSack
+## X-Curse-Project-ID: 6273
+## X-WoWI-ID: 5995
+## X-BugGrabber-Display: BugSack
+
+embeds.xml
+
+locales.lua
+core.lua
+sack.lua
+config.lua
+ldb.lua

@@ -1,0 +1,29 @@
+## Interface: 70300
+## Title: flyPlateBuffs
+## Version: 7.3.5.02
+## Notes: Shows buffs/debuffs on nameplates
+## Title-zhTW: |cffFF9900[進階]|r 血條增益/減益效果
+## Notes-zhTW: flyPlateBuffs |n增強血條上的增益/減益效果圖示功能，可以調整位置、自訂大小和要顯示哪些圖示。|n|cffffd200使用方法：|r從Esc>介面>插件>增益效果-血條，進行設定。|n|cffFF2D2D特別注意：|r可以和Tidy血條一起使用，只要將Tidy血條的 "啟用光環套件" 選項取消打勾即可。
+## DefaultState: disabled
+## Author: FlyNeko
+## SavedVariables: flyPlateBuffsDB
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\LibSharedMedia-3.0\lib.xml
+libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+
+localization.lua
+locales\zhCN.lua
+locales\zhTW.lua
+
+utils\fixBlizzard.lua
+utils\spellID.lua
+
+spellList.lua
+flyPlateBuffs.lua
+options.lua

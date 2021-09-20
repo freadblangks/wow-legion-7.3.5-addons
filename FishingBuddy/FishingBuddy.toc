@@ -1,0 +1,37 @@
+## Interface: 70300
+## Title: Fishing Buddy
+## Version: 1.8.4.7
+## Notes: Help with fishing related tasks -- clothing, fish information, etc.
+## Title-zhTW: |cffFFFF99[專業]|r 釣魚夥伴
+## Notes-zhTW: Fishing Buddy |n幫忙處理釣魚的相關工作、漁具、魚類資訊...等等。|n|cffffd200使用方法：|r點小地圖按鈕。
+## DefaultState: disabled
+## Author: Sutorix=AT=hotmail.com
+## OptionalDeps: FB_Debugging, Outfitter, myAddOns, Titan, InfoBar, FishWarden
+## SavedVariables: FishingBuddy_Info
+## SavedVariablesPerCharacter: FishingBuddy_Player
+## X-Date: July 21, 2005
+## X-Help: FBConstants.HELPMSG     
+Libs\Libs.xml
+localization.lua
+localization.zhCN.lua
+localization.zhTW.lua
+FishingSetup.lua
+FishingBuddy.xml
+FishingBuddyAPI.lua
+FishingBuddyFrame.xml
+FishingOptionsFrame.lua
+FishingScrollMenu.xml
+FishingLocationsFrame.xml
+FishingOutfitManager.lua
+FishingOutfitter.xml
+FishingGearManager.lua
+FishingBuddyMinimap.lua
+FishingQuests.lua
+FishingExtravaganza.xml
+FishingWatcher.xml
+FishingRaid.xml
+FishingSchools.lua
+FishingAbout.lua
+FishingPlans.lua
+FishingPlans\Plans.xml
+FishingFluff.xml

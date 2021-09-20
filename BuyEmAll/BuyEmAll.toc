@@ -1,0 +1,17 @@
+﻿## Author: Shinisuryu
+## Interface: 70300 
+## Notes: Enhances shift-click interface at vendors.
+## Title: BuyEmAll
+## Title-zhTW: |cffFFFF99[商人]|r 大量購買
+## Notes-zhTW: BuyEmAll |n在商人視窗按 Shift+左鍵 點擊物品可一次購買多個數量。
+## Version: 3.4.4
+## SavedVariablesPerCharacter: BEAConfirmToggle
+## LoadManagers: AddonLoader
+## X-LoadOn-Merchant: true
+## X-LoadOn-Slash: /buyemall
+
+Localization.enUS.lua
+Localization.zhCN.lua
+Localization.zhTW.lua
+BuyEmAll.lua
+BuyEmAll.xml

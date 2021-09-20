@@ -1,0 +1,15 @@
+## Interface: 70300
+## Title: Personal Loot Helper
+## Version: 1.32
+## SavedVariables: PLH_NOTIFY_MODE, PLH_INCLUDE_BOE, PLH_MIN_QUALITY, PLH_MIN_ILVL, PLH_DEBUG, PLH_CURRENT_SPEC_ONLY, PLH_CHECK_CHARACTER_LEVEL, PLH_COORDINATE_ROLLS, PLH_NOTIFY_GROUP, PLH_HIGHLIGHT_RAID_FRAMES, PLH_HIGHLIGHT_SIZE
+## Notes: Simplifies trading of personal loot by notifying you when a drop is not an upgrade for the looter, but is an upgrade for you or others in your group.
+## Title-zhTW: |cffFF7F00[副本]|r 個人拾取分享助手
+## Notes-zhTW: Personal Loot Helper |n提示你拾取的裝備可以交易，而且可以幫隊友提升裝等，或是隊友拿到的裝備可以幫助你提升裝等，讓個人拾取分享裝備更容易。|n|cffffd200使用方法：|r拿到可以交易，而且自己或隊友需要的裝備時，會自動在聊天視窗顯示 <分享> 的訊息。|n從Esc>介面>插件>裝備-分享，進行設定。
+## Author: Madone-Zul'Jin
+
+PersonalLootHelper-Constants.lua
+PersonalLootHelper-Trinkets.lua
+PersonalLootHelper-Util.lua
+PersonalLootHelper-Config.lua
+PersonalLootHelper-Core.lua
+

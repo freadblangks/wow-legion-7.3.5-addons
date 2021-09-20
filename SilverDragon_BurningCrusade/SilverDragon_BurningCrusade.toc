@@ -1,0 +1,15 @@
+## Interface: 70300
+## Title: SilverDragon (BurningCrusade)
+## Notes: Mobs for BurningCrusade
+## Title-zhTW: |cff4DFF4D[地圖]|r 稀有怪通知-燃燒的遠征
+## Notes-zhTW: SilverDragon - Burning Crusade |n燃燒的遠征稀有怪資料。
+## Version: v4.0.4-10-g8c69c1c
+## Author: Kemayo
+## eMail: kemayo at gmail dot com
+## X-Category: Interface Enhancements
+## X-Donate: PayPal:kemayo AT gmail DOT com
+## Dependencies: SilverDragon
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+module.lua

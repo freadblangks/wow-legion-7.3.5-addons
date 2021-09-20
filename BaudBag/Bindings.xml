@@ -1,0 +1,8 @@
+<Bindings>
+    <Binding name="BaudBagToggleBank" header="BaudBag" category="ADDONS">
+        BaudBagToggleBank();
+    </Binding>
+    <!--<Binding name="BaudBagToggleVoidStorage" header="BaudBag">
+        BaudBagToggleVoidStorage();
+    </Binding>-->
+</Bindings>

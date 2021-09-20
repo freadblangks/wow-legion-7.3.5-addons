@@ -1,0 +1,17 @@
+## Interface: 70300
+## Title: MSBT [|cffffff80Options|r]
+## Author: Mikord
+## Notes: Load on demand options for Mik's Scrolling Battle Text.
+## Title-zhTW: |cffFF9900[進階]|r MSBT捲動戰鬥文字-設定選項
+## Notes-zhTW: MSBT [|cffffff80Options|r] |nMik捲動戰鬥文字的設定選項，依需求載入。
+## DefaultState: disabled
+## Dependencies: MikScrollingBattleText
+## LoadOnDemand: 1
+## X-Child-Of: MikScrollingBattleText
+
+Localization\localization.xml
+
+MSBTOptionsControls.lua
+MSBTOptionsPopups.lua
+MSBTOptionsMain.lua
+MSBTOptionsTabs.lua

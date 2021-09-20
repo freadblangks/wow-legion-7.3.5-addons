@@ -1,0 +1,7 @@
+<Bindings>
+  <Binding name="CLICK DugisGuideViewer_TargetFrame:RightButton" header="DUGI" category="BINDING_HEADER_DUGI"/>
+  <Binding name="CLICK DugisSecureQuestButton:LeftButton" category="BINDING_HEADER_DUGI"/>
+  <Binding name="啟用/停用自動坐騎" category="BINDING_HEADER_DUGI">
+    DugisGuideViewer:ToogleAutoMount()
+  </Binding>
+</Bindings>

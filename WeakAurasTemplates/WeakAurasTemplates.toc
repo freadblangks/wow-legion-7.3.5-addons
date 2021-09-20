@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: WeakAuras Templates
+## Author: Infus
+## Version: 2.5.11
+## Notes: Templates for WeakAuras
+## Title-zhTW: |cffFF9900[進階]|r WA技能提醒-範本
+## Notes-zhTW: WeakAuras Templates |nWA技能提醒的快速套用範本
+## X-Category: Interface Enhancements
+## Globe-Main: WeakAuras
+## DefaultState: Disabled
+## LoadOnDemand: 1
+## Dependencies: WeakAuras, WeakAurasOptions
+
+locales.xml
+
+TriggerTemplates.lua
+TriggerTemplatesData.lua
+
+AceGUI-Widgets\AceGUIContainer-WeakAurasTemplateGroup.lua

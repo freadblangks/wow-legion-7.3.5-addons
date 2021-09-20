@@ -1,0 +1,25 @@
+## Interface: 70300
+#@non-debug@
+## Title: HandyNotes - Travel Guide
+## Notes: Shows the boat and portal locations in major zones
+#@end-non-debug@
+#@debug@
+# ## Title: HandyNotes - Travel Guide
+# ## Notes: Shows the boat and portal locations in major zones (DE lib contributed by Dathwada)
+#@end-debug@
+## Author: Varnzeck
+## Version: v1.9.2
+## RequiredDeps: HandyNotes
+## DefaultState: enabled
+## SavedVariables: HandyNotes_TravelGuideDB
+## X-Date: 2018-04-08
+## X-Category: Map
+
+Libs\Libs.xml
+Locale\Locales.xml
+Core\Constants.lua
+Core\Handler.lua
+Core\Config.lua
+Data\DB.lua
+Locale\enEN.lua
+Locale\deDE.lua

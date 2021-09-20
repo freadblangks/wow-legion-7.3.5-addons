@@ -1,0 +1,14 @@
+## Interface: 70300
+## Version: v1.2.1
+## Title: MoveTalkingHead
+## Notes: Makes the message dialog movable
+## Title-zhTW: |cff4DD2FF[頭像]|r 移動說話的頭
+## Notes-zhTW: MoveTalkingHead |n讓訊息對話框可以移動。|n|cffffd200使用方法：|r按住Shift鍵可拖曳移動位置。|n輸入 /mth 0.8 縮放大小成 80%，可以使用 0.5 ~ 2.0 之間的數字。|n輸入 /mth reset 重置設定。
+## Author: Ketho @ EU-Boulderfist
+## SavedVariables: MoveTalkingHeadDB
+## LoadOnDemand: 1
+## LoadWith: Blizzard_TalkingHeadUI
+## Dependencies: Blizzard_TalkingHeadUI
+
+Locales.lua
+MoveTalkingHead.lua

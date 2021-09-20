@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: HealBot Taiwanese Localization
+## Author: Required
+## Notes: HealBot Localization for zhTW
+## Title-zhTW: |cffFF7373[職業]|r 智能治療-繁體中文語系
+## Notes-zhTW: HealBot Taiwanese Localization |n智能治療插件的繁體中文語系套件。
+## DefaultState: disabled
+## RequiredDeps: HealBot
+## LoadOnDemand: 1
+## Version: 7.3.0.0
+
+HealBot_Localization.tw.lua

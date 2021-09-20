@@ -1,0 +1,19 @@
+## Interface: 70300
+## Author: p3lim
+## Version: 70300.15-Release
+## Title: Talentless
+## Notes: Improvements the talent UI and auto-equipping sets per specialization
+## Title-zhTW: |cff0099FF[介面]|r 天賦面板增強
+## Notes-zhTW: Talentless |n天賦面板上方多出幾個按鈕，方便快速切換專精和使用靜心之卷。|n用快速鍵切換專精：從Esc>按鍵設定>插件，設定快速鍵。
+## SavedVariablesPerCharacter: TalentlessDB
+## OptionalDeps: LibStub, LibDropDown
+
+## X-Curse-Project-ID: 102216
+## X-WoWI-ID: 19184
+
+
+
+libs\LibStub\LibStub.lua
+libs\LibDropDown\embed.xml
+
+Talentless.lua

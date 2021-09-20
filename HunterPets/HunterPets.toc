@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: [|c52ABD473Alleidun|r]'s Hunter Pets
+## Notes: A set of tools for Hunter Pets
+## Title-zhTW: |cffFF7373[職業]|r 獵人寵物-主程式
+## Notes-zhTW: [|c52ABD473Alleidun|r]'s Hunter Pets |n獵人寵物圖鑑和獸欄瀏覽器。|n|cffffd200使用方法：|r按 Shift+P 開啟收藏視窗 > 點右下角的 "獵人寵物" 標籤頁面。|n開啟/關閉區域可馴服的寵物訊息，輸入 /hunterpets zone。
+## DefaultState: disabled
+## Author: Alleidun, Simpy
+## Version: 1.5.34
+## SavedVariables: HunterPetsGlobal
+## SavedVariablesPerCharacter: HunterPetsSettings
+
+embeds.xml
+
+Core.lua
+Data.lua
+Broker.lua

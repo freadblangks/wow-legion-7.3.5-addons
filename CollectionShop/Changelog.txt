@@ -1,0 +1,136 @@
+**2.06**
+
+- Release date: 10/01/2017
+- Bug fix: Four variables were being accidentally put into global namespace. For most users this had no effect, but for others it may have caused minor taint issues.
+
+**2.05**
+
+- Release date: 08/31/2017
+- New items added for patch 7.3.0.
+- Toys: Wormhole Generator: Argus
+- Companion Pets: Model D1-BB-L3R, Naxxy
+
+**2.04**
+
+- Release date: 08/30/2017
+- TOC Updated for patch 7.3
+- Bug fix: Lua error in patch 7.3 on PlaySound() API call.
+
+**2.03**
+
+- Release date: 08/04/2017
+- Reduced number of Appearance detection retries for armor and weapons during GetAll and Live scans. This should prevent long pauses on realms that happen to have a large amount of armor or weapons that cannot be transmogged.
+- Minor change to Help tab.
+
+**2.02**
+
+- Release date: 07/18/2017
+- Bug fix: In rare situations an Appearance Shop would get stuck at "Filtering, one moment please...".
+
+**2.01**
+
+- Release date: 07/18/2017
+- Bug fix: In some cases not all Sources were being gathered to determine if an Appearance was collected (API inconsistencies) and may have returned Collected items as being Not Collected.
+- Bug fix: Rarely a noticable effect but in the event an Appearance Shop was performed within a few seconds of login or reload the number of results may have been reduced. The internal timeout has been increased for checking Sources to compensate for the game's info lag during that time.
+- Live checkbox now disabled while scanning to prevent accidental cancellation of a GetAll scan.
+
+**2.0**
+
+- Release date: 07/16/2017
+- Time since last scan will now show "Live" in green when the Live checkbox is checked instead of showing the last time a GetAll scan was performed.
+- Around 20% less auctions are stored for comparison during scanning. They are simply not needed because they are not a Mount, Pet, Toy, or Appearance.
+- Around 10% more results will be shown in an Appearance mode Shop. This is due to no longer restricting Sources by type and also the inclusion of hidden Sources that Blizzard deems unobtainable or otherwise chooses to hide.
+- Appearances mode no longer immediately starts updating when choosing a mode. A faster modified updating from your collection is performed during Shop once after each GetAll scan or every time you perform a Live scan.
+- Added Mounts portrait to Options frame.
+- The change mode button (top left on AH tab) is now disabled while scanning to prevent accidental cancellation of a GetAll scan.
+- GetAll data for all realms will be wiped due to changes in required information.
+
+**1.15**
+
+- Release date: 06/13/2017
+- Added new "Companion Pets" introduced in patch 7.2.5.
+- Companion Pets: Sneaky Marmot, Dig Rat
+
+**1.14**
+
+- Release date: 04/07/2017
+- Added new "Companion Pets" introduced in patch 7.2.
+- Companion Pets: Everliving Spore, Cavern Moccasin, Young Venomfang, Scraps
+
+**1.13**
+
+- Release date: 03/31/2017
+- Bug fix: In patch 7.2 some Auction House categories were changed causing issues in Pets and Toys mode.
+
+**1.12**
+
+- Release date: 03/30/2017
+- TOC updated for patch 7.2.
+
+**1.11**
+
+- Release date: 01/10/2017
+- Bug fix: Lua error to do with money color codes introduced in last update accidentally.
+
+**1.10**
+
+- Release date: 01/10/2017
+- Added new item introduced in patch 7.1.5.
+- Toys: Portable Yak Wash
+
+**1.09**
+
+- Release date: 12/01/2016
+- Added the few missing collection items list below...
+- Companion Pets: Albino Buzzard, Noblegarden Bunny
+- Toys: Big Red Raygun
+
+**1.08**
+
+- Release date: 12/01/2016
+- Bug fix: Lua error when looting a new Appearance from a Timewalking Dungeon after using CollectionShop Appearances mode.
+
+**1.07**
+
+- Release date: 10/25/2016
+- TOC updated for patch 7.1.
+
+**1.06**
+
+- Release date: 10/02/2016
+- Bug fix: A very few Appearances were showing as Not Collected even when they were due to being "Collected" in one Appearance category while being "Not Collected" in another. Thanks to Curse user Tarasitarik for reporting this issue.
+
+**1.05**
+
+- Release date: 09/11/2016
+- You must first exit "World of Warcraft" completely.
+- Improved detection of Not Collected vs Collected on Mounts and Toys
+- Bug fix: In rare situations changing options would close the options frame unintentionally.
+- New optional results column for users of the popular TradeSkillMaster addon, "% Item Value". This will allow viewing and sorting by this value to determine how good of a price you're getting on your collection buyouts.
+- New option for previously mentioned column, "Item Value Source". This option is the price source or custom price source used to calculate the Item Value.
+
+**1.04**
+
+- Release date: 09/11/2016
+- Not released.
+
+**1.03**
+
+- Release date: 09/09/2016
+- Workaround added for Blizzard Auction House bug: Blizzard_AuctionUI.lua:733: attempt to index local 'color' (a nil value)
+
+**1.02**
+
+- Release date: 09/08/2016
+- Bug fix: Rare Lua error on slow connections caused by previous increase in filter retry attempts.
+- Bug fix: Sometimes on slow connections, auctions were said to be no longer available when really there was just not enough time given to find the information required. Increased retry attempts to compensate, this should no longer happen.
+
+**1.01**
+
+- Release date: 09/07/2016
+- Bug fix: Occasionally items Already known would be listed as Not Collected due to slow response in retrieving item information. I've increased retry attempts to retrieve item information for filters to avoid inaccurate results. Should an item still fail during filtering a chat message will be shown.
+
+**1.0**
+
+- Release date: 09/05/2016
+- Intial release.

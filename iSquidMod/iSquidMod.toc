@@ -1,0 +1,11 @@
+## Interface: 70300
+## Author: Ganders & Imithat (Original author: SAM)
+## Title: iSquidMod |cff01DFD7 Grafic Patch
+## Notes: It just makes WoW prettier.
+## Title-zhTW: |cff00CCFF[快捷列]|r 變換獅鷲圖案
+## Notes-zhTW: iSquidMod |n更換快捷列左右兩端的獅鷲圖案，有50多種圖案可供選擇，更增添遊戲樂趣! 遊戲內建的快捷列或達美樂快捷列都可以使用。|n|cffffd200使用方法：|r輸入 /squid 查看圖案名稱。輸入 /squid 圖案名稱，變換圖案。例如： /squid diablo1_roth
+## DefaultState: disabled
+## Version: 2.56
+## SavedVariablesPerCharacter: iSquidModDB
+
+iSquidMod.lua

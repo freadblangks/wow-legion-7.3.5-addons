@@ -1,0 +1,6 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="TrackingToggle.lua"/>
+
+	<Include file="TamerJournal.xml"/>
+	<Script file="TamerJournal.lua"/>
+</Ui>

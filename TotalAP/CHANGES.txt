@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+## TotalAP v1.5.5 - Recent changes (3 releases)
+------------------------------------------------------------------------
+
+r28:
+	Added the /ap stateicons command, which can be used to toggle the icons that are shown to indicate combat, flight, pet battles, and vehicle status
+	
+	Renamed the former /ap icons command to /ap specicons to make it less ambiguous
+	Changed the SpecIcon text to also display the current rank. This can be toggled with the newly-added /ap ranks command
+	Changed the automatic hiding (/ap autohide setting) to be disabled by default, as it turned out confusing for at least some users
+	Relic recommendations are now disabled by default. Some users have (rightfully) lamented their inaccuracy, and as they're not useful to everbody they are now opt-in (Type /ap relics to enable)
+	
+	Fixed a graphics glitch that caused the SpecIcon text to be aligned improperly at times. It still can seem a bit wonky, but that may just be due to UI scaling...
+	Fixed an issue that could sometimes cause the ActionButton to not update with the correct item (causing it to display the wrong item and become unusable) if the server didn't return valid data when it was queried
+	Fixed the /ap reset command that was broken by the GUI rework. It should once again reset the display's position and restore all settings to their default values
+	Fixed an issue that would lead tier 1 artifacts (e.g., from newly-leveled characters) to display the wrong number of available traits until they reached artifact tier 2 at 35 purchased traits
+	Fixed a glitch that could occur when vehicles were not exited properly. Most notably, this should fix the unexpected behaviour manifesting when using the Lightforged Warframe on Argus
+	
+
+r27:
+	Added relic recommendations to tooltip (based on icy-veins.com - don't take them for gospel). These can be toggled with the newly-introduced /ap relics slash command
+
+	The item tooltip now also displays the percentage that an an artifact power item will add to the currently equipped artifact (experimental)
+	
+	Fixed missing space between ActionButton and its text - it seems to have gone AWOL, but now it's back
+	Fixed item tooltip to no longer display that "0 items" are in the player's inventory when there aren't any. It's true, but not very useful...
+	Fixed /ap autohide command, which was broken by the recently implemented anti-taint measures. The display should once again hide if this is enabled
+	Fixed a glitch with the vehicle StateIcon that resulted in it showing and hiding at seemingly random times
+	
+
+r26:
+	Added partial translation for the Korean (koKR) locale - Since this is still incomplete (~58% done), any help is welcome!
+	
+	Updated database to include 7.3 AP items
+	Updated Artifact Knowledge tooltip to account for the global AK progress added in 7.3
+	Removed obsolete Artifact Research status info from progress bar tooltips
+	Removed highlighting of Artifact Research Notes (will no longer be displayed prominently, as they are now unusable/grey vendor trash)
+	Removed obscure "artifact power" items from the DB that did nothing but crash the scanning algorithm (Cookie's Old Stew... really, Blizzard!?)
+	Removed obsolete artifact power items from the DB that were removed from the game some time after 7.3 (via hotfix?)
+	
+	Fixed number format for the Russian (ruRU) locale
+	Fixed number format for the Korean (koKR) locale
+	Fixed number format for the Spanish (esES and esMX) locales
+	Added some workarounds that should (hopefully) prevent the remaining taint issues
+	Added a workaround for the invalid artifact tier issues (this is currently being investigated further)
+	
+

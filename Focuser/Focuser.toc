@@ -1,0 +1,11 @@
+## Interface: 70300
+## X-Min-Interface: 30000
+## Title: Focuser
+## Notes: Sets your focus by shift clicking
+## Title-zhTW: |cffFF7F00[副本]|r 快速專注目標
+## Notes-zhTW: Focuser |nShift+左鍵點人物，可以快速設為專注目標。|n|cffffd200使用方法：|r編輯 AddOns > Focuser > Focuser.lua 可以更改按鍵。
+## DefaultState: disabled
+## Author: Slizen
+## Version 0.51
+
+Focuser.lua

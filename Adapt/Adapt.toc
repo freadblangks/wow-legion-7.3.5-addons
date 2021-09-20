@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: Adapt
+## Notes: This addon animates the static portraits of (nearly) any UI.
+## Title-zhTW: |cff4DD2FF[頭像]|r 3D動態頭像
+## Notes-zhTW: Adapt |n讓暴雪頭像美化或遊戲內建的頭像變成3D動態的。|n|cffffd200使用方法：|r從Esc>介面>插件>頭像-3D，進行設定。|n|cffFF2D2D特別注意：|r請勿和 "Stuf頭像框架" 同時載入使用。
+## DefaultState: disabled
+## Author: Gello
+## Version: 2.2.5
+## SavedVariables: AdaptSettings
+Adapt.xml
+Adapt.lua
+Options.lua

@@ -1,0 +1,27 @@
+## Interface: 70300
+## Notes: Wowhead Data dump for GatherMate2
+## Notes-zhCN: Wowhead 资料转存至采集助手 GatherMate2
+## Title: GatherMate2Data
+## Title-zhCN: GatherMate2Data 采集助手数据库
+## Title-zhTW: |cffFFFF99[專業]|r 採集助手-資料
+## Notes-zhTW: GatherMate2Data |n採集助手的資料庫。|n|cffffd200使用方法：|r從Esc>介面>插件>採集>匯入資料>匯入GatherMate2Data，將草礦點的資料匯入使用。
+## DefaultState: disabled
+## Author: kagaro, Xinhuan
+## X-Category: Map
+## X-Email: sal.scotto@gmail.com
+## Version: v30.1
+## LoadOnDemand: 1
+## X-Generated-Version: $Revision: 455 $
+## Dependencies: GatherMate2
+## X-Curse-Packaged-Version: v30.1
+## X-Curse-Project-Name: GatherMate2_Data
+## X-Curse-Project-ID: gathermate2_data
+## X-Curse-Repository-ID: wow/gathermate2_data/mainline
+
+MiningData.lua
+HerbalismData.lua
+GasData.lua
+FishData.lua
+TreasureData.lua
+ArchaeologyData.lua
+GatherMateData.lua

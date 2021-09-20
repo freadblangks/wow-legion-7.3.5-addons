@@ -1,0 +1,22 @@
+## Interface: 70300
+## Title: PetTracker Journal
+## Notes: Load on demand modification for the Pet Journal.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵助手-日誌
+## Notes-zhTW: PetTracker Journal |n依據需求載入的寵物日誌調整。
+## DefaultState: disabled
+## Author: Jaliborc (João Cardoso)
+## X-Category: Battle Pets
+## Version: 7.3.0
+
+## Dependencies: PetTracker
+## LoadWith: Blizzard_Collections
+## LoadOnDemand: 1
+
+..\PetTracker\Libs\SecureTabs-2.0\SecureTabs-2.0.lua
+
+..\PetTracker\Combat\SlotBorder.xml
+..\PetTracker\Combat\Slot.xml
+..\PetTracker\Combat\Slot.lua
+
+Components\Include.xml
+Features\Include.xml

@@ -1,0 +1,8 @@
+## Interface: 70300
+## Version: 7.3.21
+## Author: lteke
+## Title: In Progress Missions
+## Title-zhTW: |cff00FFFF[任務]|r 職業大廳報告
+## Notes-zhTW: In Progress Missions |n在職業大廳報告中列出所有角色的追隨者任務進度，也包括要塞的。|n|cffffd200使用方法：|r點小地圖按鈕的職業大廳按鈕。|n還沒有職業大廳按鈕的角色，可以輸入 /職業大廳 或 /ipm 來查看任務報告。|n|cffFF2D2D特別注意：|r其他角色必須先登入過遊戲，並且也有載入這個插件才會顯示在報告中。
+## SavedVariables: IPMDB
+InProgressMissions.lua

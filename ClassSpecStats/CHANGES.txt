@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r42 | reglohpri | 2018-04-07 18:13:59 +0000 (Sat, 07 Apr 2018) | 3 lines
+Changed paths:
+   M /trunk/ClassSpecStats.toc
+   M /trunk/stats.lua
+
+Stat priorities for the following classes have been updated
+
+Guardian Druid
+------------------------------------------------------------------------
+r41 | reglohpri | 2018-03-10 20:19:09 +0000 (Sat, 10 Mar 2018) | 3 lines
+Changed paths:
+   M /trunk/stats.lua
+
+Stat priorities for the following classes have been updated
+
+Elemental Shaman
+------------------------------------------------------------------------
+

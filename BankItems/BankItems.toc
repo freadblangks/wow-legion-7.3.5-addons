@@ -1,0 +1,20 @@
+## Interface: 70300
+## Title: BankItems
+## Title-zhCN: 离线银行 BankItems
+## Version: 7.3.0.0
+## Notes: View bank, inventory, mail, equipped and guild bank contents from any character anywhere!
+## Notes-zhCN: 让你可以随时浏览本ID所有服务器所有人物的装备以及背包、邮件、银行和公会银行中的物品|N插件命令/bi|N本地化: Isler
+## Title-zhTW: |cffB973CC[物品]|r 更多角色銀行
+## Notes-zhTW: BankItems |n讓你可以隨時瀏覽同帳號內所有伺服器、所有人物的裝備以及背包、郵件、銀行和公會銀行中的物品，並且會在背包物品的滑鼠提示中顯示其他角色擁有相同物品的數量。|n|cffffd200使用方法：|r點小地圖按鈕，或輸入 /銀行，或 /bi 開啟銀行視窗。
+## Author: Xinhuan
+## X-Category: Inventory
+## X-RelSite-UI.WoW: 1699
+## X-Email: xinhuan AT gmail DOT com
+## X-Donate: xinhuan AT gmail DOT com
+## SavedVariables: BankItems_Save, BankItems_SaveGuild
+
+localization-enUS.lua
+localization-zhCN.lua
+localization-zhTW.lua
+
+BankItems.lua

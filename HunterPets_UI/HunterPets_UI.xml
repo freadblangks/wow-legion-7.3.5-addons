@@ -1,0 +1,430 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+	<Button name="HunterPetListButtonTemplate" motionScriptsWhileDisabled="true" virtual="true">
+		<Size x="208" y="46"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture atlas="PetList-ButtonBackground" parentKey="background"/>
+			</Layer>
+			<Layer level="BORDER">
+				<Texture name="$parentIcon" parentKey="icon">
+					<Size x="38" y="38"/>
+					<Anchors>
+						<Anchor point="LEFT" x="-42" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentFactionIcon" parentKey="factionIcon">
+					<Anchors>
+						<Anchor point="BOTTOMRIGHT" x="-1" y="1"/>
+					</Anchors>
+					<Size x="90" y="44"/>	
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK" textureSubLevel="-1">
+				<Texture name="$parentIconBorder" parentKey="iconBorder" file="Interface\Common\WhiteIconFrame" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeKey="$parent.icon"/>
+						<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeKey="$parent.icon"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<FontString name="$parentName" inherits="GameFontNormal" justifyH="LEFT" parentKey="name">
+					<Size x="147" y="25"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeTo="$parentIcon" x="10" y="-5"/>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentElite" inherits="GameFontRedSmall" justifyH="RIGHT" parentKey="elite" text="精英">
+					<Size x="147" y="25"/>
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" relativeTo="$parent" x="-5" y="0"/>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentRare" inherits="GameFontGreenSmall" justifyH="RIGHT" parentKey="rare" text="稀有">
+					<Size x="147" y="25"/>
+					<Anchors>
+						<Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="$parent" x="-5" y="0"/>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentExotic" inherits="GameFontWhiteSmall" justifyH="RIGHT" parentKey="exotic" text="特別色">
+					<Size x="147" y="25"/>
+					<Anchors>
+						<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$parent" x="-5" y="0"/>
+					</Anchors>
+				</FontString>
+				<Texture name="$parentFavorite" atlas="PetJournal-FavoritesIcon" useAtlasSize="true" parentKey="favorite">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parentIcon" x="-8" y="8"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY" textureSubLevel="1">
+				<Texture atlas="PetList-ButtonSelect" parentKey="selectedTexture" hidden="true"/>
+			</Layer>
+		</Layers>
+		<Frames>
+			<PlayerModel parentKey="MiniModelFrame" useParentLevel="true" inherits="ModelWithZoomTemplate">
+			<Size x="40" y="40"/>
+				<Anchors>
+					<Anchor point="CENTER" relativeTo="$parentIcon" x="0" y="0"/>
+				</Anchors>
+				<HighlightTexture name="$parentHighlight" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>
+			</PlayerModel>
+		</Frames>
+		<HighlightTexture atlas="PetList-ButtonHighlight"/>
+		<Scripts>
+			<OnLoad>
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+			</OnLoad>
+			<OnClick function="HunterPetListItem_OnClick"/>	
+		</Scripts>
+	</Button>
+
+	<Frame name="HunterPetAbilities" virtual="true">
+		<Size x="40" y="60" />
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture name="$parentIcon" parentKey="Icon">
+					<Size x="38" y="38"/>
+					<Anchors>
+						<Anchor point="CENTER" relativePoint="CENTER" x="0" y="0"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnEnter>
+				if self.spellID then
+					GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT",1,44);
+					GameTooltip:SetSpellByID(self.spellID);
+					GameTooltip:Show();
+				end
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+				</OnLeave>
+		</Scripts>
+
+	</Frame>
+	
+	<Frame name="HunterPetJournal" parent="CollectionsJournal" setAllPoints="true" hidden="true">
+		<Frames>
+			<CheckButton parentKey="ActivateMap" inherits="SpellBookSkillLineTabTemplate" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="-36"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:SetNormalTexture('Interface/Icons/inv_misc_map03');
+					</OnLoad>
+					<OnClick>
+						self:SetChecked(false);
+						HunterPetLocations_Toggle();
+					</OnClick>
+					<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+						GameTooltip:SetText("寵物所在位置地圖");
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+			</CheckButton>
+
+			<Frame parentKey="LeftInset" useParentLevel="true" inherits="InsetFrameTemplate">
+				<Size x="260" y="496"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="4" y="-60" />
+					<Anchor point="BOTTOMLEFT" x="4" y="26" />
+				</Anchors>
+			</Frame>
+			<Frame parentKey="RightInset" useParentLevel="true" inherits="InsetFrameTemplate">
+				<Anchors>
+					<Anchor point="TOPRIGHT" x="-6" y="-60" />
+					<Anchor point="BOTTOMLEFT" relativeKey="$parent.LeftInset" relativePoint="BOTTOMRIGHT" x="20" y="0"/>
+				</Anchors>
+			</Frame>
+			<EditBox name="$parentSearchBox" inherits="SearchBoxTemplate" parentKey="searchBox" letters="40">
+				<Size x="145" y="20"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.LeftInset" x="15" y="-9"/>
+				</Anchors>
+				<Scripts>
+					<OnTextChanged function="HunterPetJournal_OnSearchTextChanged"/>
+				</Scripts>
+			</EditBox>
+			<Button name="$parentFilterButton" inherits="UIMenuButtonStretchTemplate" text="FILTER">
+				<Size x="93" y="22"/>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeKey="$parent.LeftInset" x="-5" y="-9"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture parentKey="Icon" file="Interface\ChatFrame\ChatFrameExpandArrow">
+							<Size x="10" y="12"/>
+							<Anchors>
+								<Anchor point="RIGHT" relativeKey="$parent.Right" relativePoint="RIGHT" x="-5"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnClick> 
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
+						ToggleDropDownMenu(1, nil, HunterPetJournalFilterDropDown, "HunterPetJournalFilterButton", 74, 15);
+					</OnClick>	
+				</Scripts>						
+			</Button>
+			<Frame name="$parentFilterDropDown" inherits="UIDropDownMenuTemplate">
+				<Scripts>
+					<OnLoad function="HunterPetJournalFilterDropDown_OnLoad"/>
+				</Scripts>
+			</Frame>
+			<Frame parentKey="TamablePets" useParentLevel="true" inherits="InsetFrameTemplate3">
+				<Size x="130" y="20"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="70" y="-35"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString parentKey="Count" inherits="GameFontHighlightSmall" justifyH="RIGHT">
+							<Anchors>
+								<Anchor point="RIGHT" x="-10" y="0"/>
+							</Anchors>
+						</FontString>
+						<FontString parentKey="Label" inherits="GameFontNormalSmall" text="可馴服" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="LEFT" x="10" y="0"/>
+								<Anchor point="RIGHT" relativeKey="$parent.Count" relativePoint="LEFT" x="-3" y="0"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			<Frame parentKey="TamableLooks" useParentLevel="true" inherits="InsetFrameTemplate3">
+				<Size x="130" y="20"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="210" y="-35"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString parentKey="Count" inherits="GameFontHighlightSmall" justifyH="RIGHT">
+							<Anchors>
+								<Anchor point="RIGHT" x="-10" y="0"/>
+							</Anchors>
+						</FontString>
+						<FontString parentKey="Label" inherits="GameFontNormalSmall" text="不同外觀" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="LEFT" x="10" y="0"/>
+								<Anchor point="RIGHT" relativeKey="$parent.Count" relativePoint="LEFT" x="-3" y="0"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			<Button parentKey="ShowOnlyInZone" useParentLevel="true">
+				<Size x="130" y="20"/>
+				<Anchors>
+					<Anchor point="TOPRIGHT" x="-10" y="-35"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString parentKey="BoB2" inherits="GameFontNormalSmall" text="只顯示目前區域可馴服的寵物" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="RIGHT" x="-25" y="0"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<CheckButton parentKey="CheckButton">
+						<Size x="22" y="22"/>
+						<Anchors>
+							<Anchor point="RIGHT" x="0" y="-1"/>
+						</Anchors>
+						<Scripts>
+							<OnClick function="HunterPetJournal_ZoneOnlyCheckButton_OnClick"/>
+						</Scripts>
+						<NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
+						<PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
+						<HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
+						<CheckedTexture file="Interface\Buttons\UI-CheckBox-Check"/>
+						<DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>	
+					</CheckButton>
+				</Frames>
+				
+			</Button>
+			<Frame parentKey="PetDisplay">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.RightInset" relativePoint="TOPLEFT" x="3" y="-3"/>
+					<Anchor point="BOTTOMRIGHT" relativeKey="$parent.RightInset" relativePoint="BOTTOMRIGHT" x="-3" y="3"/>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture file="Interface\PetBattles\MountJournal-BG" setAllPoints="true">
+							<TexCoords left="0" right="0.78515625" top="0" bottom="1"/>	
+						</Texture>
+					</Layer>
+					<Layer level="OVERLAY">
+						<FontString parentKey="NoPets" inherits="GameFontHighlightLarge" JustifyH="CENTER" text="噢，不!!">
+							<Size x="280" y="80"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame parentKey="ShadowOverlay" inherits="ShadowOverlayTemplate" useParentLevel="true" setAllPoints="true"/>
+					<Button parentKey="InfoButton" motionScriptsWhileDisabled="true">
+						<Size x="208" y="46"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="6" y="-6"/>
+						</Anchors>
+						<Layers>
+							<Layer level="BORDER">
+								<Texture name="$parentIcon" parentKey="Icon">
+									<Size x="38" y="38"/>
+									<Anchors>
+										<Anchor point="LEFT" x="20" y="-20"/>
+									</Anchors>
+								</Texture>
+							</Layer>
+							<Layer level="OVERLAY">
+								<FontString name="$parentName" inherits="GameFontHighlightLarge" justifyH="LEFT" justifyV="CENTER" parentKey="Name">
+									<Size x="300" y="35"/>
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentIcon" x="10" y="0"/>
+									</Anchors>
+								</FontString>
+								<FontString name="$parentSource" inherits="GameFontHighlight" justifyH="LEFT" parentKey="Source">
+									<Size x="345" y="0"/>
+									<Anchors>
+										<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$parentIcon" x="0" y="-6"/>
+									</Anchors>
+								</FontString>
+								<FontString name="$parentAbilities" inherits="GameFontHighlight" justifyH="LEFT" parentKey="Abilities">
+									<Size x="345" y="0"/>
+									<Anchors>
+										<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.Source"/>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+					</Button>
+					<Frame parentKey="AIcon1" useParentLevel="true" inherits="HunterPetAbilities">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeKey="$parent" x="26" y="-116"/>
+						</Anchors>
+					</Frame>
+					<Frame parentKey="AIcon2" useParentLevel="true" inherits="HunterPetAbilities">
+						<Anchors>
+							<Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.AIcon1" x="15" y="0"/>
+						</Anchors>
+					</Frame>
+					<Frame parentKey="AIcon3" useParentLevel="true" inherits="HunterPetAbilities">
+						<Anchors>
+							<Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.AIcon2" x="15" y="0"/>
+						</Anchors>
+					</Frame>
+					<Frame parentKey="AIcon4" useParentLevel="true" inherits="HunterPetAbilities">
+						<Anchors>
+							<Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.AIcon3" x="15" y="0"/>
+						</Anchors>
+					</Frame>
+					<PlayerModel parentKey="ModelFrame" useParentLevel="true" inherits="ModelWithZoomTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="0" y="-160"/>
+							<Anchor point="BOTTOMRIGHT" relativeKey="$parent" x="0" y="0"/>
+						</Anchors>
+						<Frames>
+							<Button parentKey="RotateLeftButton">
+								<Size x="35" y="35"/>
+								<Anchors>
+									<Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="BOTTOM" x="-5" y="50"/>
+								</Anchors>
+								<Scripts>
+									<OnLoad>
+										self:RegisterForClicks("LeftButtonDown", "LeftButtonUp");
+									</OnLoad>
+									<OnClick>
+										Model_RotateLeft(self:GetParent());
+									</OnClick>
+								</Scripts>
+								<NormalTexture file="Interface\Buttons\UI-RotationLeft-Button-Up"/>
+								<PushedTexture file="Interface\Buttons\UI-RotationLeft-Button-Down"/>
+								<HighlightTexture file="Interface\Buttons\ButtonHilight-Round" alphaMode="ADD"/>
+							</Button>
+							<Button parentKey="RotateRightButton">
+								<Size>
+									<AbsDimension x="35" y="35"/>
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="BOTTOM" x="5" y="50"/>
+								</Anchors>
+								<Scripts>
+									<OnLoad>
+										self:RegisterForClicks("LeftButtonDown", "LeftButtonUp");
+									</OnLoad>
+									<OnClick>
+										Model_RotateRight(self:GetParent());
+									</OnClick>
+								</Scripts>
+								<NormalTexture file="Interface\Buttons\UI-RotationRight-Button-Up"/>
+								<PushedTexture file="Interface\Buttons\UI-RotationRight-Button-Down"/>
+								<HighlightTexture file="Interface\Buttons\ButtonHilight-Round" alphaMode="ADD"/>
+							</Button>
+						</Frames>
+					</PlayerModel>
+				</Frames>
+
+			</Frame>
+			<!--Name needed for HybridScrollFrameTemplate-->
+			<ScrollFrame name="$parentListScrollFrame" parentKey="ListScrollFrame" inherits="HybridScrollFrameTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeKey="$parent.LeftInset" x="3" y="-36"/>
+					<Anchor point="BOTTOMRIGHT" relativeKey="$parent.LeftInset" x="-2" y="5"/>
+				</Anchors>
+				<Frames>
+					<Slider name="$parentScrollBar" inherits="HybridScrollBarTrimTemplate" parentKey="scrollBar">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="4" y="20"/>
+							<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT" x="4" y="11"/>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self.trackBG:Show();
+								self.trackBG:SetVertexColor(0, 0, 0, 0.75);
+							</OnLoad>
+						</Scripts>
+					</Slider>
+				</Frames>
+			</ScrollFrame>
+			<Button parentKey="StabledPetsButton" name="$parentStabledPetsButton" inherits="MagicButtonTemplate" text="我的獸欄寵物">
+				<Size x="140" y="22"/>
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						HunterPetsOwned_Toggle()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Frame name="$parentHunterPetOptionsMenu" inherits="UIDropDownMenuTemplate" enableMouse="true" parentKey="hunterPetOptionsMenu"/>
+		</Frames>
+		<Scripts>
+			<OnLoad function="HunterPetJournal_OnLoad"/>
+			<OnEvent function="HunterPetJournal_OnEvent"/>
+		</Scripts>
+	</Frame>
+</Ui>
+
+

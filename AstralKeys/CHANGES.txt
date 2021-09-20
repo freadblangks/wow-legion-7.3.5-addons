@@ -1,0 +1,26 @@
+lightweight tag da989f19be9bf000d9154ef8fd0da57d5bccaa4d 2.1.08
+Author:	phriked <phriked@gmail.com>
+Date:	Tue Apr 24 22:47:11 2018 -0700
+
+commit da989f19be9bf000d9154ef8fd0da57d5bccaa4d
+Author: phriked <phriked@gmail.com>
+Date:   Tue Apr 24 22:47:11 2018 -0700
+
+    Bug fixes and new features
+    
+    Fixed Bnet syncing.
+    -Wasn't sending keys to friends.
+    New Feature
+    -Added key information to unit's tooltip in game tooltip and Blizzard's
+    friends list tooltip.
+
+commit 464590274ee49aac76752d6fd3e2471a71a7c917
+Author: phriked <phriked@gmail.com>
+Date:   Thu Feb 22 21:52:34 2018 -0800
+
+    Bug Fixes
+    
+    -Fixed Frame not being the correct size
+    -Fixed reset bug in reset script for players logged in before the reset
+    happens
+

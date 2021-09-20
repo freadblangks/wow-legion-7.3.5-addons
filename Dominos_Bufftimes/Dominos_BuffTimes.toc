@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: Dominos Buff Times
+## Title-zhCN: |cFF0099FF[Dominos]|r BuffTimes
+## Notes: Adds a cooldown timer on action buttons for the duration of buffs and debuffs cast on your target
+## Title-zhTW: |cff00CCFF[快捷列]|r 增益和減益時間
+## Notes-zhTW: Dominos Buff Times |n在快捷列按鈕上顯示你對目標所施放的增益和減益效果時間，更方便做Buff/DOT監控。|n|cffffd200使用方法：|r從Esc>介面>插件>快捷列-增益時間，進行設定。|n|cffFF2D2D特別注意：|r這個插件可以單獨載入使用。
+## SavedVariables: Dominos_BuffTimesDB
+## Author: Tuller/Starslayer
+## X-Curse-Packaged-Version: v1.3.85
+## X-Curse-Project-Name: Dominos_BuffTimes
+## X-Curse-Project-ID: dominos_bufftimes
+## X-Curse-Repository-ID: wow/dominos_bufftimes/mainline
+embeds.xml
+main.lua
+config.lua
+defaults.lua

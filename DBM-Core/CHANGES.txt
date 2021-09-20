@@ -1,0 +1,54 @@
+tag 0cb5a3b36de32157d194d861f2335ff8ed7300f3 7.3.28
+Author:	subversion <svn@deadlybossmods.com>
+Date:	Thu May 3 20:00:04 2018 +0200
+
+Tagging as 7.3.28
+
+commit 8a89ede2af96d9db7156d466ea21eea708986bd0
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 3 20:00:04 2018 +0200
+
+    increment version number to 7.3.28
+
+commit 8d91fff6572352842f93fab859c13edf61d721b7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 3 04:09:28 2018 +0200
+
+    Omega via svn r17486:
+    More map fixes
+
+commit e26c05913a9ebe0522dba2b576c2d06c7768158f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 3 04:03:28 2018 +0200
+
+    Omega via svn r17485:
+    Tweak for robustness GetCurrentMapID returns 0 until map loads, GetBestMapForUnit always returns correct
+
+commit d74f4aa64c1fc8de69c1dad49ff3ed88e3992db1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 3 03:47:57 2018 +0200
+
+    Omega via svn r17484:
+    Vectis Update
+
+commit ae02f803923f3097ab0bb90b670472c4d4458823
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 3 02:30:05 2018 +0200
+
+    Omega via svn r17483:
+    Finish mother mod from todays testing
+
+commit 43d42b3831681b70777f0c84de4cb03d6f3bceaa
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 2 23:48:03 2018 +0200
+
+    Omega via svn r17482:
+    fix two lua errors
+
+commit 5a2da970ce2e9e9821120c1ca64f57282677701a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 2 20:48:57 2018 +0200
+
+    tandanu via svn r17481:
+    increment alpha version
+

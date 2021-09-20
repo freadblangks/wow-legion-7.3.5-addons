@@ -1,0 +1,16 @@
+﻿## Interface: 70300
+## Title: GladiatorlosSA
+## Notes: PvP Sound Alerter
+## Title-zhTW: |cffFF0000[PVP]|r 技能語音提示-主程式
+## Notes-zhTW: GladiatorlosSA |n用語音報出敵方玩家正在施放的技能。|n|cffffd200使用方法：|r從Esc>介面>插件>PVP技能語音，進行設定。
+## DefaultState: disabled
+## Author: Abatorlos(of Spinebreaker), DuskAshes, superk521, zuhligan, Grit (Legion Update), Mini_Dragon, LordKuper
+## SavedVariables: GladiatorlosSADB
+## Version: 1.17
+
+embeds.xml
+Locales\locales.xml
+
+GladiatorlosSA2.lua
+spelllist.lua
+options.lua

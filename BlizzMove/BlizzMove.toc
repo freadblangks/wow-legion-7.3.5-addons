@@ -1,0 +1,10 @@
+## Interface: 70300
+## Title: Blizzmove
+## Notes: Move those blizzard windows
+## Title-zhTW: |cff0099FF[介面]|r 移動暴雪視窗
+## Notes-zhTW: Blizzmove |n允許自由拖曳移動遊戲內建的各種視窗。只是暫時性的移動和縮放，不會保存位置。|n要永久性的移動位置和縮放，請使用 '版面配置' 插件來調整。|n|cffffd200使用方法：|r拖曳視窗最上方的視窗標題，可以移動。按住Ctrl鍵不放在視窗上滾動滑鼠滾輪，可以放大和縮小整個視窗，包括內容文字。
+## Author: yess
+## X-Email: yess@xan.de
+
+Handle.lua
+BlizzMove.lua

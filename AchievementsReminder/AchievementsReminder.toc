@@ -1,0 +1,17 @@
+﻿## Interface: 70300
+## Title: Achievements|cff7fff7fReminder|r - shows achievements by location
+## Author: Shurshik
+## Notes: Shows list of achieves that are avaible in a zone and tactics for them
+## Title-zhTW: |cffFFCC99[成就]|r 副本成就-提醒
+## Notes-zhTW: Achievements Reminder |n列出該區域可做的成就和相關戰術。
+## DefaultState: disabled
+## Dependencies: RaidAchievement
+## LoadOnDemand: 0
+## SavedVariables: ralllocationnames,ralltactics,ralltacticsver,ralltacticsdif
+## SavedVariablesPerCharacter: ralloptions,ralloptionsmanual,rallbosstooltip,rallbosschaton,ralloptionsmanual3,ralloptionTrackCharAchieves
+Localization\localization-enEN.lua
+Localization\localization-zhCN.lua
+Localization\localization-zhTW.lua
+AR_database.lua
+AchievementsReminder.lua
+AchievementsReminder.xml

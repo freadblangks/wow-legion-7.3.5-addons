@@ -1,0 +1,10 @@
+## Interface: 70300
+## Title: |cff0080ffOrderHall|rIcon
+## Author: Siweia
+## Notes: Replace the OrderHallCommandBar with an Icon
+## Title-zhTW: |cff0099FF[介面]|r 職業大廳圖示
+## Notes-zhTW: |cff0080ffOrderHall|rIcon |n在畫面上方中間顯示職業大廳圖示，取代一整條黑色的職業大廳列。|n|cffffd200使用方法：|r滑鼠指向圖示會顯示職業大廳資訊。
+## Version: 1.0
+## LoadWith: Blizzard_OrderHallUI
+
+Core.lua

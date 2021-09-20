@@ -1,0 +1,10 @@
+lightweight tag 4190d38bb9987ea83a4b6b97b659cba9b3fc866a v1.2.8
+Author:	Saregon <n_rhygar@yahoo.it>
+Date:	Wed Oct 18 16:42:52 2017 +0200
+
+commit 4190d38bb9987ea83a4b6b97b659cba9b3fc866a
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Wed Oct 18 16:42:52 2017 +0200
+
+    remove search filter character limit
+

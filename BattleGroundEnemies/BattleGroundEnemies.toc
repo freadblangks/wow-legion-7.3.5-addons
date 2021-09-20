@@ -1,0 +1,33 @@
+## Interface: 70300
+## Title: BattleGroundEnemies
+## Title-zhTW: |cffFF0000[PVP]|r 戰場目標框架
+## Notes-zhTW: BattleGroundEnemies |n戰場專用的敵方單位框架，可以監控敵人的血量、減益效果、控場遞減...等等多種狀態。|n|cffffd200使用方法：|r從Esc>介面>插件>PVP戰場目標，進行設定。
+## DefaultState: disabled
+## Version: v3.1.9.2
+## Author: Bullsei
+## SavedVariables: BattleGroundEnemiesDB
+## OptionalDeps: Ace3, LibStub, LibRaces-1.0, UTF8, DRData-1.0, LibSharedMedia-3.0, LibPlayerSpells-1.0
+
+## X-Curse-Project-ID: 274066
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+Locales\enUS.lua
+Locales\zhCN.lua
+Locales\zhTW.lua
+
+Data.lua
+Main.lua
+
+Objects\Auras.lua
+Objects\Buffs.lua
+Objects\Debuffs.lua
+Objects\DR.lua
+Objects\ObjectiveAndRespawn.lua
+Objects\Racial.lua
+Objects\Trinket.lua
+
+Testmode.lua
+Options.lua

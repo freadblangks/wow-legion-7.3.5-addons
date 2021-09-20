@@ -1,0 +1,22 @@
+## Interface: 70300
+## Title: Engraved
+## Version: 2.0.5
+## Notes: Stylish combat resource display
+## Title-zhTW: |cffFF7373[職業]|r 連擊點數-符文字
+## Notes-zhTW: Engraved |n使用非常有型的魔獸古代符文字來顯示連擊點數，有多種樣式可以選擇。|n支援死亡騎士符文、盜賊和德魯伊的連擊點數、術士靈魂裂片、法師祕法充能、聖騎士聖能和武僧真氣。|n|cffffd200使用方法：|r從Esc>介面>插件>連擊點數-符文字，進行設定。
+## DefaultState: disabled
+## Author: Neph / lieandswell <Nephthys @ Hyjal-US>
+## SavedVariablesPerCharacter: EngravedOptions
+
+Engraved.xml
+Engraved.lua
+Runes.lua
+DeathKnight.lua
+RogueDruid.lua
+Mage.lua
+Warlock.lua
+Paladin.lua
+Monk.lua
+OptionsLibrary.lua
+Options.lua
+Localization.lua

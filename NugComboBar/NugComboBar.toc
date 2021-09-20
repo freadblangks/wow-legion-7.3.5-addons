@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: NugComboBar
+## Notes: Combopoints counter
+## Title-zhTW: |cffFF7373[職業]|r 連擊點數-3D圓-主程式
+## Notes-zhTW: NugComboBar |n使用精美的3D圓形來顯示連擊點數。|n|cffffd200使用方法：|r從Esc>介面>插件>連擊點數，進行設定。
+## DefaultState: disabled
+## Author: d87
+## SavedVariablesPerCharacter: NugComboBarDB_Character
+## SavedVariables: NugComboBarDB_Global
+NugComboBar.lua
+skin.lua
+
+gui\gui.xml

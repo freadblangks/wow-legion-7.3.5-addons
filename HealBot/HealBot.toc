@@ -1,0 +1,20 @@
+## Interface: 70300
+## Title: HealBot
+## Author: Strife
+## Notes: Adds a panel with skinable bars for healing, decursive, buffing, ressing, range checking and aggro tracking
+## Title-zhTW: |cffFF7373[職業]|r 智能治療-主程式
+## Notes-zhTW: HealBot |n用來取代隊伍/團隊框架，滑鼠點一下就能快速施放法術/補血，是補師的好朋友!|n 可以自訂框架的外觀，提供治療、驅散、施放增益效果、使用飾品、距離檢查和仇恨提示的功能。|n|cffffd200使用方法：|r點小地圖按鈕，或輸入 /治療，或 /智能治療，或 /hb 開啟設定。
+## DefaultState: disabled
+## SavedVariablesPerCharacter:  HealBot_Config, HealBot_Config_Spells, HealBot_Config_Buffs, HealBot_Config_Cures
+## SavedVariables: Healbot_Config_Skins, HealBot_Globals, HealBot_Class_Spells, HealBot_Class_Buffs, HealBot_Class_Cures, HealBot_MapScale
+## OptionalDeps: LibSharedMedia-3.0, LibDataBroker-1.1, LibDBIcon-1.0
+## Version: 7.3.5.0
+
+embeds.xml
+
+Locale\HealBot_Global.lua
+Locale\HealBot_Localization.en.lua
+
+HealBot.xml
+HealBot_Action.xml
+HealBot_Options.xml

@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: HandyNotes_DungeonLocations
+## Version: 1.28
+## Notes: Shows locations of old world dungeon and raid entrances
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-副本入口
+## Notes-zhTW: HandyNotes_DungeonLocations |n在地圖上顯示舊世界5人地城和團隊副本的入口位置。|n|cffffd200使用方法：|r從Esc>介面>插件>地圖標記>插件>副本入口，進行設定。
+## Author: Caliaha of Cairne
+## RequiredDeps: HandyNotes
+## SavedVariables: HandyNotes_DungeonLocationsDB
+
+locales\Locales.xml
+HandyNotes_DungeonLocations.lua

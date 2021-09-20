@@ -1,0 +1,73 @@
+Revision History:
+=================
+
+* v1.9.3 (Apr 12, 2018)
+-----------------------
+- added Dalaran and Pandaria portals to Stormwind
+- updated deDE.lua and applied fix to other locale .lua's
+- updated DB.lua
+- renamed enUS.lua to enEN.lua
+- fixed spelling errors
+
+* v1.9.2 (Apr 10, 2018)
+-----------------------
+- fixed enUS.lua file
+- added blank locale file for future translations
+- fixed spelling errors
+
+* v1.9.1 (Apr 8, 2018)
+-----------------------
+- added German (de lib) contributed by Dathwada
+
+* v1.9 (Apr 7, 2018)
+-----------------------
+- added various missed portals
+- added Warlords of Draenor data
+- fixed spelling errors
+- neatened DB.lua
+
+* v1.8 (Mar 6, 2018)
+-----------------------
+- added portals in Dalaran-Northrend
+- adjusted string in Handler.lua forcing English string instead of localized
+
+* v1.7 (Feb 11, 2018)
+-----------------------
+- updated for 7.3.5
+- fixed spelling errors and inaccurate database links
+- added portal and zeppelin coordinates to Orgrimmar, Thunder Bluff, Undercity, and connected zones
+- added various Horde portals
+
+* v1.6 (Sep 01, 2017)
+-----------------------
+- updated for 7.3
+
+* v1.5 (June 12, 2017)
+-----------------------
+- added Stormwind portal to Ashran
+- updated for 7.2.5
+
+* v1.4 (May 22, 2017)
+-----------------------
+- added druid portals in Class Hall/ Val'sharah
+- added Dalaran portals to Broken Isles map for Alliance and Horde
+
+* v1.3 (May 18, 2017)
+-----------------------
+- adjusted locations for Isle of Thunder portals in Townlong Steppes
+- added portal from Isle of Thunder to Townlong Steppes
+
+* v1.2 (May 16, 2017)
+-----------------------
+- Fixed an issue when right clicking portals or boats displayed improper addon name
+
+* v1.1 (May 13, 2017)
+-----------------------
+- Added placeholders for Horde zeppelins and portals
+
+* v1.0 (May 12, 2017)
+-----------------------
+- Added Alliance and neutral boat locations in Azeroth
+- Added portals in Stormwind, Ironforge, Darnassus, Exodar, Shattrath, Vale of Eternal Blossoms, Dalaran-Northrend, and Dalaran-Broken Isles 
+- Added portals in non major zones (Mount Hyjal, Deepholm, Tol Barad)
+- Created links for zeppelins and faction air vehicles

@@ -1,0 +1,24 @@
+lightweight tag cb45aa5bb51a3a3378379613ac1e164fe73fa26c 1.17
+Author:	Bernhard Saumweber <b.saumweber@gmail.com>
+Date:	Tue Dec 26 13:55:19 2017 +0100
+
+commit cb45aa5bb51a3a3378379613ac1e164fe73fa26c
+Author: peti446 <peti446@users.noreply.github.com>
+Date:   Tue Dec 26 12:55:19 2017 +0000
+
+    Added Spanish localization (#9)
+    
+    * Create esES.lua: Spanish translation
+    * Update esES.lua
+    * fixed space error
+    * Added Spanish Localization
+    * Removed MX
+    * Changed place so it actually loads now
+    * Update esES.lua
+
+commit 2a1f08ed83fd791fdabb1f744ac469d7f5bbb070
+Author: Bernhard Saumweber <b.saumweber@gmail.com>
+Date:   Thu Dec 14 22:31:28 2017 +0100
+
+    Set version to next release version: 1.17
+

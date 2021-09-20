@@ -1,0 +1,115 @@
+﻿=== Changelog ===
+v7.3.7
+  - fixed searching for items
+  - fixed error on login or (bank)bag open/close 
+v7.3.6
+  - introduced cleanup ignore filter for containers, these containers won't be affected by the cleanup operation
+  - fixed container filters to use correct IDs for the target containers
+  - fixed swapping of bags resulting in exceptions and missing items
+  - fixed faulty container rendering when the column configuration was changed
+  - fixed some caching related issues that lead to faulty textures and bagcontents for bank containers when in offline mode
+v7.3.5
+  - reworked generation of the containers menu drop downs and their internal handling of clicks
+  - introduced usage of regular containers filter assignment (can be configured through container menu)
+  - fixed quest item highlights to correctly show for items collected for quests
+  - fixed updating item upgrade overlays (this also fixed missing pawn infos on items)
+  - fixed updating of containers after splitting in options (didn't shrink anymore after system rework)
+v7.3.4
+  - major rework of how item buttons and bag buttons are created and accessed
+  - rework of rarity coloring internals (are still expected to look almost the same though)
+  - added support for masque skinning (item buttons in the bags as well as bag buttons in the bag overview)
+  - added possibility to activate/deactivate masque support in options, defaults to off!
+  - worked around quirk in blizzards code that prevented opening the options panel from chat or dropdown menu in the bags on the first try
+v7.3.3
+  - added button linking to blizzards authenticator system for people that don't have the extra 4 slots yet ("hidden" in menu drop down)
+  - major restructoring of big parts of the addon if you encounter problems please don't hesitate to report!
+v7.3.2
+  - updated playsound usage to blizzards new id based system
+  - fixed background selection broken somewhere in the extensive restructuring of past versions
+v7.2.2
+  - reworked TokenFrame and MoneyFrame in first backpack container to better fit and worked out some scaling issues
+  - extensive internal restructuring
+v7.0.3
+  - added special handling for vendors that are also quests givers 
+  - fixed grey item equip on visiting mail
+  - fixed skin selection in options
+  - initial support for CaerdonWardrobe (does not work on offline bank yet)
+  - fixed performance issues introduced with 6.2.0 beta versions
+  - fixed offline bank issues
+  - reworked debug system to hopefully perform better when not used.
+v6.0.3
+  - reworked options panel
+  - reworked some optios to be global for all containers:
+    + rarity coloring
+    + new item highlight
+    + junk selling
+  - fixed tooltips in offline bank
+v6.0.2
+  - propably found long time bug for overlayed bag icons
+  - reworked interal (debug) logging system
+  - reworked caching mechanism for more general use
+  - added reagent bank
+  - added blizzards bag sorting feature
+  - added option to automatically sell junk when visiting a merchand
+  - added option to hide flashing border for new items (per container)
+  - fixed bag updating when visiting a vendor
+  - extended maximum possible columns for bags to 40 to accomodate for bigger sizes, default for bank is increased to 14
+v6.0.1
+  - added file based logging on a per session basis, to enable type the following into the chat:
+    /script BaudBag_DebugLog = true;
+	The resulting log will be in the SavedVariable file for BaudBag. Beware that the option will reset to false when relogging or reloading the ui! Entries of previous sessions will automatically be overriden!
+  - fixed locked bag selection
+v6.0.0
+  - adapted to braking changes in API & base container addon
+v5.4.0
+  - added workaround for slider value bug introduced in live 5.4.0 builds (see http://www.wowwiki.com/Patch_5.4.0/API_changes#Issues)
+  - fixed blue borders in offline bank view when bank hasn't been visited in a session
+v5.3.0
+  - fixed search when caged battle pets are present in the bags open for search
+  - added new option 
+v5.2.0
+  - fixed faulty behaviour when BB is deativated for the inventory (Ticket 77)
+v5.1.0
+  - hotfix for changes made to original BagSlots by Blizz
+v5.0.0
+  - fixed my sloppy coding resulting in tainting sloppy coded blizzard addons with patch 5.0.4
+v4.3.0
+  - removed obsolete code to get rid of some error messages
+  - fixed up size of Bag Slot Container Frame (thx to KanadiaN for the patch!)
+  - finally fixed AutoOpen function for bags when going to a vendor or mail terminal
+v4.2.0
+  - removed keyring to adapt to the current WoW Interface changes introduced with patch 4.2.0
+v4.1.1
+  - fixed open bags closing when opening merchant window
+  - backpack now opens correctly when all bags are opened even if it is not joined with other bags
+  - corrected backpack toggeling to close or open all bags at once instead of opening closed and closing opened bags
+  - worked around some tainting issues
+
+v4.1.0
+  - adopted Changes for Patch 4.1 (new ToggleAllBags behavior)
+
+v4.0.3
+  - added bag search (allowing lua style pattern matching)
+  - added option setting to close the whole bag set when closing the first container of a set
+  - added highlighting of container slots when mouse hovers over bags slots in bank or backpack
+  - fixed opening of original bankframe when baudbags own bank frame is disabled
+
+v4.0.2
+  - major restructuring of inner workings
+  - added new token view for up to 5 tokens in the first backpack container
+  - moved options to regular wow options interface
+  - changed rarity coloring to be a bit more discrete (thanks to eldaveo)
+  - added russian and korean translations
+  - fixed cost view for next bank slot
+  
+v4.0.1
+  - fixed auto open issue when visiting a vendor or mail
+
+v4.0.0
+  - updated a big part of the addon to comply with recent changes in the UI-API
+  - updated toc to 40000
+
+=== Known Issues ===
+
+If the columns of the first bagpack container are set to a low value the visible tokens and money may be visible outside the bag frame.
+One cannot right-click on reagents to put them in the reagent bank, it will only be put in the regular bank. (Restriction by Blizz API)

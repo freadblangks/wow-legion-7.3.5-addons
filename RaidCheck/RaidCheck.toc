@@ -1,0 +1,21 @@
+## Interface: 70300
+## Version: 2.91
+## Title: Raid Check
+## Notes: Check if Players are using Food, Flasks, Runes, and Vantus Runes
+## Title-zhTW: |cffFF7F00[團隊]|r 檢查食物精煉
+## Notes-zhTW: Raid Check |n檢查所有團隊成員是否都有食物、精煉藥劑和增強符文的增益效果。|n|cffffd200使用方法：|r點小地圖按鈕。
+## DefaultState: disabled
+## Author: tobbi007 & Torsin
+## SavedVariables: RaidCheckDB
+
+## Embedded libraries
+Libs\Libs.xml
+
+## Locale Translations
+Locales\Locales.xml
+
+## Core functionality that includes the GUI
+Core.lua
+Constants.lua
+UI\UI.xml
+RaidCheck_Functions.lua

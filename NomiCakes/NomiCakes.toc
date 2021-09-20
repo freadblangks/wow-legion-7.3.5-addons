@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: NomiCakes
+## Author: Semlar
+## Version: 7.3.0.1
+## SavedVariablesPerCharacter: NomiCakesDatas
+## Notes: Shows what recipes can be learned from Nomi in Dalaran
+## Title-zhTW: |cffFFFF99[專業]|r 燒焦糯米 
+## Notes-zhTW: NomiCakes |n和達拉然的糯米對話時，對話選項旁會顯示每種食材可以學到哪些食譜。|n或許糯米這次不會再燒焦了?!|n|cffffd200使用方法：|r輸入 /糯米，或 /nomi 查看食譜的取得方式。
+NomiCakes.lua

@@ -1,0 +1,34 @@
+------------------------------------------------------------------------
+r459 | nevcairiel | 2016-10-15 15:04:15 +0000 (Sat, 15 Oct 2016) | 1 line
+Changed paths:
+   A /tags/v30.1 (from /trunk:458)
+
+Tagging as v30.1
+------------------------------------------------------------------------
+r458 | nevcairiel | 2016-10-15 15:03:23 +0000 (Sat, 15 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/ArchaeologyData.lua
+   M /trunk/FishData.lua
+   M /trunk/HerbalismData.lua
+   M /trunk/MiningData.lua
+   M /trunk/TreasureData.lua
+
+Update from user-contributed data
+------------------------------------------------------------------------
+r456 | nevcairiel | 2016-09-20 14:36:33 +0000 (Tue, 20 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/ArchaeologyData.lua
+   M /trunk/FishData.lua
+   M /trunk/HerbalismData.lua
+   M /trunk/MiningData.lua
+   M /trunk/TreasureData.lua
+
+Add data contributed through CurseForge forum, cleaned up and de-duplicated
+------------------------------------------------------------------------
+r455 | nevcairiel | 2016-09-20 14:36:08 +0000 (Tue, 20 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/GatherMate2_Data.toc
+   M /trunk/GatherMateData.lua
+
+Update TOC and add legion zone filter
+------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: MinimapButtonBag
+## Author: karlsnyder
+## X-Category: Map
+## Notes: Cleans up minimap buttons and makes them accessible through a pop out menu!
+## Notes-zhCN: 清除迷你地图周围按钮，整合它们至一个弹出菜单中！
+## Title-zhTW: |cff4DFF4D[地圖]|r 小地圖按鈕選單
+## Notes-zhTW: MinimapButtonBag, MBB |n將小地圖周圍的按鈕，整合成一個彈出式按鈕選單!
+## SavedVariablesPerCharacter: MBB_Exclude, MBB_Options
+
+localization-zhCN.lua
+localization-zhTW.lua
+MBB.xml

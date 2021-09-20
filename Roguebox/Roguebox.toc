@@ -1,0 +1,14 @@
+## Interface: 70300
+## X-Min-Interface: 70000
+## Title: RogueBox
+## Author: Zaperox
+## Version: 0.13b
+## Notes: Bones you rolled, on your personal resource display!
+## Title-zhTW: |cffFF7373[職業]|r 暴徒骰子監控
+## Notes-zhTW: RogueBox |n骰出你的命運，呈現在個人資源條下方。盜賊暴徒專精專用。|n|cffffd200使用方法：|r從Esc>介面>名稱>顯示個人資源，打勾開啟這個插件。
+## DefaultState: disabled
+
+pistol.lua
+timertext.lua
+crimsonvial.lua
+main.lua

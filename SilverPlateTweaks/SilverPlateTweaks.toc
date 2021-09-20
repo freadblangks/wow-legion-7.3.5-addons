@@ -1,0 +1,7 @@
+## Interface: 70300
+## Title: SilverPlateTweaks
+## Author: Lad-Lightbringer | SilverrWolf
+## Title-zhTW: |cffFF6060[戰鬥]|r 血條距離微調
+## Notes-zhTW: SilverPlateTweaks |n自動調整血條的視野距離和堆疊時的間距。|n|cffFF2D2D特別注意：|r若要手動從Esc>介面>插件>進階，來調整血條時，請關閉這個插件。
+## Version: 1.0
+SilverPlateTweaks.lua

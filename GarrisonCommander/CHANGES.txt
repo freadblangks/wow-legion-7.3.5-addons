@@ -1,0 +1,18 @@
+tag a3447ee95ed0f6f28dae819e08478ad642d5840e 2.18.5
+Author:	Alar of Runetotem <alar@aspide.it>
+Date:	Fri Nov 3 16:15:17 2017 +0100
+
+Removed OrderHallCommander advertising
+
+commit 797379e3c267fc45791bd547aa5bcb120ddc5a6e
+Author: Alar of Runetotem <alar@aspide.it>
+Date:   Fri Nov 3 16:14:44 2017 +0100
+
+    doc
+
+commit 31846d809767fe07728a6be8b82fb24a60b4c72a
+Author: Alar of Runetotem <alar@aspide.it>
+Date:   Fri Nov 3 16:10:21 2017 +0100
+
+    OrderHallCommander advertising removed
+

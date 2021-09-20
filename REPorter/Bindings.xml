@@ -1,0 +1,26 @@
+<Bindings>
+  <Binding name="REPORTERINC1" header="REPORTERB" category="ADDONS">
+    REPorter:SmallButton(1);
+  </Binding>
+  <Binding name="REPORTERINC2" category="ADDONS">
+    REPorter:SmallButton(2);
+  </Binding>
+  <Binding name="REPORTERINC3" category="ADDONS">
+    REPorter:SmallButton(3);
+  </Binding>
+  <Binding name="REPORTERINC4" category="ADDONS">
+    REPorter:SmallButton(4);
+  </Binding>
+  <Binding name="REPORTERINC5" category="ADDONS">
+    REPorter:SmallButton(5);
+  </Binding>
+  <Binding name="REPORTERINC6" category="ADDONS">
+    REPorter:SmallButton(6);
+  </Binding>
+  <Binding name="REPORTERHELP" category="ADDONS">
+    REPorter:BigButton(true);
+  </Binding>
+  <Binding name="REPORTERCLEAR" category="ADDONS">
+    REPorter:BigButton(false);
+  </Binding>
+</Bindings>

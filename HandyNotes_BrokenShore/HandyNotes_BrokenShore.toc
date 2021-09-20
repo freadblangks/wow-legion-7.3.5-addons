@@ -1,0 +1,33 @@
+## Interface: 70300
+#@non-debug@
+## Title: HandyNotes - Broken Shore
+## Title-zhCN: HandyNotes - 破碎海滩
+## Notes: Shows the POIs in Broken Shore
+## Notes-zhCN: 顯示破碎海滩的 POI 位置
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-破碎海岸
+## Notes-zhTW: HandyNotes - Broken Shore |n在地圖上顯示破碎群島寶藏和稀有怪的位置。|n|cffffd200使用方法：|r從Esc>介面>插件>地圖標記>插件>破碎海岸，進行設定。
+#@end-non-debug@
+#@debug@
+# ## Title: HandyNotes - Broken Shore
+# ## Title-zhCN: HandyNotes - 破碎海滩
+# ## Title-zhTW: HandyNotes - 破碎海岸
+# ## Notes: Shows the POIs in Broken Shore
+# ## Notes-zhCN: 顯示破碎海滩的 POI 位置
+# ## Notes-zhTW: 顯示破碎海岸的 POI 位置
+#@end-debug@
+## Author: arith
+## Version: v1.24
+## RequiredDeps: HandyNotes
+## OptionalDeps: LibBabble-SubZone-3.0, LibUIDropDownMenu
+## DefaultState: enabled
+## SavedVariables: HandyNotes_BrokenShoreDB
+## X-Date: 2018-04-25T2:26:46Z
+## X-License: GPLv2
+## X-Category: Map
+
+Libs\Libs.xml
+Locale\Locales.xml
+Core\Constants.lua
+Core\Handler.lua
+Core\Config.lua
+Data\DB.lua

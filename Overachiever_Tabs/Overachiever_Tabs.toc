@@ -1,0 +1,21 @@
+## Interface: 70300
+## Title: Overachiever - Tabs
+## Version: 0.99.10
+## Author: Tuhljin
+## Notes: Achievement frame tabs module.
+## Title-zhTW: |cffFFCC99[成就]|r 非凡成就視窗-標籤頁面
+## Notes-zhTW: Overachiever - Tabs |n成就視窗的標籤頁面模組。
+## LoadOnDemand: 1
+## LoadWith: Blizzard_AchievementUI
+## Dependencies: Overachiever
+## SavedVariables: Overachiever_Tabs_Settings
+## SavedVariablesPerCharacter: Overachiever_Tabs_CharVars
+## X-Child-Of: Overachiever
+
+localization.lua
+build.lua
+Search.lua
+Suggestions.lua
+Watch.lua
+Related.lua
+CalendarNotice.lua

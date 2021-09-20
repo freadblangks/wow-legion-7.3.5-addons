@@ -1,0 +1,12 @@
+tag v7.1.0.161027
+df707690954dec084944e8ffee0f4063d58b59eb
+Vladinator89 <vladix@gmail.com>
+2016-10-29 09:06:47 +0100
+
+v7.1.0.161027
+
+
+--------------------
+
+Vladinator89:
+	- - TOC bump and fixed issue with RealID/Bnet friends. The editbox should now properly insert the custom nick note.

@@ -1,0 +1,34 @@
+﻿## Interface: 70300
+## Title: Spy
+## Version: 3.4.10
+## Notes: Detects and alerts you to the presence of nearby enemy players.
+## Title-zhTW: |cffFF0000[PVP]|r 偵測敵方玩家
+## Notes-zhTW: Spy |n。PVP 服的野外求生的利器，偵測並列出附近所有的敵對陣營玩家。將玩家加入 KOS 即殺清單，出現在你附近時便會播放警告音效，或是通報到聊天頻道。還能夠和公會、隊伍、團隊成員分享即殺玩家的資料，自保圍剿兩相宜。也會記錄最近遇到的敵方玩家和勝敗次數統計。|n|cffffd200使用方法：|r從 Esc > 介面 > 插件 > PVP偵測敵方玩家，進行設定。
+## DefaultState: disabled
+## Creator: Immolation
+## Author: Slipjack
+## X-Credits-ptBR: Localization: Kasth
+## X-Credits-zhTW: Localization: Jaspy10
+## OptionalDeps:  Ace3, LibSharedMedia-3.0, 
+## SavedVariables: SpyDB
+## SavedVariablesPerCharacter: SpyPerCharDB
+
+#@no-lib-strip@
+Embeds.xml
+#@end-no-lib-strip@
+
+Spy.xml
+
+
+Locales\Spy-enUS.lua
+Locales\Spy-zhTW.lua
+
+Spy.lua
+Fonts.lua
+Colors.lua
+Widgets.lua
+WindowOrder.lua
+MainWindow.lua
+List.lua
+SpyStats.xml
+SpyData.lua

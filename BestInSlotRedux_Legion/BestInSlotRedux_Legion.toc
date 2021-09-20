@@ -1,0 +1,17 @@
+## Interface: 70300
+## Title: Best In Slot Redux [|cffff975bLegion|r]
+## Notes: Legion Raid Module for BestInSlotRedux
+## Title-zhTW: |cffB973FF[裝備]|r 欄位最佳裝備-軍臨天下
+## Notes-zhTW: Best In Slot Redux [|cffff975bLegion|r] |n欄位最佳裝備的軍臨天下資料片模組。
+## DefaultState: disabled
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU
+## Version: v7.3.16
+## Dependencies: BestInSlotRedux
+
+LegionLegendaries.lua
+EmeraldNightmare.lua
+Nighthold.lua
+TrialOfValor.lua
+LegionArtifact.lua
+TombOfSargeras.lua
+AntorusTheBurningThrone.lua

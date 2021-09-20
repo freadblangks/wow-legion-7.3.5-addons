@@ -1,0 +1,35 @@
+﻿## Interface: 70300
+## Author: Graçi. ptBR Translation by Kasth
+## Title: EmoteCenter
+## Notes: Access all emotes, and manage favorites
+## Title-zhTW: |cffFF9999[聊天]|r 表情動作選單
+## Notes-zhTW: EmoteCenter |n方便使用所有表情動作指令，可以加入最愛來快速使用。|n|cffffd200使用方法：|r點小地圖按鈕的 '表情' 按鈕選擇表情動作。
+## Version: 20131202
+
+## SavedVariables: EmoteCenterDB
+## OptionalDeps: Ace3, LibQTip-1.0, LibDBIcon-1.0
+
+
+
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceLocale-3.0\AceLocale-3.0.xml
+libs\LibQTip-1.0\lib.xml
+#@end-no-lib-strip@
+libs\LibDataBroker-1-1\LibDataBroker-1.1.lua
+#@no-lib-strip@
+libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#@end-no-lib-strip@
+
+
+locale.xml
+EmoteData.lua
+Options.lua
+EmoteCenter.lua
+

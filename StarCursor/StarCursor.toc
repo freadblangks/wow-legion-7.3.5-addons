@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: StarCursor |cff9966ff<duality.ps>
+## Notes: Makes it easy to keep track of where your cursor is located.
+## Title-zhTW: |cff0099FF[介面]|r 滑鼠游標亮晶晶
+## Notes-zhTW: StarCursor |n快速移動滑鼠時會一閃一閃亮晶晶，讓你能夠輕鬆的找到滑鼠游標在哪裡。
+## Author: duality.ps @ Ticstyle
+## Version: r3
+## X-Curse-Packaged-Version: r3
+## X-Curse-Project-Name: StarCursor
+## X-Curse-Project-ID: starcursor
+## X-Curse-Repository-ID: wow/starcursor/mainline
+## DefaultState: enabled
+
+embeds.xml
+
+## locale\enUS.lua
+
+core.lua
+## options.lua

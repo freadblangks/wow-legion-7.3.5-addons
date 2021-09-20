@@ -1,0 +1,18 @@
+## Interface: 70300
+## Title: HandyNotes_Legion R & T
+## Version: 1.01b
+## Notes: Shows location of treasures and rares in Legion
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-破碎群島寶藏
+## Notes-zhTW: HandyNotes_Legion R & T |n在地圖上顯示破碎群島寶藏和稀有怪的位置。|n|cffffd200使用方法：|r從Esc>介面>插件>地圖標記>插件>破碎群島寶藏，進行設定。
+## DefaultState: enabled
+## Author: Katjes (Coronet - Dun Morogh(EU))
+## OptionalDeps: Ace3
+## RequiredDeps: HandyNotes
+## X-Embeds: Ace3
+## SavedVariables: LegionRaresTreasuresDB
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+HandyNotes_LegionRaresTreasures.lua

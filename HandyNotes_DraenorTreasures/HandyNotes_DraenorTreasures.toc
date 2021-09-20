@@ -1,0 +1,18 @@
+## Interface: 70300
+## Title: HandyNotes_DraenorTreasures
+## Version: 1.20
+## Notes: Shows location of treasures and rares in Draenor
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-德拉諾寶藏
+## Notes-zhTW: Handy Notes - Draenor Treasures |n標示出德拉諾的寶藏和稀有怪位置。
+## DefaultState: disabled
+## Author: Katjes (Coronet - Dun Morogh(EU))
+## OptionalDeps: Ace3
+## RequiredDeps: HandyNotes
+## X-Embeds: Ace3
+## SavedVariables: DraenorTreasuresDB
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+HandyNotes_DraenorTreasures.lua

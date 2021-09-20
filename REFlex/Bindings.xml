@@ -1,0 +1,9 @@
+<Bindings>
+  <Binding name="REFLEXOPEN" header="REFLEXB"  category="ADDONS">
+    if not REFlexFrame:IsVisible() then
+      REFlexFrame:Show()
+    else
+      REFlexFrame:Hide()
+    end
+  </Binding>
+</Bindings>

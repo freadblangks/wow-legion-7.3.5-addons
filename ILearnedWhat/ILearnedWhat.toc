@@ -1,0 +1,11 @@
+﻿## Interface: 70300
+## Title: ILearnedWhat
+## Notes: Keep track of the things you learn and unlock while leveling.
+## Title-zhTW: |cff00FFFF[任務]|r 我學會了什麼
+## Notes-zhTW: ILearnedWhat |n升級時會彈出視窗特別提醒你解鎖了哪些新的遊戲內容，包括技能、天賦、地城、戰場和介面功能。還可以查看在升級的過程中，哪個等級會解鎖哪些內容。|n|cffffd200使用方法：|r點小地圖按鈕，或輸入 /ilw 開啟視窗。
+## Author: LanceDH
+## Version: 7.3.07
+## SavedVariables: ILWDB
+ILearnedWhat.xml
+HelpFrame.xml
+HelpFrame.lua

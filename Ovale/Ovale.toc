@@ -1,0 +1,83 @@
+## Interface: 70300
+## Title: Ovale Spell Priority
+## Notes: Show the icon of the next spell to cast
+## Title-zhTW: |cffFF7373[職業]|r 輸出助手-主程式
+## Notes-zhTW: Ovale Spell Priority |n畫面中央會顯示2~4個圖示，提示下一個要施放的技能，可以做為輸出迴圈的新手教學，幫助你打出漂亮的 DPS。|n所有傷害輸出職業都可使用，不支援坦克和補師。|n|cffffd200使用方法：|r直接拖曳圖示上方可以移動，從Esc>介面>插件>輸出助手，進行設定。|n|cffFF2D2D特別注意：|r支援的職業專精包括：冰邪死騎、鳥貓熊D、獵人三系、法師三系、織霧御風武僧、懲戒騎、暗影牧、盜賊三系、元素增強薩、術士三系和武器狂怒戰。
+## DefaultState: disabled
+## Author: Sidoine, Johnny C. Lam
+## Version: 7.3.0.3
+## OptionalDeps: Ace3, LibBabble-CreatureType-3.0, LibDataBroker-1.1, LibDBIcon-1.0, LibDualSpec-1.0, LibRangeCheck-2.0, LibTextDump-1.0, Masque, Recount, Skada, SpellFlashCore, LibArtifactData-1.0, DBM-Core, BigWigs
+## SavedVariables: OvaleDB
+
+# Libraries.
+libs\libs.xml
+
+Ovale.lua
+Localization.lua
+Options.lua
+
+# Debugging and profiling modules.
+Debug.lua
+Profiler.lua
+
+# Utility modules.
+Pool.lua
+PoolGC.lua
+Queue.lua
+TimeSpan.lua
+
+# Core modules.
+AST.lua
+ActionBar.lua
+Aura.lua
+BestAction.lua
+ComboPoints.lua
+Compile.lua
+Condition.lua
+Cooldown.lua
+Data.lua
+Equipment.lua
+Future.lua
+GUID.lua
+Health.lua
+Lexer.lua
+PaperDoll.lua
+Power.lua
+Runes.lua
+Score.lua
+Scripts.lua
+SimulationCraft.lua
+SpellBook.lua
+SpellFlash.lua
+Stance.lua
+State.lua
+Version.lua
+
+# Core modules with dependencies.
+Icon.lua
+Icon.xml
+Frame.lua
+
+# Additional modules.
+Artifact.lua
+BanditsGuile.lua
+BossMod.lua
+DamageTaken.lua
+DataBroker.lua
+DemonHunterDemonic.lua
+DemonHunterSigils.lua
+DemonHunterSoulFragments.lua
+Enemies.lua
+HonorAmongThieves.lua
+PassiveAura.lua
+Recount.lua
+ShadowWordDeath.lua
+Skada.lua
+SpellDamage.lua
+SteadyFocus.lua
+Totem.lua
+WarriorCharge.lua
+WildImps.lua
+
+conditions.lua
+scripts\files.xml

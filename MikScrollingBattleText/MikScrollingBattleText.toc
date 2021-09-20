@@ -1,0 +1,27 @@
+## Interface: 70300
+## Version: 5.7.148
+## Title: Mik's Scrolling Battle Text
+## Author: Mikord
+## Notes: Scrolls battle information around the character model.
+## Title-zhTW: |cffFF9900[進階]|r MSBT捲動戰鬥文字-主程式
+## Notes-zhTW: Mik's Scrolling Battle Text |n讓打怪的傷害數字和系統訊息，整齊的在角色周圍捲動。|n可以自訂顯示的位置、大小和要顯示哪些戰鬥文字。|n|cffffd200使用方法：|r從Esc>介面>插件>戰鬥-文字，或輸入 /msbt 進行設定。
+## DefaultState: disabled
+## SavedVariables: MSBTProfiles_SavedVars, MSBT_SavedMedia
+## SavedVariablesPerCharacter: MSBTProfiles_SavedVarsPerChar
+## OptionalDeps: LibSharedMedia-3.0
+
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0.lua
+
+MikSBT.lua
+Localization\localization.xml
+MSBTProfiles.lua
+MSBTParser.lua
+MSBTMedia.lua
+MSBTAnimations.lua
+MSBTTriggers.lua
+MSBTCooldowns.lua
+MSBTLoot.lua
+MSBTMain.lua
+MSBTAnimationStyles.lua

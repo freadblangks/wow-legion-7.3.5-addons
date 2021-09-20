@@ -1,0 +1,15 @@
+## Interface: 70300
+## Title: SilverDragon (Cataclysm)
+## Notes: Mobs for Cataclysm
+## Title-zhTW: |cff4DFF4D[地圖]|r 稀有怪通知-浩劫與重生
+## Notes-zhTW: SilverDragon - Cataclysm |n浩劫與重生的稀有怪資料。
+## Version: v4.0.4-10-g8c69c1c
+## Author: Kemayo
+## eMail: kemayo at gmail dot com
+## X-Category: Interface Enhancements
+## X-Donate: PayPal:kemayo AT gmail DOT com
+## Dependencies: SilverDragon
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+module.lua

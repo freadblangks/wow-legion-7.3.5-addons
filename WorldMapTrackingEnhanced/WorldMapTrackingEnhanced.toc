@@ -1,0 +1,32 @@
+## Interface: 70300
+#@non-debug@
+## Title: World Map Tracking Enhanced
+## Title-zhCN: 增强的世界地图追踪选项
+## Notes: Enhanced World Map's Tracking Options with the support to most popular addons
+## Notes-zhCN: 增强的世界地图追踪选项，支持最热门的游戏插件
+## Title-zhTW: |cff4DFF4D[地圖]|r 世界地圖追蹤增強
+## Notes-zhTW: World Map Tracking Enhanced |n加強世界地圖右上角放大鏡的追蹤功能，提供更多的項目，選擇要在地圖上顯示、不顯示哪些圖示。|n支援地圖標記、採集助手和相關模組，讓你可以快速開關地圖上的圖示，不需要停用模組和重新載入介面。|n|cffffd200使用方法：|r點世界地圖右上角的放大鏡。
+#@end-non-debug@
+#@debug@
+# ## Title: World Map Tracking Enhanced
+# ## Title-zhTW: 強化的世界地圖追蹤
+# ## Notes: Enhanced World Map's Tracking Options with the support to most popular addons
+# ## Notes-zhTW: 強化的世界地圖追蹤選項，支援最熱門的遊戲插件
+#@end-debug@
+## Author: arith
+## Version: v2.21
+# # RequiredDeps: 
+## OptionalDeps: Ace3, LibStub, CallbackHandler-1.0, LibUIDropDownMenu
+## DefaultState: enabled
+## SavedVariables: WorldMapTrackingEnhancedDB
+## X-Date: 2018-04-24T9:44:47Z
+## X-License: GPLv2
+## X-Category: Map
+
+Libs\Libs.xml
+Locale\Locales.xml
+Core\Constants.lua
+Core\Core.lua
+Core\Config.lua
+
+Modules.xml

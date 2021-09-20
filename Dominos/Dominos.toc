@@ -1,0 +1,37 @@
+## Interface: 70300
+## Title: Dominos
+## Notes: A main actionbar replacement
+## Title-zhTW: |cff00CCFF[快捷列]|r 達美樂-主程式
+## Notes-zhTW: Dominos |n用來取代遊戲內建的主要快捷列，提供方便的快捷列配置、快速鍵設定，讓你可以自由安排快捷列的位置和大小，以及多種自訂功能。|n|cffffd200使用方法：|r點小地圖按鈕，或從Esc>介面>插件>快捷列，進行設定。
+## Author: Tuller
+## Version: 7.3.2
+## SavedVariables: DominosDB, DominosVersion
+## OptionalDeps: Ace3, LibKeyBound-1.0, LibSharedMedia-3.0, Masque, FlyPaper
+embeds.xml
+localization.xml
+Dominos.lua
+core\helpers.lua
+core\frame.lua
+core\buttonBar.lua
+core\configOverlay.lua
+core\bindableButton.lua
+core\fadeManager.lua
+core\overrideController.lua
+core\tooltipController.lua
+core\bindingsController.lua
+bars\barStates.lua
+bars\multiActionBarFixer.lua
+bars\actionButton.lua
+bars\actionBar.lua
+bars\petBar.lua
+bars\stanceBar.lua
+bars\bagBar.lua
+bars\castBar.lua
+bars\menuBar.lua
+bars\extraActionBar.lua
+bars\vehicleBar.lua
+## bars\castBar.lua
+plugins\slashCommands.lua
+plugins\launcher.lua
+plugins\blizzardHider.lua
+plugins\buttonThemer.lua

@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: CombatTime
+## Description: Simple, light-weight, LDB-enabled timer that tracks how long you spend in combat
+## Notes: Simple, light-weight, LDB-enabled timer that tracks how long you spend in combat
+## Title-zhTW: |cffFF2D2D[戰鬥]|r 時間
+## Notes-zhTW: CombatTime |n在小地圖下方顯示這次戰鬥的經過時間。方便觀察戰鬥的時間軸、可以開幾次大招...等等。|n|cffffd200使用方法：|r在時間上面點右鍵解鎖位置，便可拖曳移動，再點一次右鍵鎖定位置。|n輸入 /combattime toggle 切換顯示/隱藏，輸入 /combattime reset 恢復為預設值。
+## DefaultState: disabled
+## Author: oscarucb
+## Credits: Portions modified from James Whitehead II, Rick Roe, and the Blizzard Stopwatch code
+## Version: 2.5.4
+## SavedVariablesPerCharacter: CombatTimeSettings
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+CombatTime.lua
+CombatTime.xml

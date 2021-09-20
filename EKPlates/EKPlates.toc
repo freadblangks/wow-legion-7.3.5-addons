@@ -1,0 +1,13 @@
+﻿## Interface: 70300
+## Title: |cff00ffffEK|rPlates
+## Version: R1.7a
+## Author: EK(Linodas@Illidan-US)
+## Notes: Nameplates. Credits to Paopao and Dawn.
+## Title-zhTW: |cffFF6060[戰鬥]|r EK血條
+## Notes-zhTW: |cff00ffffEK|rPlates |n另一種血條增強插件，預設使用血量百分比數字來取代血條，怪物頭上大大的數字就是血量百分比 (不會顯示 % 符號)。血滿的時候不會顯示，只有血量不是 100% 的時候才會顯示數字。|n當前目標頭上會有明顯的箭頭指示，非常方便!|n也可以更改為顯示血條而不是數字，需要在設定中調整。但如果你喜歡血條樣式，建議改用 Tidy 血條插件，有多種外觀樣式可供選擇。。|n|cffffd200使用方法：|r要更改設定，用記事本編輯 AddOns\EKplates\config.lua 依照裡面的說明來修改。|n|cffFF2D2D特別注意：|r請勿和Tidy血條同時載入使用。
+## DefaultState: disabled
+
+## X-Credits:Paopao, Dawn
+
+Config.lua
+EKPlates.lua

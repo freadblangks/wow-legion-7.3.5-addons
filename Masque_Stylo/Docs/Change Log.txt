@@ -1,0 +1,87 @@
+[v2.1]
+
+Updated TOC file.
+Added Demon Hunter class color.
+Slightly modified Hunter class color to be more accurate.
+
+----------------------------------------------------------------------------------------------------
+
+[v2.0]
+
+Fixed what little changes that kept Stylo from functioning. Stylo now works again out of the box.
+
+----------------------------------------------------------------------------------------------------
+
+Updated to change version..
+
+----------------------------------------------------------------------------------------------------
+
+[v1.9]
+
+Added Monk class buttons.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.8]
+
+Updated for patch 5.0.4 and MoP.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.7]
+
+Major update.
+Added class colors:
+
+Death Knight
+Druid
+Hunter
+Mage
+Paladin
+Priest
+Rogue
+Shaman
+Warlock
+Warrior
+
+Updated the Addon to show as Masque Stylo instead of Buttonfacade Stylo in the addon list.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.6]
+
+Updated TOC file.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.5]
+
+Updated for Masque, changed all files to work with Masque.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.4]
+
+Updated so it shows that it works with 4.2
+
+----------------------------------------------------------------------------------------------------
+
+[v1.3]
+
+Updated the pushed button state, also updated the checked state to be more unique.
+
+
+----------------------------------------------------------------------------------------------------
+
+[v1.2]
+
+Changed Stylo Red and Blue so they would be closer to that of the original Stylo.
+
+ :Set Normal button to not be static.
+ :Fine tuned the color.
+
+----------------------------------------------------------------------------------------------------
+
+[v1.1]
+
+Added a Bonus Skin, just a clean skin. Cleaned up some unnecessary images. 

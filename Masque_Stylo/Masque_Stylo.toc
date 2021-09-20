@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: Masque |cffff8000Stylo|r
+## Version: v7.2.0
+## Notes: Stylo Designs for Masque
+## Title-zhTW: |cff00CCFF[快捷列]|r 按鈕外觀主題-時尚
+## Notes-zhTW: Masque - |cffff8000Stylo|r |n時尚設計的按鈕外觀佈景主題。
+## DefaultState: disabled
+## Author: Stylo
+## Credits: Creators of Masque and Opaque for asking for a Masque version of Stylo 
+## Dependencies: Masque
+
+Stylo.lua

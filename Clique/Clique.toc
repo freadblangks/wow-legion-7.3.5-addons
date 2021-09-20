@@ -1,0 +1,42 @@
+## Interface: 70300
+## Title: Clique
+## Author: Cladhaire
+## Version: v70300-1.0.0
+## Notes: Simply powerful click-casting interface
+## Title-zhTW: |cffFF7373[職業]|r 快速施法
+## Notes-zhTW: Clique |n提供簡單而強大的滑鼠點擊快速施法功能，用滑鼠點一下頭像/框架就能夠立即施放法術，可以搭配大多數的單位框架一起使用。|n|cffffd200使用方法：|r按下法術書最右下角的標籤頁，來設定法術和對應的滑鼠按鍵。
+## DefaultState: disabled
+## SavedVariables: CliqueDB, CliqueDB3
+
+## X-Localizations: enUS, enGB, ruRU, zhCN, zhTW
+## X-CompatibleLocales: enUS, enGB, deDE, frFR, esES, esMX, zhCN, zhTW, koKR, ruRU
+
+AddonCore.lua
+Localization.enUS.lua
+Localization.zhCN.lua
+Localization.zhTW.lua
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\tekKonfigAboutPanel.lua
+
+DatabaseDefaults.lua
+
+ClickCastTemplate.xml
+
+Clique.xml
+
+Clique.lua
+Utils.lua
+
+BindConfig.lua
+
+OptionsPanel.lua
+FrameOptionsPanel.lua
+
+BlizzardFrames.lua
+
+# HeaderTest.xml
+# HeaderTest.lua
+# TestSuite.lua

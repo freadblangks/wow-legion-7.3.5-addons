@@ -1,0 +1,28 @@
+## Interface: 70300
+## Title: Objective Announcer
+## Version: 7.3.0
+## Notes: Announces Questing Information to Chat
+## Title-zhTW: |cff00FFFF[任務]|r 進度通報
+## Notes-zhTW: Objective Announcer |n將自己的任務完成進度通報到聊天頻道，一起組隊解任務時粉方便!|n|cffffd200使用方法：|r從Esc>介面>插件>任務-進度通報，進行設定。
+## Author: Bantou & Eincrou
+## SavedVariables: ObjectiveAnnouncerDB
+## X-credits: Created by Bantou. Additional development by Eincrou.
+## X-Category: Quest
+
+## DefaultState: enabled
+## LoadOnDemand: 0
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+#@no-lib-strip@
+Embeds.xml
+#@end-no-lib-strip@
+
+Locales.xml
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+ObjectiveAnnouncer.lua
+Config.lua
+Broker.lua

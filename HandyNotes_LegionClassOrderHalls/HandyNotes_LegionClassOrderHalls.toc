@@ -1,0 +1,31 @@
+## Interface: 70300
+#@non-debug@
+## Title: HandyNotes - Legion Class Order Halls
+## Title-zhCN: HandyNotes - 职业大厅
+## Notes: Shows the NPC locations and major POIs in Class Order Halls
+## Notes-zhCN: 显示各职业大厅里 NPC 与主要的 POI 的位置
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-職業大廳
+## Notes-zhTW: HandyNotes - Legion Class Order Halls |n在地圖上顯示職業大廳NPC和主要POI的位置。|n|cffffd200使用方法：|r從Esc>介面>插件>地圖標記>插件>職業大廳，進行設定。
+#@end-non-debug@
+#@debug@
+# ## Title: HandyNotes - Legion Class Order Halls
+# ## Title-zhTW: HandyNotes - 職業大廳
+# ## Notes: Shows the NPC locations and major POIs in Class Order Halls
+# ## Notes-zhTW: 顯示各職業大廳裡 NPC 與主要的 POI 的位置
+#@end-debug@
+## Author: arith
+## Version: v1.26
+## RequiredDeps: HandyNotes
+## OptionalDeps: LibBabble-SubZone-3.0, LibUIDropDownMenu
+## DefaultState: enabled
+## SavedVariables: HandyNotes_LegionClassOrderHallsDB
+## X-Date: 2018-04-25T2:34:49Z
+## X-License: GPLv2
+## X-Category: Map
+
+Libs\Libs.xml
+Locale\Locales.xml
+Core\Constants.lua
+Core\Handler.lua
+Core\Config.lua
+Data\DB.lua

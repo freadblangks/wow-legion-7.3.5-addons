@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: Skada |r[|caaedc99fDPS plus HPS|r]
+## Notes: A module for Skada that tracks a sum of damage and healing done
+## Title-zhTW: |cffFF2D2D[戰鬥]|r 傷害統計-傷害治療合計
+## Notes-zhTW: Skada |r[|caaedc99fDPS plus HPS|r] |n傷害輸出加治療合併計算的戰鬥統計模組。
+## Author: lifegutter@gmail.com
+## Version: 1.6
+## Dependencies: Skada
+## X-Part-Of: Skada
+
+SkadaDPSplusHPS.lua

@@ -1,0 +1,109 @@
+ <Ui xmlns="http://www.blizzard.com/wow/ui/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ../../FrameXML/UI.xsd">
+	
+
+	<Frame name="ILW_HelpRegionTemplate" virtual="true" >
+	<Frames>
+		<Frame name="$parentBox" toplevel="true" enableMouse="true" hidden="false" inherits="HelpPlateBox" parentKey="Box">
+				<Scripts>
+					<OnEnter>
+						
+					</OnEnter>
+					<OnLeave>
+						
+					</OnLeave>
+				</Scripts>
+			</Frame>
+			
+			<Frame name="$parentGlowFrame" toplevel="true" enableMouse="true" hidden="true" inherits="HelpPlateBoxHighlight" parentKey="GlowFrame">
+			</Frame>
+			
+			<Button name="$parentButton" hidden="false" inherits="HelpPlateButton" parentKey="Button">
+				<Scripts>
+					
+					<OnLoad>
+						
+					</OnLoad>
+					<OnEnter>
+						
+					</OnEnter>
+					<OnLeave>
+						
+					</OnLeave>
+					<OnShow>
+						
+					</OnShow>
+				</Scripts>
+			</Button>
+			
+			<Frame name="$parentTooltip" toplevel="true" enableMouse="true" hidden="true" inherits="GlowBoxTemplate" parentKey="Tooltip">
+				<Size>
+					<AbsDimension x="220"/>
+				</Size>
+				
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="$parentText" inherits="GameFontWhite" hidden="false" justifyH="LEFT" parentKey="Text" text="X unread unlocks!">
+							<Size>
+								<AbsDimension x="200" y="0"/>
+							</Size>
+							<Anchors>
+								<Anchor point="TOP" y="-10"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				
+				<Frames>
+					<Frame name="$parentArrowDown" toplevel="true" enableMouse="true" hidden="true"  parentKey="ArrowDown">
+						<Size x="53" y="21"/>
+						<Anchors>
+							<Anchor point="BOTTOM" relativePoint="TOP" y="-3"/>
+						</Anchors>
+						 <Layers>
+						<Layer level="ARTWORK">
+							<Texture name="$parentArrow" inherits="HelpPlateArrowUP">
+							<Anchors>
+								<Anchor point="TOPLEFT"/>
+							</Anchors>
+								</Texture>
+							</Layer>
+									
+						</Layers>
+					</Frame>
+					
+					<Frame name="$parentArrowDown" toplevel="true" enableMouse="true" hidden="true"  parentKey="ArrowUp">
+						<Size x="53" y="21"/>
+						<Anchors>
+							<Anchor point="TOP" relativePoint="BOTTOM" y="3"/>
+						</Anchors>
+						 <Layers>
+						<Layer level="ARTWORK">
+							<Texture name="$parentArrow" inherits="HelpPlateArrowDOWN">
+							<Anchors>
+								<Anchor point="TOPLEFT"/>
+							</Anchors>
+								</Texture>
+							</Layer>
+									
+						</Layers>
+					</Frame>
+				</Frames>
+			</Frame>
+			</Frames>
+	</Frame>
+	
+	<Frame name="ILW_HelpFrame" toplevel="true" enableMouse="true" hidden="true" parent="ILW_UnlockContainer" inherits="SecureFrameTemplate" frameStrata="MEDIUM">
+		<Size>
+			<AbsDimension x="410" y="420"/>
+		</Size>
+		<Scripts>
+			<OnLoad>
+				self:SetFrameLevel(self:GetParent():GetFrameLevel() + 5)
+			</OnLoad>
+		</Scripts>
+	</Frame>
+
+	
+ </Ui>

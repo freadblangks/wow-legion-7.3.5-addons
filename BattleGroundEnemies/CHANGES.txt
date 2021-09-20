@@ -1,0 +1,30 @@
+lightweight tag 4e0464820d9411f6bd7ee18b6d6fa34659dc6f8d v3.1.9.2
+Author:	GitHub <noreply@github.com>
+Date:	Fri Apr 20 00:20:49 2018 +0200
+
+commit 4e0464820d9411f6bd7ee18b6d6fa34659dc6f8d
+Author: bullsei <bullsei@users.noreply.github.com>
+Date:   Fri Apr 20 00:20:49 2018 +0200
+
+    Update CHANGELOG.md
+
+commit ef52466ff70da8d283c802ab69e91312f095daab
+Author: bullsei <bullsei@users.noreply.github.com>
+Date:   Thu Apr 19 22:14:15 2018 +0200
+
+    Bug Fixes
+    
+    Fixed Objectives not showing up
+    Fixed own health not updating
+    Fixed an error that happened once a while
+
+commit ef52466ff70da8d283c802ab69e91312f095daab
+Author: bullsei <bullsei@users.noreply.github.com>
+Date:   Thu Apr 19 22:14:15 2018 +0200
+
+    Bug Fixes
+    
+    Fixed Objectives not showing up
+    Fixed own health not updating
+    Fixed an error that happened once a while
+

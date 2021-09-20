@@ -1,0 +1,72 @@
+Changes since tag v7.0.13
+
+commit fc7a53feeeec08d98430d8b4e84296199514929f
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Mon Mar 12 22:12:52 2018 +0100
+
+    Add safeguard to prevent redundant updates from being triggered
+    
+    As the rewards data can only change if the weekly chest is being looted,
+    this should be sufficient.
+    
+    In the rare case that it's the first login for the week, any of the
+    regular BAG_UPDATE events (on login) will trigger the update as it is.
+
+commit b40263ded0ab70b00a748a0d43c936b6d6346087
+Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
+Date:   Sat Mar 10 00:06:08 2018 +0100
+
+    Revert "Add updating of M+ weekly reward chest"
+    
+    This reverts commit a4311dc436d3d51359b3e88b5dc0d9b354b09623.
+
+commit 62ecf707e82431e7789f26898e39ed88958fdc5e
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Sat Mar 3 15:29:28 2018 +0100
+
+    Purge duplicate LFR entries from the DB at startup
+
+commit 205643a189363b53dee84a57dccada821d47b125
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Sat Mar 3 15:19:20 2018 +0100
+
+    Stop writing duplicate LFR lockout entries to the DB
+    
+    Only the regular LFR lockouts will be omitted, so that the legacy LFR
+    handling continues to function as it did previously.
+
+commit facdecc3bbf015921aa76491f6476d142687266e
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Fri Mar 2 19:18:25 2018 +0100
+
+    Add updating of M+ weekly reward chest
+
+commit a4311dc436d3d51359b3e88b5dc0d9b354b09623
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Fri Mar 2 19:18:25 2018 +0100
+
+    Add updating of M+ weekly reward chest
+
+commit f7f4d2c942e102b706066ccf21169892604eb59c
+Author: Sacred Duckwhale <duckwhale@mail.ru>
+Date:   Sun Feb 4 20:19:00 2018 +0100
+
+    Add externals to .gitignore
+    
+    This allows for local testing after adding the libraries without having
+    git consider them for staging
+
+commit c57b9b76962452e38dd326244d39dee8495cbe92
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Sat Feb 3 11:45:28 2018 +0100
+
+    add Argus troops weekly quests
+    
+    Closes #34
+
+commit 433869567549806097e2903a14888e4d7646fa0c
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Thu Jan 11 19:25:54 2018 +0100
+
+    fix version number display
+

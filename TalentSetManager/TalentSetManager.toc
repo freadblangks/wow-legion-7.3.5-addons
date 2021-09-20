@@ -1,0 +1,21 @@
+## Interface: 70300
+## Title: Talent Set Manager
+## Author: Vildiesel EU - Well of Eternity
+## Notes: Allows you to store and learn entire sets of talents
+## Title-zhTW: |cff0099FF[介面]|r 天賦管理員
+## Notes-zhTW: Talent Set Manager |n讓你可以儲存多組天賦設定，快速切換整組天賦，也可以依據天賦的設定自動換裝。|n提供的巨集按鈕可以拉到快捷列上，只要按一下便能立馬換天賦。|n|cffffd200使用方法：|r在天賦面板建立新的天賦設定後，按下學習來切換整組天賦。|n從Esc>介面>插件>天賦，進行設定。
+## DefaultState: disabled
+## eMail: n_rhygar@yahoo.it
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: TalentSetManager_Options, TalentSetManager_CharacterSaves
+## SavedVariablesPerCharacter: TalentSetManager_Saves
+libs\libs.xml
+localization.lua
+TalentSetManager.lua
+components.xml
+ldb.lua
+macro.lua
+help.lua
+options.lua
+iconselect.lua

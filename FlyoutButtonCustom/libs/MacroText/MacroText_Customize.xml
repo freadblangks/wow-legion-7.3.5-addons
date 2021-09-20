@@ -1,0 +1,276 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+	..\FrameXML\UI.xsd">
+    <Script file="MacroText_Customize.lua"/>
+	
+	<CheckButton name="LibMT_MacroTextButton_Template" inherits="SimplePopupButtonTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>
+				self.icon = _G[self:GetName() .. "Icon"];
+			</OnLoad>
+			<OnClick>
+				LibMT_MacroTextButton_OnClick(self, button, down);
+			</OnClick>
+		</Scripts>
+		<NormalTexture name="$parentIcon">
+			<Size>
+				<AbsDimension x="36" y="36"/>
+			</Size>
+			<Anchors>
+				<Anchor point="CENTER">
+					<Offset>
+						<AbsDimension x="0" y="-1"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</NormalTexture>
+		<HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square"/>
+		<CheckedTexture alphaMode="ADD" file="Interface\Buttons\CheckButtonHilight"/>
+	</CheckButton>	
+
+	<Frame name="LibMT_MacroTextCustomizeFrame_Template" inherits="SecureHandlerStateTemplate" hidden="true" enableMouse="true" movable="true" frameStrata="DIALOG" clampedToScreen="true" virtual="true">
+		<Size>
+			<AbsDimension x="300" y="430"/>
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+		<Backdrop bgFile="Interface/DialogFrame/UI-DialogBox-Background" edgeFile="Interface/DialogFrame/UI-DialogBox-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer>
+				<Texture parentKey="TitleBorder" file="Interface/DialogFrame/UI-DialogBox-Header">
+					<Size>
+						<AbsDimension x="150" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" y="10" />
+					</Anchors>
+					<TexCoords left="0.2" right="0.8" top="0" bottom="0.6" />
+				</Texture>
+				<FontString font="GameFontNormal" text="巨集文字">
+					<Size>
+						<AbsDimension x="140" y="0" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" y="1" />
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="12" />
+					</FontHeight>
+					<Color r="1" g="0.8196079" b="0" />
+					<Shadow>
+						<Color r="0" g="0" b="0" />
+						<Offset>
+							<AbsDimension x="1" y="-1" />
+						</Offset>
+					</Shadow>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="  輸入巨集或          清除內容停用巨集">
+					<Size>
+						<AbsDimension x="140" y="0" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" y="-30" />
+					</Anchors>
+					<Color r="1" g="1" b="1" />
+				</FontString>
+				<FontString inherits="GameFontNormal" text="拖曳法術/物品或    點一下設定圖示">
+					<Size>
+						<AbsDimension x="140" y="0" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" x="80" y="-210" />
+					</Anchors>
+					<Color r="1" g="1" b="1" />
+				</FontString>
+				<FontString parentKey="CommandType" inherits="GameFontNormal" text="">
+					<Size>
+						<AbsDimension x="140" y="0" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" x="80" y="-250" />
+					</Anchors>
+					<Color r="1" g="1" b="1" />
+				</FontString>
+				<FontString inherits="GameFontNormal" text="滑鼠提示說明">
+					<Size>
+						<AbsDimension x="140" y="0" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" y="-300" />
+					</Anchors>
+					<Color r="1" g="1" b="1" />
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button parentKey="Toggle">
+				<Size>
+					<AbsDimension x="32" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" x="5" y="5"/>
+				</Anchors>
+				<NormalTexture file="Interface/Buttons/UI-Panel-MinimizeButton-Up"/>
+				<PushedTexture file="Interface/Buttons/UI-Panel-MinimizeButton-Down"/>
+				<HighlightTexture file="Interface/Buttons/UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
+				<Scripts>
+					<OnClick>
+						self:GetParent():Hide()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<ScrollFrame name="$parentMacroFrameScrollFrame" parentKey="ScrollMacro" inherits="UIPanelScrollFrameTemplate">
+				<Size x="230" y="140"/>
+				<Anchors>
+					<Anchor point="TOP" y="-60"/>
+				</Anchors>
+				<ScrollChild>
+					<EditBox name="$parentEditBoxMacro" parentKey="EditBoxMacro" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true">
+						<Size x="230" y="140"/>
+						<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface/DialogFrame/UI-DialogBox-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16"/>
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16"/>
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="4" right="4" top="4" bottom="4"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<FontString inherits="GameFontNormal">
+							<Color r="1" g="1" b="1" />
+						</FontString>
+						<Scripts>
+							<OnLoad>
+								self:SetTextInsets(5, 5, 5, 5)
+							</OnLoad>
+							<OnTextChanged>
+								self.cursorOffset = self.cursorOffset or 0;
+								self.cursorHeight = self.cursorHeight or 0;
+								ScrollingEdit_OnTextChanged(self, self:GetParent());
+							</OnTextChanged>
+							<OnCursorChanged function="ScrollingEdit_OnCursorChanged"/>
+							<OnUpdate>
+								self.cursorOffset = self.cursorOffset or 0;
+								self.cursorHeight = self.cursorHeight or 0;
+								ScrollingEdit_OnUpdate(self, elapsed, self:GetParent());
+							</OnUpdate>
+							<OnEscapePressed function="EditBox_ClearFocus"/>
+						</Scripts>
+					</EditBox>
+				</ScrollChild>
+			</ScrollFrame>
+			<CheckButton name="$parentSpellIcon" parentKey="spellIcon" inherits="LibMT_MacroTextButton_Template">
+				<Size x="36" y="36"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="40" y="-210"/>
+				</Anchors>
+				<Scripts>
+					<OnReceiveDrag>
+						LibMT_MacroTextButton_ReceiveDrag(self)
+					</OnReceiveDrag>
+				</Scripts>
+			</CheckButton>
+			<EditBox name="$parentEditBoxIcon" parentKey="EditBoxIcon" letters="255" autoFocus="false" countInvisibleLetters="true">
+				<Size x="230" y="27"/>
+				<Anchors>
+					<Anchor point="TOP" y="-270"/>
+				</Anchors>
+				<Backdrop bgFile="Interface/DialogFrame/UI-DialogBox-Background" edgeFile="Interface/DialogFrame/UI-DialogBox-Border" tile="true">
+					<EdgeSize>
+						<AbsValue val="16"/>
+					</EdgeSize>
+					<TileSize>
+						<AbsValue val="16"/>
+					</TileSize>
+					<BackgroundInsets>
+						<AbsInset left="5" right="5" top="5" bottom="5"/>
+					</BackgroundInsets>
+				</Backdrop>
+				<FontString inherits="GameFontNormal">
+					<Color r="1" g="1" b="1" />
+				</FontString>
+				<Scripts>
+					<OnLoad>
+						self:SetTextInsets(5, 5, 5, 5)
+					</OnLoad>
+					<OnEscapePressed function="EditBox_ClearFocus"/>
+				</Scripts>
+			</EditBox>
+			<ScrollFrame name="$parentTooltipFrameScrollFrame" parentKey="ScrollTooltip" inherits="UIPanelScrollFrameTemplate">
+				<Size x="230" y="60"/>
+				<Anchors>
+					<Anchor point="TOP" y="-320"/>
+				</Anchors>
+				<ScrollChild>
+					<EditBox name="$parentEditBoxTooltip" parentKey="EditBoxTooltip" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true">
+						<Size x="230" y="60"/>
+						<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface/DialogFrame/UI-DialogBox-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16"/>
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16"/>
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="4" right="4" top="4" bottom="4"/>
+							</BackgroundInsets>
+						</Backdrop>
+						<FontString inherits="GameFontNormal">
+							<Color r="1" g="1" b="1" />
+						</FontString>
+						<Scripts>
+							<OnLoad>
+								self:SetTextInsets(5, 5, 5, 5)
+							</OnLoad>
+							<OnTextChanged>
+								self.cursorOffset = self.cursorOffset or 0;
+								self.cursorHeight = self.cursorHeight or 0;
+								ScrollingEdit_OnTextChanged(self, self:GetParent());
+							</OnTextChanged>
+							<OnCursorChanged function="ScrollingEdit_OnCursorChanged"/>
+							<OnUpdate>
+								self.cursorOffset = self.cursorOffset or 0;
+								self.cursorHeight = self.cursorHeight or 0;
+								ScrollingEdit_OnUpdate(self, elapsed, self:GetParent());
+							</OnUpdate>
+							<OnEscapePressed function="EditBox_ClearFocus"/>
+						</Scripts>
+					</EditBox>
+				</ScrollChild>
+			</ScrollFrame>
+			<Button name="$parentButtonOK" parentKey="OK" inherits="UIPanelButtonTemplate" text="確定">
+				<Size>
+					<AbsDimension x="150" y="22"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP" y="-390"/>
+				</Anchors>
+				<!--Scripts>
+					<OnClick>
+						MacroTextCustomizeFrame_OkClick(self:GetParent())
+					</OnClick>
+				</Scripts-->
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnMouseDown>
+				self:StartMoving()
+			</OnMouseDown>
+			<OnMouseUp>
+				self:StopMovingOrSizing()
+			</OnMouseUp>
+		</Scripts>
+	</Frame>
+</Ui>

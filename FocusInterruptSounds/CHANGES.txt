@@ -1,0 +1,276 @@
+------------------------------------------------------------------------
+r103 | btsang@alumni.princeton.edu | 2017-03-30 04:06:37 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   M /trunk
+   M /trunk/.pkgmeta
+
+FocusInterruptSounds:
+- Final update to pkgmeta and externals?
+------------------------------------------------------------------------
+r102 | btsang@alumni.princeton.edu | 2017-03-30 04:01:56 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   M /trunk
+
+FocusInterruptSounds:
+- Update externals
+------------------------------------------------------------------------
+r101 | btsang@alumni.princeton.edu | 2017-03-30 03:55:26 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+FocusInterruptSounds:
+- Try a different pkgmeta
+------------------------------------------------------------------------
+r100 | btsang@alumni.princeton.edu | 2017-03-30 03:44:53 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   D /trunk/Desktop.ini
+
+FocusInterruptSounds:
+- Delete accidental check-in
+------------------------------------------------------------------------
+r99 | btsang@alumni.princeton.edu | 2017-03-30 03:43:56 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+FocusInterruptSounds:
+- Update pkgmeta
+------------------------------------------------------------------------
+r98 | btsang@alumni.princeton.edu | 2017-03-30 03:43:09 -0500 (Thu, 30 Mar 2017) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update toc
+------------------------------------------------------------------------
+r97 | btsang@alumni.princeton.edu | 2017-03-30 03:39:56 -0500 (Thu, 30 Mar 2017) | 1 line
+Changed paths:
+   A /trunk/Desktop.ini
+
+
+------------------------------------------------------------------------
+r96 | corg | 2016-10-25 19:08:32 -0500 (Tue, 25 Oct 2016) | 3 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update TOC
+- Borrow chat-channel selection code from Rali's Spell Announce
+------------------------------------------------------------------------
+r95 | corg | 2016-08-13 15:25:18 -0500 (Sat, 13 Aug 2016) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Fix interrupt spell names for Demon Hunters and Survival Hunters
+------------------------------------------------------------------------
+r94 | corg | 2016-07-19 13:39:20 -0500 (Tue, 19 Jul 2016) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update TOC
+------------------------------------------------------------------------
+r93 | corg | 2015-06-23 19:14:12 -0500 (Tue, 23 Jun 2015) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update toc
+------------------------------------------------------------------------
+r92 | corg | 2015-02-24 11:35:42 -0600 (Tue, 24 Feb 2015) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Updating toc
+------------------------------------------------------------------------
+r91 | corg | 2015-02-02 04:18:21 -0600 (Mon, 02 Feb 2015) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Added Doomguard's Shadow Lock to the default list of pet interrupts
+------------------------------------------------------------------------
+r90 | corg | 2014-11-08 12:00:19 -0600 (Sat, 08 Nov 2014) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Added Avenger's Shield to the default list of interrupts
+------------------------------------------------------------------------
+r89 | corg | 2014-10-14 20:22:47 -0500 (Tue, 14 Oct 2014) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Fix toc again
+------------------------------------------------------------------------
+r88 | corg | 2014-10-14 20:09:21 -0500 (Tue, 14 Oct 2014) | 4 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+   M /trunk/FocusInterruptSounds.toc
+   D /trunk/casting.mp3
+   A /trunk/casting.ogg
+   D /trunk/cc.mp3
+   A /trunk/cc.ogg
+   D /trunk/innervate.mp3
+   A /trunk/innervate.ogg
+   D /trunk/interrupted.mp3
+   A /trunk/interrupted.ogg
+   D /trunk/sheep.mp3
+   A /trunk/sheep.ogg
+
+FocusInterruptSounds:
+- Converted sound files to ogg since mp3 appears to be broken
+- Removed Arcane Torrent from default list of interrupts
+- Update toc
+------------------------------------------------------------------------
+r87 | corg | 2013-09-14 12:34:04 -0500 (Sat, 14 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Adding Counter Shot to the list of interrupt spells available to players
+------------------------------------------------------------------------
+r86 | corg | 2013-09-14 02:24:36 -0500 (Sat, 14 Sep 2013) | 3 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Updating TOC
+
+------------------------------------------------------------------------
+r85 | corg | 2013-05-25 16:24:30 -0500 (Sat, 25 May 2013) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update toc for 5.3
+------------------------------------------------------------------------
+r84 | corg | 2013-05-02 21:48:26 -0500 (Thu, 02 May 2013) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Fixed LUA error while attempting to announce interrupts in raids
+------------------------------------------------------------------------
+r83 | corg | 2013-03-15 00:35:48 -0500 (Fri, 15 Mar 2013) | 4 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update ToC
+- Add Optical Blast (Warlock Observer pet)
+- Fix channel errors for non-LFR raids (hopefully didn't break LFR raids)
+------------------------------------------------------------------------
+r82 | corg | 2013-01-05 23:40:06 -0600 (Sat, 05 Jan 2013) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Remove some debug code that was accidentally checked into r81
+------------------------------------------------------------------------
+r81 | corg | 2013-01-05 23:34:01 -0600 (Sat, 05 Jan 2013) | 4 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Updated announce functionality to use the Instance channel when applicable
+- Updated interrupt spell availability detection to include a sacrificed Felhound's spell lock
+- Removed unintentional usage of global variables
+------------------------------------------------------------------------
+r80 | corg | 2013-01-02 00:05:03 -0600 (Wed, 02 Jan 2013) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Add Silencing Shot to the list of interrupt spells.
+------------------------------------------------------------------------
+r79 | corg | 2012-12-01 19:06:09 -0600 (Sat, 01 Dec 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Possible support for the Monk class
+------------------------------------------------------------------------
+r78 | corg | 2012-11-28 02:15:08 -0600 (Wed, 28 Nov 2012) | 4 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Update toc for 5.1
+- Wiped default blacklist (the new Blizzard API feature seems to do the trick)
+- Replaced channeled spell detection logic with UnitChannelInfo() API.
+------------------------------------------------------------------------
+r77 | corg | 2012-11-10 03:19:15 -0600 (Sat, 10 Nov 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Fix nil error (probably caused by very fast casts such as Nature's Swiftness + Healing Touch)
+------------------------------------------------------------------------
+r76 | corg | 2012-11-01 02:45:05 -0500 (Thu, 01 Nov 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Update some defaults
+------------------------------------------------------------------------
+r75 | corg | 2012-10-29 23:25:33 -0500 (Mon, 29 Oct 2012) | 5 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Hooked into the UnitCastingInfo API enabling two new options:
+-- Minimum cast time (default: 1.0 seconds)
+-- Blizzard API blacklist
+
+------------------------------------------------------------------------
+r74 | corg | 2012-10-10 05:09:49 -0500 (Wed, 10 Oct 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Sunbeam -> Solar Beam
+------------------------------------------------------------------------
+r73 | corg | 2012-09-08 21:21:14 -0500 (Sat, 08 Sep 2012) | 3 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Fixed LUA error with the "Announce interrupts" option
+- New Feature: "Check spell availability" will now check a customizable list of interrupt spells instead of a single hardcoded spell based on class.
+------------------------------------------------------------------------
+r72 | Talyrius | 2012-09-08 15:26:08 -0500 (Sat, 08 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- A leaked global is tainting the Glyphs frame
+------------------------------------------------------------------------
+r71 | corg | 2012-08-31 20:39:27 -0500 (Fri, 31 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.toc
+
+FocusInterruptSounds:
+- Updating toc
+------------------------------------------------------------------------
+r70 | corg | 2012-01-13 04:19:00 -0600 (Fri, 13 Jan 2012) | 3 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Silenced LUA error near line 895
+- Updated default blacklist for some of the more spammy mobs in Dragon Soul
+------------------------------------------------------------------------
+r69 | corg | 2012-01-02 02:07:13 -0600 (Mon, 02 Jan 2012) | 2 lines
+Changed paths:
+   M /trunk/FocusInterruptSounds.lua
+
+FocusInterruptSounds:
+- Bundling a simple interrupt announcer
+------------------------------------------------------------------------
+

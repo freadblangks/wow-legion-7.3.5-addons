@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: OmniCC Config
+## Notes: OmniCC's configuration menu
+## Title-zhTW: |cffFF9900[進階]|r 冷卻時間-設定選項
+## Notes-zhTW: OmniCC Config |n冷卻倒數計時的設定選項。
+## DefaultState: disabled
+## Author: Tuller
+## Dependencies: OmniCC
+## LoadOnDemand: 1
+
+libs\libs.xml
+localization\localization.xml
+widgets\widgets.xml
+
+mainPanel.lua
+panels\panels.xml

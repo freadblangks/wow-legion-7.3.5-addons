@@ -1,0 +1,12 @@
+tag 6e9b68e91d516c1697d7418e96fb107ea4269e5a 7.3.5
+Author:	Talryn <git@talryn.sent.com>
+Date:	Wed Feb 14 10:42:50 2018 -0500
+
+Tag as 7.3.5.
+
+commit d9d95dc6deebf688cabd13bde3d65b306611aeaf
+Author: Talryn <git@talryn.sent.com>
+Date:   Thu Feb 8 02:55:56 2018 -0500
+
+    Add Xavaric's buff.
+

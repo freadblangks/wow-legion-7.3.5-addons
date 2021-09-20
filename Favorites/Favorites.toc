@@ -1,0 +1,14 @@
+## Interface: 70300
+## Title: |cFF99CC01Favorites|r
+## Version: 2.0
+## Notes: Adds favorites & Class colors to the in game friends list
+## Title-zhTW: |cffFF9999[聊天]|r 最愛好友名單
+## Notes-zhTW: Favorites |n在遊戲內建的好友名單中新增 '加入最愛' 的功能。可以自訂多個不同的最愛群組，幫好友名單分類。|n|cffffd200使用方法：|r按 O 開啟好友名單，在好友的名字上點右鍵加入/移除最愛。|n從Esc>介面>插件>好友名單-最愛，新增/移除自訂群組。
+## Author: Jax 
+## SavedVariables: favsDB
+#@no-lib-strip@
+Embeds.xml
+#@end-no-lib-strip@
+
+Favorites.lua
+Options.lua

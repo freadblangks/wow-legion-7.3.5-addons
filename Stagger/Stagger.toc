@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: |cff0080ffStagger|r
+## Author: Siweia
+## Notes: Monk Tanking Tool
+## Title-zhTW: |cffFF7373[職業]|r 武僧醉仙緩勁監控
+## Notes-zhTW: Stagger |n坦僧專用的醉仙緩勁狀態監控，還有玄牛雕像、斗轉星移和金鐘絕釀的可用次數、持續和冷卻時間。點圖示可以取消玄牛雕像。|n|cffffd200使用方法：|r非戰鬥中輸入 /stg 解鎖移動和鎖定位置。輸入 /stg reset 重置。
+## DefaultState: disabled
+## Version: 5.1
+## SavedVariables: MoverDB
+
+Config.lua
+Core.lua

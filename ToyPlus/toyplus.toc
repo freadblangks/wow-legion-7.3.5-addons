@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: ToyPlus
+## Version: 1.6
+## Author: distnz
+## SavedVariables: ToyPlusDB
+## Notes: Launcher for your favourite toys.
+## Title-zhTW: |cffFFFF66[收藏]|r 玩具選單
+## Notes-zhTW: ToyPlus |n快速使用你最愛的玩具。|n|cffffd200使用方法：|r左鍵點小地圖按鈕開啟玩具清單，右鍵點小地圖按鈕進行設定。
+## DefaultState: disabled
+
+embeds.xml
+toyplus.lua

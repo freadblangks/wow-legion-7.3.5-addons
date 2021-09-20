@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: |cFFDDCF99Obelisk|r Quest
+## Author: Malakahh
+## Notes: Upgraded questing UI
+## Title-zhTW: |cff00FFFF[任務]|r 任務怪提示
+## Notes-zhTW: |cFFDDCF99Obelisk|r Quest |n在任務怪血條的上方顯示任務目標進度的提示文字，開啟敵方血條就會出現。|n|cffffd200使用方法：|r一次放棄多個任務：在世界地圖旁任務清單的區域名稱上點滑鼠右鍵，可以放棄該區域中的所有任務。
+## Version: 1.2
+
+## SavedVariables: OQ
+
+util.lua
+zoneNameSubstitutions.lua
+## rewards.lua
+## zoneTracking.lua
+zoneAbandon.lua
+## objectiveTrackerMenu.lua
+## objectiveTrackerMoveResize.lua
+nameplates.lua
+acceptAllQuestsBtn.lua

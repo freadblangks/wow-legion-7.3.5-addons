@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Icecrown
+## Author: Shurshik
+## Notes: RaidAchievement Wotlk Icecrown Module
+## Title-zhTW: |cffFFCC99[成就]|r 冰冠城塞
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Wotlk Icecrown |nICC 巫妖王冰冠城塞的副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: icraspisokon
+RaidAchievement_Icecrown.lua
+RaidAchievement_Icecrown.xml
+RaidAchievement_Icecrownbosses.lua

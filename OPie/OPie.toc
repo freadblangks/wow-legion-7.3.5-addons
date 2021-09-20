@@ -1,0 +1,31 @@
+## Interface: 70300
+## Title: OPie
+## Version: Vanilla 4
+## Notes: Group abilities into rings that appear when you hold down a binding.
+## Notes-zhCN: 当你按下快捷键时显示一个环形的技能分组.
+## Title-zhTW: |cff00CCFF[快捷列]|r 環形快捷列-主程式
+## Notes-zhTW: OPie |n按下快速鍵時顯示圓環形的技能群組，可以做為輔助的快捷列使用，十分方便!|n|cffffd200使用方法：|r從Esc>介面>插件>快捷列-環形，進行設定。
+## Author: foxlit
+## SavedVariables: OneRing_Config
+## X-URL-UpdateRSS: https://www.townlong-yak.com/opie/rss/main
+## X-Website: https://www.townlong-yak.com/opie/
+## X-M6-AB: OneRingLib.ext.ActionBook
+Libs\Evie.lua
+Libs\Niji.lua
+Libs\Mirage.lua
+Libs\AltGameTooltip.xml
+Libs\Reverse.xml
+Libs\ActionBook\ActionBook.xml
+Libs\ActionBook\ActionBookUI.xml
+Locale.lua
+OneRingLib.lua
+OPieUI.lua
+OPieConfig.lua
+OPieBindings.lua
+Meta\StanceBar.lua
+Meta\RingKeeper.lua
+Meta\RingKeeperConfig.lua
+Meta\SpecSet.lua
+Meta\DataBroker.lua
+Rings\Common.lua
+Rings\RKRings.lua

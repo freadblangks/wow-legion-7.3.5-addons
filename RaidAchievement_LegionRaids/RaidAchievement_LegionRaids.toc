@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Legion raids
+## Author: Shurshik
+## Notes: RaidAchievement Legion Raids Module
+## Title-zhTW: |cffFFCC99[成就]|r 軍臨天下團隊
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Legion raids |n軍臨天下的團隊副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: legionrraspisokon
+RaidAchievement_LegionRaids.lua
+RaidAchievement_LegionRaids.xml
+RaidAchievement_LegionRaidsbosses.lua

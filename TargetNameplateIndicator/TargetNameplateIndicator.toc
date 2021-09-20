@@ -1,0 +1,17 @@
+## Title: TargetNameplateIndicator
+## Interface: 70300
+## Notes: Puts a texture on your target's nameplate to make them stand out. Configure by editing the options in config.lua.
+## Title-zhTW: |cffFF6060[戰鬥]|r 目標指示箭頭
+## Notes-zhTW: Target Nameplate Indicator |n在當前目標血條上方顯示箭頭，讓目標更明顯。|n|cffffd200使用方法：|r要更改箭頭圖案和位置，用記事本編輯 AddOns\TargetNameplateIndicator\config.lua ，依照裡面的說明來調整設定。|n|cffFF2D2D特別注意：|rEK血條已經有這個功能，請勿和EK血條同時載入使用。|n可以與Tidy血條或遊戲內建的血條一起搭配使用。
+## Author: Choonster
+## Version: 1.23
+## OptionalDeps: LibNameplateRegistry-1.0
+## X-Embeds: LibNameplateRegistry-1.0
+
+#@no-lib-strip@
+LibNameplateRegistry-1.0\embeds.xml
+LibNameplateRegistry-1.0\LibNameplateRegistry-1.0\LibNameplateRegistry-1.0.xml
+#@end-no-lib-strip@
+
+config.lua
+core.lua

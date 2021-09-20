@@ -1,0 +1,7 @@
+changeset:   167:fd7f6c8e4152
+tag:         v1.11.7
+user:        Caleb Atherton <atcaleb@twitch.tv>
+date:        Sat Mar 31 23:51:54 2018 -0400
+summary:     Added breed data for Tottle, the Battle for Azeroth Collector's Edition pet.
+
+

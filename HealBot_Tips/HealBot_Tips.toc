@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: HealBot Tooltips
+## Author: Strife
+## Notes: HealBot Tooltips, only loads if Tooltips are used
+## Title-zhTW: |cffFF7373[職業]|r 智能治療-提示說明
+## Notes-zhTW: HealBot Tooltips |n智能治療的提示說明，只有在使用提示說明時才會載入。
+## DefaultState: disabled
+## RequiredDeps: HealBot
+## LoadOnDemand: 1
+## Version: 7.3.5.0
+
+HealBot_Tooltip.lua

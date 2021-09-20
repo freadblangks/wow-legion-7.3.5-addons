@@ -1,0 +1,16 @@
+------------------------------------------------------------------------
+r546 | mysticalos | 2018-05-08 02:48:03 +0000 (Tue, 08 May 2018) | 1 line
+Changed paths:
+   M /trunk/ChangeLog.lua
+   M /trunk/WIM.lua
+   M /trunk/WIM.toc
+
+prep
+------------------------------------------------------------------------
+r545 | mysticalos | 2018-05-03 02:27:46 +0000 (Thu, 03 May 2018) | 1 line
+Changed paths:
+   M /trunk/Modules/WhisperEngine.lua
+
+Handle GetAutoCompleteResults changes in 8.x
+------------------------------------------------------------------------
+

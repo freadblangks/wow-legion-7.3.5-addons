@@ -1,0 +1,17 @@
+## Interface: 70300
+## LoadOnDemand: 0
+## Title: TradeLog
+## Notes: trade history log, recent trade list by Warbaby@163.com
+## Notes-zhCN: 交易记录 by Warbaby (三月十二@聖光之願<冰封十字軍>)
+## Title-zhTW: |cffFFFF99[商人]|r 交易通知/記錄
+## Notes-zhTW: TradeLog |n 查看與玩家交易的歷史記錄，以及在聊天視窗中顯示交易訊息。|n|cffffd200使用方法：|r點小地圖按鈕觀看交易詳細內容。
+## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
+
+Libs\LibDBIcon-1.0.xml
+
+localization-enUS.lua
+localization-zhCN.lua
+localization-zhTW.lua
+TradeLog.lua
+RecentTradeFrame.xml
+TradeLogFrame.xml

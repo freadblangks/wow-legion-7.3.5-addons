@@ -1,0 +1,37 @@
+## Interface: 70300
+## Version: 7.3.5.0
+
+## Title: PhanxBuffs
+## Notes: Basic replacement for the player buff, debuff, and temporary enchant frames.
+## Title-zhTW: |cffFF9900[進階]|r 玩家增益/減益效果
+## Notes-zhTW: PhanxBuffs |n增強畫面右上角的玩家增益、減益效果圖示功能，可以調整位置、自訂圖示大小和時間文字。|n|cffffd200使用方法：|r從Esc>介面>插件>增益效果-玩家，進行設定。
+## DefaultState: disabled
+## Author: Phanx
+## X-Email: addons@phanx.net
+## X-License: All Rights Reserved
+## X-Website: https://github.com/Phanx/PhanxBuffs
+## X-Curse-Project-ID: 23981
+## X-WoWI-ID: 16874
+
+## OptionalDependencies: Masque, LibSharedMedia-3.0
+## SavedVariables: PhanxBuffsDB
+## SavedVariablesPerCharacter: PhanxBuffsIgnoreDB
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+Libs\PhanxConfig-Checkbox\PhanxConfig-Checkbox.lua
+Libs\PhanxConfig-Dropdown\PhanxConfig-Dropdown.lua
+Libs\PhanxConfig-EditBox\PhanxConfig-EditBox.lua
+Libs\PhanxConfig-Header\PhanxConfig-Header.lua
+Libs\PhanxConfig-MediaDropdown\PhanxConfig-MediaDropdown.lua
+Libs\PhanxConfig-OptionsPanel\PhanxConfig-OptionsPanel.lua
+Libs\PhanxConfig-Slider\PhanxConfig-Slider.lua
+
+Localization.lua
+Core.lua
+Buffs.lua
+Debuffs.lua
+Enchants.lua
+Options.lua
+SkinSupport.lua

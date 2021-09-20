@@ -1,0 +1,49 @@
+<Bindings>
+    <Binding name="MISSING_MOUNTS" header="COLLECTME" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.MOUNT)
+    </Binding>
+    <Binding name="MISSING_COMPANIONS" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.COMPANION)
+    </Binding>
+    <Binding name="MISSING_TITLES" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.TITLE)
+    </Binding>
+    <Binding name="RANDOM_COMPANIONS" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.RANDOM_COMPANION)
+    </Binding>
+    <Binding name="RANDOM_MOUNTS" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.RANDOM_MOUNT)
+    </Binding>
+    <Binding name="RANDOM_TITLES" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.UI:Show(CollectMe.RANDOM_TITLE)
+    </Binding>
+    <Binding name="SUMMON_COMPANION" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.RandomCompanion:Summon()
+    </Binding>
+    <Binding name="DISMISS_COMPANION" category="ADDONS">
+        local CollectMe = LibStub("AceAddon-3.0"):GetAddon("CollectMe")
+        CollectMe.RandomCompanion:Dismiss()
+    </Binding>
+    <Binding name="CM_MOUNT" category="ADDONS">
+        local RandomMount = LibStub("AceAddon-3.0"):GetAddon("CollectMe"):GetModule("RandomMount")
+        RandomMount:Summon()
+    </Binding>
+    <Binding name="CM_DISMOUNT" category="ADDONS">
+        Dismount()
+    </Binding>
+    <Binding name="CM_GROUND_MOUNT" category="ADDONS">
+        local RandomMount = LibStub("AceAddon-3.0"):GetAddon("CollectMe"):GetModule("RandomMount")
+        RandomMount:Summon(CollectMe.MountDB.GROUND)
+    </Binding>
+    <Binding name="CM_TITLE" category="ADDONS">
+        local RandomTitle = LibStub("AceAddon-3.0"):GetAddon("CollectMe"):GetModule("RandomTitle")
+        RandomTitle:Select()
+    </Binding>
+</Bindings>

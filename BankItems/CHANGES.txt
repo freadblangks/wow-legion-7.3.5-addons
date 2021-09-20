@@ -1,0 +1,204 @@
+------------------------------------------------------------------------
+r250 | Burstroc | 2017-08-29 19:41:36 -0500 (Tue, 29 Aug 2017) | 7 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+FIXED: Update calls to PlaySound to use a soundKitID for 7.3.0 api changes
+UPDATED: Now store BankItems version in saved variables as a number instead of a string. Makes for easier comparison of data versions. New variable in use to allow safe downgrading to earlier versions.
+UPDATED: Combined Legion related update functions into a single function.
+UPDATED: Legion update function will run again to convert old string versions to numbers and update old item links to add missing segments added in 7.0.3.
+UPDATED: New method for removing accents from special characters during searches. Also moved the strlower calls into the accent removal function since it was called every time the function was anyway.
+UPDATED: Unique Item tooltip caching updated for additional Legion segments. Will ignore unique caching of mythic keystones and artifact weapons for now.
+
+------------------------------------------------------------------------
+r249 | burstroc | 2016-07-25 00:21:09 -0500 (Mon, 25 Jul 2016) | 2 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+FIXED: Fixed issues with search overlays not displaying on all tabs. Replaced SetTexture with the new SetColorTexture where needed.
+ADDED: Added new function to attempt to update saved mailbox data and remove any itemID's that were stored between prior Legion updates. These counts will be set to 1 and an out of date message will print when trying to load mailboxes that needed modification.
+------------------------------------------------------------------------
+r248 | burstroc | 2016-07-23 21:18:54 -0500 (Sat, 23 Jul 2016) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 71: Added nil checks when checking for outdated mailbox.
+------------------------------------------------------------------------
+r247 | burstroc | 2016-07-22 15:09:28 -0500 (Fri, 22 Jul 2016) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: Fixed errors resulting from 7.0 changes to GetSendMailItem function returns. If you sent mail to another tracked character with an older version of the addon after 7.0 launched you will need to visit their mailbox again to update counts.
+------------------------------------------------------------------------
+r246 | burstroc | 2016-07-20 00:27:56 -0500 (Wed, 20 Jul 2016) | 2 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: Updated SetInboxItem tooltip hook for changes to GetInboxItemLink.
+UPDATED: Added new tooltip hook for SetRecipeReagentItem and removed old SetTradeSkillItem hook.
+------------------------------------------------------------------------
+r245 | burstroc | 2016-07-19 17:37:21 -0500 (Tue, 19 Jul 2016) | 3 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+FIXED: Fixed errors resulting from 7.0 changes to GetInboxItem function returns. If you visited a mailbox with an older version of the addon after 7.0 launched you will need to visit the mailbox again to update counts.
+UPDATED: Opening the mailbox bag or switching the viewed character in BankItems will check if you used an older version of the addon to save mailbox counts since 7.0 went live and alert you to needing to visit the mailbox again to update.
+UPDATED: Removed references to SetToFileData now that 7.0 is live.
+------------------------------------------------------------------------
+r244 | burstroc | 2016-07-18 20:33:36 -0500 (Mon, 18 Jul 2016) | 6 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+UPDATED: TOC updated for 7.0.3
+ADDED: Legion item link update function (remove lone 0's from item links). Will begin to process changes when patch 7.0.3 goes live. Item links generally shouldn't throw errors with the 6.2.4 format but this should reduce the saved variables size and prevent conflicts with future updates.
+UPDATED: Item link matching updated for compatibility with Legion item link changes.
+UPDATED: Will automatically disable use of SetToFileData once 7.0 is released. Need to keep it in use until 7.0 updates SetTexture to accept texture ids and removes SetToFileData.
+FIXED: Textures on reagent bank and void storage should now tile properly.
+FIXED: Now detects if the logged in character has unlocked the reagent bank.
+------------------------------------------------------------------------
+r243 | burstroc | 2016-06-20 00:00:05 -0500 (Mon, 20 Jun 2016) | 4 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+Ticket 70: Added nil checks for bank event arguments.
+FIXED: Updated unique item version counting to fix some base item versions including counts for modified item versions and some items without bonus ids not registering as matches.
+FIXED: Added new method to determine guild realm to account for connected realm guilds. Please note that old guilds saved on incorrect realms (character realm instead of guild realm) will remain in the saved data. If you would like to remove the guilds saved with incorrect realms you can delete them from the options menu. If you would like to retain the historical data from these but don't want them included in tooltip counts you can unselect them from the guild bank inclusion dropdown.
+UPDATED: TOC updated for addon version number.
+------------------------------------------------------------------------
+r242 | burstroc | 2015-10-11 01:29:05 -0500 (Sun, 11 Oct 2015) | 2 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+UPDATED: Changed point where guild bank tab toc and addon version keys are saved so they won't change if there is an error saving the tab.
+Ticket 69: Error from ticket should be fixed by some changes made in prior update(r241).
+------------------------------------------------------------------------
+r241 | burstroc | 2015-10-04 15:41:37 -0500 (Sun, 04 Oct 2015) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 68: Setup safeguards for when an empty bag/bank/inventory save table has been created without saving the contents so no size key had been set (only seemed to be happening for empty equipped items saves).
+------------------------------------------------------------------------
+r240 | burstroc | 2015-09-28 20:40:23 -0500 (Mon, 28 Sep 2015) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 67: Added a check to attempt to prevent error with SetMerchantItem hook.
+------------------------------------------------------------------------
+r239 | burstroc | 2015-09-24 01:12:59 -0500 (Thu, 24 Sep 2015) | 7 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 66: Fixed an issue with checking mail on characters missing auction house data.
+
+UPDATED: New option to open the guild bank frame with the "/bi" command
+
+UPDATED: Saving of reagent bank and normal bank have been updated to reduce the number of times the current player's tooltip cache is regenerated.
+
+FIXED: Swapping equipped bank bags while they are displayed by BankItems should now update the display properly.
+------------------------------------------------------------------------
+r238 | burstroc | 2015-09-13 00:05:41 -0500 (Sun, 13 Sep 2015) | 16 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+Mark as 6.2.2.0
+Ticket 65: Added several new nil checks to closed bank updating function to prevent errors. Also added error catching routine to prevent future errors in the function from spamming users.
+REMOVED: Checkbox for the "Ignore unstackable soulbound items" tooltip count option has been removed since the option no longer does anything.
+FIXED: Now using GetVoidItemHyperlinkString to save links for void storage items to show correct equipment versions. You will need to visit the void storage on each character to allow the saved item links to update.
+FIXED: Prevent a short game freeze when accessing a characters void storage the first time after a client load by adding a slight delay to saving contents.
+ADDED: New function to upgrade item links from old MoP/6.0/6.1 formats to current 6.2 formats.
+UPDATED: New method to update to/from the inspect cursor when ctrl is held down on a BankItems item.
+UPDATED: Added several new tooltip hooks for more currency/recipe tooltips.
+ADDED: Auction items with a max expiration date more than an hour ago will be removed from the auction saves the next time you visit a mailbox on that character if the mailbox isn't full. By this point the mailbox should already have the proceeds of the auction or the returned item.
+ADDED: Visiting a mailbox now stores the time of your last visit.
+ADDED: Expired mail items (excluding money) will have their counts set to 0 to emphasize they are no longer in your mailbox and stop them from being added to item counts. BankItems will also add expired items that can be returned to another saved character into their mailbox save if that mailbox has a recorded save time before the expiration of the mailed item. This will be run for the currently selected player whenever the selected player is changed and for any player whose mailbox is visited before saving new mailbox contents.
+UPDATED: Cleanup of various unused function returns.
+UPDATED: Items with large counts (10000+) will have the count abbreviated (e.g. 10.5K instead of 10000) to stop counts from wrapping lines.
+UPDATED: Tooltip counts for currencies or guild banks will no longer show extra information for the location specific counts since they are always the same place.
+UPDATED: Icon displays will attempt to use GetItemInfo provided icons before using GetItemIcon since GetItemIcon will only provide the icon for the generic item version.
+ADDED: New option (off by default) to count only exact item matches in tooltips for items with the same ID but different stats (suffixes, bonus ids, etc.).
+------------------------------------------------------------------------
+r237 | burstroc | 2015-07-06 01:53:10 -0500 (Mon, 06 Jul 2015) | 3 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+UPDATED: Tooltip hooking has been changed to fix adding counts to recipe tooltips the first time they are shown after the game client has loaded.
+
+Ticket 64: Added deletion dropdown menus to the options screen as a clearer way to delete individual characters and guilds from saved data.
+------------------------------------------------------------------------
+r236 | burstroc | 2015-07-01 22:11:17 -0500 (Wed, 01 Jul 2015) | 5 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 63 (& Ticket 62 comment): Hooked SetAuctionItem to get around more empty item links being set on auction tooltips.
+
+ADDED: New tooltip hook for the SetInboxItem tooltip function to get around even more empty item links being set on tooltips in received mail.
+
+UPDATED: New method of saving caged battlepets from received mail so a proper battlepet link is saved.
+------------------------------------------------------------------------
+r235 | burstroc | 2015-06-27 22:41:22 -0500 (Sat, 27 Jun 2015) | 3 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 62: Hooked SetGuildBankItem to get around more empty item links being set on some item tooltips. Also updated the SetHyperlink hook for cases where empty item links get set.
+
+UPDATED: New method of saving caged battlepets in the guild bank. Next time you visit a guild bank tab with a caged pet it should save a proper battlepet link instead of the more generic caged pet link. This should make the pets show correctly in the BankItems guild bank window once the links are updated.
+------------------------------------------------------------------------
+r234 | burstroc | 2015-06-26 17:30:24 -0500 (Fri, 26 Jun 2015) | 3 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+Ticket 59: Hooked the SetTradeSkillItem tooltip function to show item counts in tradeskill window tooltips again. Looks like Blizzard is setting empty item links (itemID 0) to the tooltips for these which breaks the general hooking method.
+
+ADDED: New tooltip hooks for the SetQuestLogItem, SetQuestItem, SetQuestLogCurrency, and SetQuestCurrency tooltip functions to show item/currency counts in quest dialogs and the quest log.
+------------------------------------------------------------------------
+r233 | burstroc | 2015-06-25 19:33:10 -0500 (Thu, 25 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: Closed bank updating function should no longer throw errors if a caged battle pet is in the bag being targeted for updates.
+------------------------------------------------------------------------
+r232 | burstroc | 2015-06-25 03:08:34 -0500 (Thu, 25 Jun 2015) | 3 lines
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: Some saved item links were throwing errors due patch 6.2 changes to the link format. Invalid links will now be updated when mousing over the item.
+
+UPDATED: For Future Use - TOC and Addon versions will now be tracked for various bags/banks to help identify out-of-date data due to game patches or addon updates.
+------------------------------------------------------------------------
+r231 | burstroc | 2015-06-23 21:01:36 -0500 (Tue, 23 Jun 2015) | 2 lines
+Changed paths:
+   M /trunk/BankItems.toc
+
+Bump TOC version
+Mark as 6.2.0.0
+------------------------------------------------------------------------
+r230 | burstroc | 2015-06-16 23:43:02 -0500 (Tue, 16 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: New counting methods introduced in Ticket 57 fix should should now always exclude the equipped bags themselves instead of sometimes showing them as part of the bank count.
+------------------------------------------------------------------------
+r229 | burstroc | 2015-06-13 02:52:12 -0500 (Sat, 13 Jun 2015) | 5 lines
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+Ticket 57: Please visit the bank on each character to make sure data is updated - Added new workaround functions to make a best guess at where items are being removed from the bank if it is closed (e.g. crafting and quest completion). The workaround will be disabled until the bank is visited if there are signs the bank data is out-of-date. Tooltip counts for the current character should now be correct regardless of the status of bank data.
+
+ADDED: New tooltip hook for SetBackpackToken. Currencies tracked on the backpack should now show tooltip counts.
+
+Ticket 50: Added new tooltip hook for SetMerchantCostItem and workaround for GetMerchantItemCostItem function returning nil for currency links. Should hopefully fix remaining vendors not displaying currency tooltip counts.
+------------------------------------------------------------------------
+r228 | nbluewiz | 2015-02-27 09:00:44 -0600 (Fri, 27 Feb 2015) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+FIXED: BankItems v6.x.x.x text shown as double line in interface options panel. (depending on font)
+------------------------------------------------------------------------
+

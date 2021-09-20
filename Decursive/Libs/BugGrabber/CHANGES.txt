@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r222 | funkydude | 2017-08-29 20:14:00 -0500 (Tue, 29 Aug 2017) | 1 line
+Changed paths:
+   M /trunk/!BugGrabber.toc
+
+bump toc
+------------------------------------------------------------------------
+r221 | funkydude | 2017-08-29 20:13:38 -0500 (Tue, 29 Aug 2017) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+Make it obvious when we skip the debuglocals call.
+------------------------------------------------------------------------
+

@@ -1,0 +1,13 @@
+## Interface: 70300
+## Author: Shaboo Frostmourne (Based on ABDefender by Riel Kil'Jaeden GER EU, based on FaraFrames by Farang).  Updated by Shoogi of Wyrmrest Accord
+## Title: Battleground Defender
+## Notes: Announce incoming enemies in battle grounds with a single mouse click
+## Title-zhTW: |cffFF0000[PVP]|r 戰場喊話助手
+## Notes-zhTW: Battleground Defender |n會顯示一個小小的按鈕視窗，只要用滑鼠按一下，便能喊話落人來防守。節省許多打字的時間。|n|cffffd200使用方法：|r輸入 /戰場喊話，或 /bgd 開啟喊話按鈕。|n 從Esc>介面>插件>PVP戰場喊話，進行設定。
+## DefaultState: disabled
+## Version: 1.6.10
+## OptionalDeps:
+## Dependencies:
+## SavedVariables:
+## SavedVariablesPerCharacter: BGD_Prefs
+BGDefender.xml

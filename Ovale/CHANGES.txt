@@ -1,0 +1,84 @@
+tag b7ad6547ac78f7e8d5472848a563236ca1e081e1 7.3.0.3
+Author:	Sidoine De Wispelaere <sidoine@sidoine.net>
+Date:	Thu Sep 21 09:12:51 2017 +0200
+
+Fixes by Kevin
+
+commit 466fd65068736736e40d88f0ec680749c1163448
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 15 04:32:22 2017 +0200
+
+    update to lastest Outlaw script
+
+commit 466fd65068736736e40d88f0ec680749c1163448
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 15 04:32:22 2017 +0200
+
+    update to lastest Outlaw script
+
+commit bdc100dbcd33f2553c442af2e9b9ce081f4c2252
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Wed Sep 13 01:13:12 2017 +0200
+
+    druid_claws_of_shirvallah no longer exists
+
+commit 5172a75264bc72df8b8f684366bef5336b4815f4
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Wed Sep 13 01:11:49 2017 +0200
+
+    bristling_fur as long cd
+
+commit 1db5afc3aa031476181ea3fbc0a943ca67518d08
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Wed Sep 13 01:11:32 2017 +0200
+
+    improve usage of frenzied regeneration
+
+commit bbc93d46d68609d897a5abc79f1ae9863a94e65c
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Sat Sep 9 23:15:19 2017 +0200
+
+    PoF offgcd
+
+commit f05be18a0b4c7e95c0fa03a177af11bfd2da588e
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 04:53:02 2017 +0200
+
+    distance check for CoC
+
+commit 1be9fdd9066a80a25cec0b0f5020f1463b6b14d0
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 04:52:01 2017 +0200
+
+    water elemental spells only usable when we have a pet
+
+commit 214f438f2323f6ffe188dd58274e550d6c97a3c6
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 04:51:35 2017 +0200
+
+    cd on Blizzard
+
+commit 61c89d455d2d6724716d42a95900ca1e14362fa1
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 01:37:26 2017 +0200
+
+    update game version
+
+commit 69c49c2ff445728016b7995f30d35544f48d73cc
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 01:36:08 2017 +0200
+
+    update rotation for 7.3.0
+
+commit e4e92fef8a3a21ca57f325a4cdf8babf33dfe58e
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 01:22:35 2017 +0200
+
+    Update frost mage
+
+commit e4e92fef8a3a21ca57f325a4cdf8babf33dfe58e
+Author: Kevin De Smet <kevin.de.smet@outlook.be>
+Date:   Fri Sep 8 01:22:35 2017 +0200
+
+    Update frost mage
+

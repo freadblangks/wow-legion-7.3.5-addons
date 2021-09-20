@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: PetTracker Upgrades
+## Notes: Warns you when wild pets you might want appear in combat.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵助手-升級
+## Notes-zhTW: PetTracker Upgrades |n對戰時出現你所缺少、品質較高的野外寵物時會通知提醒。
+## DefaultState: disabled
+## Author: Jaliborc (João Cardoso)
+
+## Dependencies: PetTracker
+## X-Category: Battle Pets
+## Version: 7.3.0
+
+Upgrades.lua

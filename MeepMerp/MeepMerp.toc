@@ -1,0 +1,10 @@
+## Interface: 70300
+## Title: MeepMerp
+## Version: v1.02
+## Author: Akirian @ US-Frostmourne
+## DefaultState: enabled
+## Notes: A simple add-on to make a noise when you're out of range for a cast. /meepmerp
+## Title-zhTW: |cffFF2D2D[戰鬥]|r 超出法術範圍音效
+## Notes-zhTW: MeepMerp|n距離過遠、超出法術可以施放的範圍時會發出「咕嚕嚕嚕～」的音效來提醒。|n使用方法：要改為自訂的音效，輸入 /超出法術範圍音效  來看修改說明。
+
+MeepMerp.lua

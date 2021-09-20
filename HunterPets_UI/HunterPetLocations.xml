@@ -1,0 +1,30 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+	<Frame name="HunterPetLocations" parent="HunterPetJournal" hidden="true" inherits="ButtonFrameTemplate" framestrata="MEDIUM">
+		<Size x="405" y="316"/>
+		<Anchors>
+			<Anchor relativeTo="HunterPetJournal" relativePoint="TOPRIGHT" point="TOPLEFT" x="0" y="-80"/>
+		</Anchors>
+		<Frames>
+			<Frame parentKey="Map">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" x="2" y="-23"/>
+					<Anchor point="BOTTOMRIGHT" relativeTo="$parent" x="-4" y="27"/>
+				</Anchors>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnShow>
+				ButtonFrameTemplate_HidePortrait(self);
+			</OnShow>
+			<OnLoad>
+				HunterPetLocations_OnLoad(self);
+			</OnLoad>
+		</Scripts>
+
+	</Frame>
+
+
+</Ui>

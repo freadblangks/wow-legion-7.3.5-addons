@@ -1,0 +1,26 @@
+﻿## Interface: 70300
+## Title: Broker: |cffffffffChatAlerts|r
+## Version: 1.3 r023
+## Author: tritium
+## X-Credits: Sid67 (For the original Fubar - ChatAlertsFu)
+## X-Category: Chat
+## OptionalDeps: Ace3, SCT, MikScrollingBattleText, Parrot
+## Notes: Toggles sound and text popups for incoming chat, loot and system messages.
+## Title-zhTW: |cffFF9999[聊天]|r 通知
+## Notes-zhTW: Broker: |cffffffffChatAlerts|r |n在畫面上方顯示聊天對話、拾取物品和系統訊息的文字和音效通知，可自行選擇要通知的頻道和使用關鍵字過濾。讓你不會錯過任何重要的聊天訊息。|n|cffffd200使用方法：|r點小地圖按鈕，或從 Esc > 介面 > 插件 > 聊天-通知，進行設定。|n要調整畫面上的位置和文字大小，載入 "[進階]版面配置" 插件，然後從 "Esc > 版面配置 > 其他 > 顯示錯誤&警告" 調整框架的位置和縮放大小。
+## DefaultState: disabled
+## SavedVariables: BrokerChatAlerts_DB
+
+## X-Embeds: Ace3
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+Locales\locales.xml
+
+Utilities.lua
+Broker_ChatAlerts.lua
+Options.lua
+Tooltip.lua
+MinimapButton.lua
+DataBroker.lua

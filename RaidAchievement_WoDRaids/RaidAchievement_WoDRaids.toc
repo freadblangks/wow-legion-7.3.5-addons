@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - WoD raids
+## Author: Shurshik
+## Notes: RaidAchievement WoD Raids Module
+## Title-zhTW: |cffFFCC99[成就]|r 德拉諾團隊
+## Notes-zhTW: Raid|cff7fff7fAchievement|r - WoD raids |n德拉諾的團隊副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: wodrraspisokon
+RaidAchievement_WoDRaids.lua
+RaidAchievement_WoDRaids.xml
+RaidAchievement_WoDRaidsbosses.lua

@@ -1,0 +1,28 @@
+## Interface: 70300
+## Title: FlyoutButtonCustom
+## Author: another
+## Version: 2.82
+## Notes: Custom flyout buttons support
+## Title-zhTW: |cff00CCFF[快捷列]|r 彈出式按鈕
+## Notes-zhTW: FlyoutButtonCustom |n在快捷列上自訂彈出式的按鈕清單，類似獵人寵物、術士惡魔和法師傳送門的彈出式按鈕。可以完全自訂彈出的按鈕清單中要放哪些技能、物品或巨集。|n|cffffd200使用方法：|r打開法術書或收藏視窗，將圖示拖曳到快捷列的箭頭上建立彈出式按鈕清單。|n右鍵點擊箭頭可以切換彈出的方向。|n輸入 /彈出按鈕，或 /fbc 開啟設定。
+## DefaultState: disabled
+## SavedVariables: FlyoutButtonCustom_Settings_Global
+## SavedVariablesPerCharacter: FlyoutButtonCustom_Settings
+## OptionalDeps: ButtonFacade, Bartender4, ButtonForge, Dominos, ElvUI, TinyExtraBars, Masque
+
+libs\libstub\LibStub.lua
+libs\EasyStorage\EasyStorage.lua
+libs\CallBackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibKeyBound-1.0\lib.xml
+libs\Glow\Glow.xml
+libs\ChargeOverlay\ChargeCooldown.lua
+libs\MacroText\IconSelection.xml
+libs\MacroText\MacroText_Customize.xml
+
+Common.lua
+FlyoutButtonCustom.xml
+Settings.xml
+FlyoutListButton.lua
+FlyoutArrowButton.lua
+FlyoutListFrame.lua
+FlyoutButtonCustom.lua

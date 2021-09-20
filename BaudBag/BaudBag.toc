@@ -1,0 +1,40 @@
+## Author: Thurmal (Author), Suddendeath2000 (Former Author), Baudzila (Original Author)
+## Interface: 70300
+## LoadOnDemand: 0
+## Dependencies: Blizzard_VoidStorageUI
+## OptionalDeps: CaedronWardrobe, Masque
+## Notes: Allows you to combine bags as well as customize their display.
+## Notes-zhCN: 以整合方式显示你的背包和银行|N本地化:Isler
+## Notes-zhTW: 以整合方式顯示你的背包和銀行|N本地化:Isler
+## SavedVariablesPerCharacter: BaudBag_Cfg,BaudBag_Cache,BaudBag_Debug
+## Title: Baud Bag
+## Title-zhCN: 背包整合 Baud Bag
+## Title-zhTW: |cffB973CC[物品]|r Baud整合背包
+## Notes-zhTW: Baud Bag |n可以選擇要將哪幾個背包整合成一個，有多種外觀風格可供選擇。|n|cffffd200使用方法：|r從Esc>介面>插件>背包，進行設定。|n|cffFF2D2D特別注意：|r分類背包和整合背包選擇其中一種使用即可，請勿同時載入。
+## DefaultState: disabled
+## Version: 7.3.7
+
+Localization.lua
+BaudBagFunctions.lua
+lib\BaseTypes.lua
+lib\BagSet.lua
+lib\ItemButton.lua
+lib\BagButton.lua
+lib\SubContainer.lua
+lib\Container.lua
+lib\ContainerMenu.lua
+lib\TextureHelper.lua
+lib\Backgrounds\BlizzardBackground.lua
+lib\Backgrounds\SimpleBackground.lua
+lib\Backgrounds\BackgroundRegistration.lua
+BaudBagConfig.lua
+BaudBagCache.lua
+BaudBagToolTips.lua
+BaudBagOptions.xml
+BaudBagToken.xml
+BaudBagBank.xml
+frames\BaudBagSearchFrame.xml
+BaudBag.xml
+BaudBagVoidStorage.xml
+external\CaedronWardrobeSupport.lua
+external\Masque.lua

@@ -1,0 +1,24 @@
+## Title: CollectMe
+## Notes: Displays a list of mounts, companions, titles, toys, and followers which the character is missing and allows to summon companions and mounts
+## Title-zhTW: |cffFFFF66[收藏]|r 收藏進度
+## Notes-zhTW: Collect Me |n列出尚未收集到的寵物、坐騎、玩具、頭銜、追隨者、傳家寶，顯示收藏進度。還有隨機召喚寵物和坐騎的功能。|n|cffffd200使用方法：|r輸入 /收藏，或 /cm 開啟主視窗。從Esc>介面>插件>收藏-進度，進行設定。
+## DefaultState: disabled
+## Author: Tschebel (Nyssa), Jim-Bim (Ascalia), Xtcssa (VitalityV)
+## eMail: admin AT tschebel DOT net
+## X-email: admin AT tschebel DOT net
+## X-License: MIT modified with notification clause
+
+## Interface: 70300
+## Version: 2.9.6
+
+## X-credits: wowwiki
+
+## LoadOnDemand: 0
+
+## SavedVariables: CollectMeDB
+
+## OptionalDeps: Ace3
+
+embeds.xml
+locales.xml
+CollectMe.xml

@@ -1,0 +1,9 @@
+## Interface: 70300
+## Author: p3lim
+## Version: 4
+## Title: Lib: Wasabi
+## Notes: Library for implementing addon configs
+## OptionalDeps: LibStub
+
+embed.xml
+

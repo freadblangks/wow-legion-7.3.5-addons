@@ -1,0 +1,34 @@
+﻿## Interface: 70300
+## Title: Gladius
+## Version: 5.2.3
+## Notes: Arena enemy unit frames.
+## Title-zhTW: |cffFF0000[PVP]|r 競技場頭像
+## Notes-zhTW: Gladius |n競技場專用的敵方單位框架。|n|cffffd200使用方法：|r進入競技場時會自動出現。|n輸入 /競技場，或從 Esc > 介面 > 插件 > PVP競技場頭像，進行設定。|n輸入 /競技場 測試，或 /gladius test 來測試頭像框架。再輸入一次可關閉測試。
+## DefaultState: disabled
+## Author: Resike and Firebunny. Original author: Proditor
+## SavedVariables: Gladius2DB
+## OptionalDeps: Ace3, LibStub, LibSharedMedia-3.0
+
+#@no-lib-strip@
+Embeds.xml
+#@end-no-lib-strip@
+
+Gladius.lua
+Localizations.lua
+Options.lua
+
+Modules\HealthBar.lua
+Modules\PowerBar.lua
+Modules\CastBar.lua
+Modules\Auras.lua
+Modules\ClassIcon.lua
+Modules\Trinket.lua
+Modules\Highlight.lua
+Modules\Clicks.lua
+Modules\TargetBar.lua
+Modules\Tags.lua
+Modules\Announcements.lua
+Modules\DRTracker.lua
+Modules\Timer.lua
+Modules\Layout.lua
+Modules\Dispel.lua

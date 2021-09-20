@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: TransmogRoulette
+## Notes: Covers the transmog ui with random buttons
+## Title-zhTW: |cffFFFF66[收藏]|r 塑形轉轉樂
+## Notes-zhTW: TransmogRoulette |n塑形時按下隨機轉轉樂按鈕，打開衣櫃的無限可能。
+## Author: Semlar
+## Version: 7.3.0.1
+
+## LoadOnDemand: 1
+## LoadWith: Blizzard_Collections
+
+TransmogRoulette.xml

@@ -1,0 +1,8 @@
+## Interface: 70300
+## Title: WorldFlightMap
+## Notes: Replaces the taxi map with the world map
+## Title-zhTW: |cff4DFF4D[地圖]|r 世界鳥點地圖
+## Notes-zhTW: WorldFlightMap |n使用完整的世界地圖來顯示鳥點和飛行路線，選擇鳥點的同時也可以看到任務位置。
+## Author: Semlar
+## Version: 7.3.0.6
+WorldFlightMap.lua

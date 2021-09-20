@@ -1,0 +1,20 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r   Main
+## Author: Shurshik
+## Notes: Group and raid achievements tracker
+## Title-zhTW: |cffFFCC99[成就]|r 副本成就-主程式
+## Notes-zhTW: Raid|cff7fff7fAchievement|r - Main |n追蹤地城和團隊副本的成就。|n|cffffd200使用方法：|r點小地圖按鈕，或輸入 /raida。
+## DefaultState: disabled
+## URL: http://phoenixstyle.com
+## LoadOnDemand: 0
+## SavedVariables: pseashowfailreas,pseashownewvervar,wherereportraidach, wherereportpartyach,raquantrepeatach,raquantrepeatachtm,raoldvern2, raaddoninstalledsins,raminibutshowt,RA_Settings,rasoundtoplay,raenablebg,psdonaspanvar,radonateq1
+## SavedVariablesPerCharacter: thisaddonworkea, raannouncerun4
+Localization\localization-enEN.lua
+Localization\localization-zhCN.lua
+Localization\localization-zhTW.lua
+RaidAchievement.lua
+RaidAchievement.xml
+LibStub.lua
+CallbackHandler-1.0.lua
+LibDataBroker-1.1.lua
+RaBroker.lua

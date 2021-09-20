@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: Hidden Artifact Tracker
+## SavedVariables: HiddenArtifactTracker
+## SavedVariablesPerCharacter: HiddenArtifactTrackerChars
+## Notes: In-tooltip tracking for hidden artifact appearances.
+## Title-zhTW: |cffFFFF66[收藏]|r 神兵武器-隱藏版提示
+## Notes-zhTW: Hidden Artifact Tracker |n在神兵武器的滑鼠提示中顯示隱藏版外觀的相關資訊，包括取得方式和解鎖進度。
+## DefaultState: disabled
+HiddenArtifactTracker_artifacts.lua
+HiddenArtifactTracker_mage.lua
+HiddenArtifactTracker.lua

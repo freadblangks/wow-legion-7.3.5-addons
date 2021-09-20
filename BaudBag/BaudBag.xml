@@ -1,0 +1,395 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	
+	<Script file="BaudBag.lua" />
+  
+	<Frame name="BaudBagBagsFrameTemplate" virtual="true" enableMouse="true">
+		<Anchors>
+			<Anchor point="TOPRIGHT" relativeTo="$parentBackdrop" relativePoint="TOPLEFT" />
+		</Anchors>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="16" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="16" />
+			</EdgeSize>
+		</Backdrop>
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropColor(0,0,0,1);
+			</OnLoad>
+			<OnShow function="BaudBagBagsFrame_OnShow" />
+		</Scripts>
+	</Frame>
+	
+	<Frame topLevel="true" name="BaudBagContainerTemplate" virtual="true" hidden="true" parent="UIParent" movable="true" frameStrata="MEDIUM" enableMouse="true">
+		<Size>
+			<AbsDimension x="640" y="560" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Frames>
+			<Frame name="$parentBackdrop" parentKey="Backdrop">
+				<Frames>
+					<Frame name="$parentTextures" parentKey="Textures" setAllPoints="true" />
+				</Frames>
+			</Frame>
+			<Button name="$parentCloseButton" parentKey="CloseButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT" />
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						BaudBag_DebugMsg("BagOpening", "["..self:GetParent():GetName().."] Close Button pressed");
+						self:GetParent():Hide();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="$parentMenuButton" parentKey="MenuButton">
+				<Size x="16" y="16" />
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="$parentCloseButton" relativePoint="TOPLEFT" x="0" y="-8" />
+				</Anchors>
+				<Scripts>
+					<OnClick function="BaudBagContainerDropDown_Show" />
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\UI-PlusButton-Up" />
+				<PushedTexture file="Interface\Buttons\UI-PlusButton-Down" />
+				<HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD" />
+			</Button>
+			<Button name="$parentSearchButton" parentKey="SearchButton">
+				<Size x="16" y="16" />
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="$parentMenuButton" relativePoint="TOPLEFT" x="0" y="0" />
+				</Anchors>
+				<NormalTexture file="Interface\Minimap\TRACKING\None" />
+				<HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD">
+					<Size x="12" y="13"/>
+					<Anchors>
+						<Anchor point="CENTER" x="0" y="0"/>
+					</Anchors>
+				</HighlightTexture>
+				<Scripts>
+					<OnClick function="BaudBagSearchButton_Click" />
+					<OnEnter>
+						GameTooltip:SetOwner(self);
+						GameTooltip:SetText(BaudBagLocalized.SearchBagTooltip);
+						GameTooltip:Show();
+					</OnEnter>
+					<OnLeave function="GameTooltip_Hide"/>
+				</Scripts>
+			</Button>
+			<Button name="$parentDepositButton" parentKey="DepositButton" hidden="true">
+				<Size x="16" y="16" />
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="$parentSearchButton" relativePoint="TOPLEFT" x="0" y="0"/>
+				</Anchors>
+				<NormalTexture file="Interface\EncounterJournal\UI-EncounterJournalTextures">
+					<TexCoords left="0.73046875" right="0.82421875" top="0.61816406" bottom="0.66015625"/>
+				</NormalTexture>
+				<PushedTexture file="Interface\EncounterJournal\UI-EncounterJournalTextures">
+					<TexCoords left="0.63281250" right="0.72656250" top="0.61816406" bottom="0.66015625"/>
+				</PushedTexture>
+				<HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD">
+					<Size x="12" y="13"/>
+					<Anchors>
+						<Anchor point="CENTER" x="0" y="0"/>
+					</Anchors>
+				</HighlightTexture>
+				<Scripts>
+					<OnClick>
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION);
+						DepositReagentBank();
+					</OnClick>
+					<OnEnter>
+						GameTooltip:SetOwner(self);
+						GameTooltip:SetText(REAGENTBANK_DEPOSIT);
+						GameTooltip:Show();
+					</OnEnter>
+					<OnLeave function="GameTooltip_Hide"/>
+				</Scripts>
+			</Button>
+			<Frame name="$parentUnlockInfo" parentKey="UnlockInfo" hidden="true">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="0" y="0"/>
+					<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" x="0" y="0"/>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUNDBORDER">
+						<Texture name="$parentBottomLeftInner" file="Interface\GuildBankFrame\Corners" >
+							<Size x="32" y="32"/>
+							<Anchors>
+								<Anchor point="BOTTOMLEFT" x="4" y="0"/>
+							</Anchors>
+							<TexCoords left="0.01562500" right="0.51562500" top="0.00390625" bottom="0.12890625"/>
+						</Texture>
+						<Texture name="$parentBottomRightInner" file="Interface\GuildBankFrame\Corners" >
+							<Size x="32" y="32"/>
+							<Anchors>
+								<Anchor point="BOTTOMRIGHT" x="-4" y="0"/>
+							</Anchors>
+							<TexCoords left="0.01562500" right="0.51562500" top="0.13671875" bottom="0.26171875"/>
+						</Texture>
+						<Texture name="$parentTopRightInner" file="Interface\GuildBankFrame\Corners"  >
+							<Size x="32" y="32"/>
+							<Anchors>
+								<Anchor point="TOPRIGHT" x="-4" y="0"/>
+							</Anchors>
+							<TexCoords left="0.01562500" right="0.51562500" top="0.26953125" bottom="0.39453125"/>
+						</Texture>
+						<Texture name="$parentTopLeftInner" file="Interface\GuildBankFrame\Corners">
+							<Size x="32" y="32"/>
+							<Anchors>
+								<Anchor point="TOPLEFT" x="4" y="0"/>
+							</Anchors>
+							<TexCoords left="0.01562500" right="0.51562500" top="0.40234375" bottom="0.52734375"/>
+						</Texture>
+						<Texture name="$parentLeftInner" file="Interface\GuildBankFrame\VertTile" vertTile="true">
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="$parentTopLeftInner" relativePoint="BOTTOMLEFT" x="-3"/>
+								<Anchor point="BOTTOMLEFT" relativeTo="$parentBottomLeftInner" relativePoint="TOPLEFT" x="-3"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentRightInner" file="Interface\GuildBankFrame\VertTile" vertTile="true">
+							<Anchors>
+								<Anchor point="TOPRIGHT" relativeTo="$parentTopRightInner" relativePoint="BOTTOMRIGHT" x="4"/>
+								<Anchor point="BOTTOMRIGHT" relativeTo="$parentBottomRightInner" relativePoint="TOPRIGHT" x="4"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentTopInner" file="Interface\GuildBankFrame\HorizTile" horizTile="true">
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="$parentTopLeftInner" relativePoint="TOPRIGHT" y="3"/>
+								<Anchor point="TOPRIGHT" relativeTo="$parentTopRightInner" relativePoint="TOPLEFT" y="3"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentBottomInner" file="Interface\GuildBankFrame\HorizTile" horizTile="true">
+							<Anchors>
+								<Anchor point="BOTTOMLEFT" relativeTo="$parentBottomLeftInner" relativePoint="BOTTOMRIGHT" y="-5"/>
+								<Anchor point="BOTTOMRIGHT" relativeTo="$parentBottomRightInner" relativePoint="BOTTOMLEFT" y="-5"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+					<Layer level="BACKGROUND">
+						<Texture name="$parentBlackBG">
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="$parentTopLeftInner" x="4" y="-4"/>
+								<Anchor point="BOTTOMRIGHT" relativeTo="$parentBottomRightInner" x="-4" y="3"/>
+							</Anchors>
+							<Color r="0" g="0" b="0" a="1"/>
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<FontString name="$parentText" inherits="GameFontHighlightMedium" text="REAGENTBANK_PURCHASE_TEXT" justifyV="BOTTOM">
+							<Size x="512" y="32"/>
+							<Anchors>
+								<Anchor point="BOTTOM" relativePoint="CENTER" x="0" y="-8"/>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentTabCost" inherits="GameFontNormalMed3" text="COSTS_LABEL">
+							<Size x="0" y="12"/>
+							<Anchors>
+								<Anchor point="CENTER" relativePoint="CENTER" x="-93" y="-48"/>
+							</Anchors>
+						</FontString>
+						<FontString name="$parentTitle" inherits="QuestFont_Enormous" text="REAGENT_BANK" justifyV="BOTTOM">
+							<Size x="384" y="0"/>
+							<Anchors>
+								<Anchor point="BOTTOM" relativeTo="$parentText" relativePoint="TOP" x="0" y="8"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="$parentCostMoneyFrame" parentKey="CostMoneyFrame" inherits="SmallMoneyFrameTemplate" hidden="false">
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentTabCost" relativePoint="RIGHT" x="0" y="0"/>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								SmallMoneyFrame_OnLoad(self);
+								MoneyFrame_SetType(self, "STATIC");
+							</OnLoad>
+						</Scripts>
+					</Frame>
+					<Button name="$parentPurchaseButton" inherits="UIPanelButtonTemplate" text="BANKSLOTPURCHASE">
+						<Size x="124" y="21"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentCostMoneyFrame" relativePoint="RIGHT" x="12" y="0"/>
+						</Anchors>
+						<Scripts>
+							<OnClick>
+								PlaySound(SOUNDKIT.IG_MAINMENU_OPTION);
+								StaticPopup_Show("CONFIRM_BUY_REAGENTBANK_TAB");
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+				<Scripts>
+					<OnShow function="ReagentBankFrame_UpdateTabBuyingInfo"/>
+					<OnLoad function="RaiseFrameLevel"/>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<Layers>
+			<Layer>
+				<FontString name="$parentName" parentKey="Name" inherits="GameFontNormal" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="0" y="12" />
+					</Size>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad function="BaudBagContainer_OnLoad" />
+			<OnShow function="BaudBagContainer_OnShow" />
+			<OnHide function="BaudBagContainer_OnHide" />
+			<OnUpdate function="BaudBagContainer_OnUpdate" />
+			<OnDragStart function="BaudBagContainer_OnDragStart" />
+			<OnDragStop function="BaudBagContainer_OnDragStop" />
+		</Scripts>
+	</Frame>
+	
+	<Frame name="BaudBagFirstContainerTemplate" virtual="true" inherits="BaudBagContainerTemplate">
+		<Frames>
+			<CheckButton name="$parentBagsButton" parentKey="BagsButton">
+				<Size>
+					<AbsDimension x="24" y="24" />
+				</Size>
+				<Anchors>
+					<Anchor point="RIGHT" relativeTo="$parentName" relativePoint="LEFT" x="-5" y="0" />
+				</Anchors>
+				<Scripts>
+					<OnClick function="BaudBagBagsButton_OnClick" />
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up" />
+				<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down" />
+				<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD" />
+				<CheckedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down" />
+			</CheckButton>
+			<Frame name="$parentMoneyFrame" parentKey="MoneyFrame" inherits="SmallMoneyFrameTemplate">
+				<Size>
+					<AbsDimension x="206" y="20" />
+				</Size>
+			</Frame>
+			<Frame name="$parentTokenFrame" parentKey="TokenFrame" inherits="BaudBagTokenFrameTemplate" hidden="true">
+				<Size>
+					<AbsDimension x="206" y="20" />
+				</Size>
+			</Frame>
+		</Frames>
+		<Layers>
+			<Layer>
+				<FontString name="$parentSlots" parentKey="FreeSlots" inherits="GameFontNormal" justifyH="LEFT" wordwrap="false" nonSpaceWrap="false" />
+			</Layer>
+		</Layers>
+	</Frame>
+	<Frame name="BaudBagSubBagTemplate" virtual="true">
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Frames>
+			<!-- this is necessary to let WoW correctly update the content of the bags -->
+			<Button parentKey="FilterIcon" hidden="true">
+				<Size x="0" y="0"/>
+				<Anchors>
+					<Anchor point="TOP" relativeKey="$parent" relativePoint="TOP" x="0" y="0"/>
+				</Anchors>
+				<Layers>
+					<Layer level="OVERLAY">
+						<Texture parentKey="Icon" atlas="bags-icon-consumables" useAtlasSize="true">
+							<Anchors>
+								<Anchor point="CENTER"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad function="BaudBagSubBag_OnLoad" />
+			<OnEvent function="BaudBagSubBag_OnEvent" />
+		</Scripts>
+	</Frame>
+	
+	<Frame name="BaudBagContainerDropDown" inherits="UIDropDownMenuTemplate" hidden="true" id="1">
+		<Scripts>
+			<OnLoad function="BaudBagContainerDropDown_OnLoad" />
+		</Scripts>
+	</Frame>
+
+	<Frame name="BaudBagContainer1_1" inherits="BaudBagFirstContainerTemplate">
+		<Frames>
+			<Frame name="$parentBagsFrame" inherits="BaudBagBagsFrameTemplate">
+			</Frame>
+		</Frames>
+	</Frame>
+	
+	<Frame name="BaudBagContainer2_1" inherits="BaudBagFirstContainerTemplate">
+		<Frames>
+			<Frame name="$parentBagsFrame" inherits="BaudBagBagsFrameTemplate" frameStrata="MEDIUM">
+				<Frames>
+					<Frame name="BaudBagBankSlotPurchaseFrame" setAllPoints="true" parent="BaudBagContainer2_1BagsFrame">
+						<Layers>
+							<Layer level="BACKGROUND">
+								<FontString name="$parentSlotCost" inherits="GameFontHighlight" text="Slot:" justifyH="LEFT">
+									<Size>
+										<AbsDimension x="30" y="20" />
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMLEFT" x="15" y="25" />
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Frames>
+							<Button name="BaudBagBankSlotPurchaseButton" inherits="UIPanelButtonTemplate" text="BANKSLOTPURCHASE">
+								<Size>
+									<AbsDimension x="0" y="21" />
+								</Size>
+								<Anchors>
+									<Anchor point="BOTTOM" x="0" y="5" />
+									<Anchor point="LEFT" x="5" y="0" />
+									<Anchor point="RIGHT" x="-5" y="0" />
+								</Anchors>
+								<Scripts>
+									<OnClick>
+										PlaySound(SOUNDKIT.IG_MAINMENU_OPTION);
+										StaticPopup_Show("CONFIRM_BUY_BANK_SLOT");
+									</OnClick>
+								</Scripts>
+							</Button>
+							<Frame name="$parentMoneyFrame" inherits="SmallMoneyFrameTemplate">
+								<Anchors>
+									<Anchor point="LEFT" relativeTo="$parentSlotCost" relativePoint="RIGHT" />
+								</Anchors>
+								<Scripts>
+									<OnLoad>
+										SmallMoneyFrame_OnLoad(self);
+										MoneyFrame_SetType(self, "STATIC");
+									</OnLoad>
+								</Scripts>
+							</Frame>
+						</Frames>
+					</Frame>
+				</Frames>
+			</Frame>
+		</Frames>
+	</Frame>
+
+	<Frame name="BaudBagFrame">
+		<KeyValues>
+			<KeyValue key="BankOpen" value="false" type="boolean"/>
+		</KeyValues>
+		<Scripts>
+			<OnLoad function="BaudBag_OnLoad" />
+			<OnEvent function="BaudBag_OnEvent" />
+		</Scripts>
+	</Frame>
+
+	<Frame name="BagContainer" />
+	
+</Ui>

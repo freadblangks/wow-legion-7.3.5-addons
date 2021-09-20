@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: Best In Slot Redux
+## Notes: Keep track of your, your raid members and your guilds Best in Slot list!
+## Title-zhTW: |cffB973FF[裝備]|r 欄位最佳裝備-主程式
+## Notes-zhTW: Best In Slot Redux |n方便你在打副本之前，事先選擇好每個裝備欄位的最佳裝備，有掉落時會提醒。也可以和其他人或公會成員分享 BiS，方便 RL 分裝。|n|cffffd200使用方法：點小地圖按鈕。
+## DefaultState: disabled
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU
+## Version: v7.3.16
+## SavedVariables: BestInSlotDB
+
+Libs\Libs.xml
+Locales\Locales.xml
+Include.xml
+Frames\Include.xml
+Modules\Include.xml
+

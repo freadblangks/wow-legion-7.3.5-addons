@@ -1,0 +1,22 @@
+## Interface: 70300
+## Author: p3lim
+## Version: 70300.52-Release
+## Title: Molinari
+## Notes: One-click Milling, Prospecting, Disenchanting and Lockpicking!
+## Title-zhTW: |cffFFFF99[專業]|r 一鍵分解物品
+## Notes-zhTW: Molinari |n提供快速拆裝分解、研磨草藥、勘探寶石和開鎖的功能!|n|cffffd200使用方法：|r只要按下 Ctrl+Alt 鍵再點一下物品，立馬分解!|n從Esc>介面>插件>專業-分解，將要避免不小心被處理掉的物品加入忽略清單。
+## DefaultState: disabled
+## OptionalDeps: LibProcessable, Wasabi
+## SavedVariables: MolinariBlacklistDB, MolinariDB
+
+## X-Curse-Project-ID: 20338
+## X-WoWI-ID: 13188
+
+libs\LibStub\LibStub.lua
+libs\Wasabi\embed.xml
+libs\LibProcessable\embed.xml
+
+
+Localization.lua
+Config.lua
+Molinari.lua

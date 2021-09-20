@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: Shield Tracker
+## Notes: Tracks a wide variety of shields / absorbs.
+## Title-zhTW: |cffFF9900[進階]|r 盾量監控
+## Notes-zhTW: Shield Tracker |n讓你可以建立出自訂性非常高的進度條來監控身上的盾。|n|cffffd200使用方法：|r從Esc>介面>插件>盾量監控，進行設定。
+## DefaultState: disabled
+## Author: Talryn
+## Version: 7.3.5
+## SavedVariables: ShieldTrackerDB
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibQTip-1.0, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, Tukui, ElvUI, AceGUI-3.0-Completing-EditBox
+
+embeds.xml
+
+locale.xml
+
+ShieldTracker.lua

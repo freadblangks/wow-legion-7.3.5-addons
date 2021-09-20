@@ -1,0 +1,17 @@
+## Interface: 70300
+## Title: [|c52ABD473Alleidun|r]'s Hunter Pets UI
+## Title-zhTW: |cffFF7373[職業]|r 獵人寵物-圖鑑
+## Notes-zhTW: [|c52ABD473Alleidun|r]'s Hunter Pets UI |n瀏覽和搜尋所有可供馴服的寵物和所在位置地圖。|n|cffffd200使用方法：|r按 Shift+P 開啟收藏視窗 > 點右下角的 "獵人寵物" 標籤頁面。
+## DefaultState: disabled
+## Author: Alleidun
+## Version: 1
+## LoadOnDemand: 1
+## Dependencies: HunterPets
+
+..\HunterPets\Libs\SecureTabs-2.0\SecureTabs-2.0.lua
+
+Filtering.lua
+HunterPets_UI.lua
+HunterPets_UI.xml
+HunterPetLocations.lua
+HunterPetLocations.xml

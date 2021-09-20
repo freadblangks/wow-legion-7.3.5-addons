@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: SimpleObjectiveProgress
+## Author: Simca
+## Notes: SimpleObjectiveProgress is a basic addon designed to add NPC weight information for quest objectives to NPC tooltips.
+## Title-zhTW: |cff00FFFF[任務]|r 任務怪進度提示
+## Notes-zhTW: SimpleObjectiveProgress |n在任務怪的滑鼠提示說明中顯示這隻怪所提供的任務目標進度百分比，一般任務和世界任務都可以使用。
+## Version: v1.2.6
+## X-Date: 2017-08-31T3:45:33Z
+## X-License: BSD
+
+libs.xml
+
+SimpleObjectiveProgress.lua

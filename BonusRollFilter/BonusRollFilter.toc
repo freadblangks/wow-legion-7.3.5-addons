@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: BonusRollFilter
+## Version: 7.3.2.2-release
+## Author: Chawan
+## Description: BonusRollFilter allows you to specify exactly which bosses and difficulties you want bonus rolls to appear on.
+## Notes: BonusRollFilter allows you to specify exactly which bosses and difficulties you want bonus rolls to appear on.
+## Title-zhTW: |cffFF7F00[團隊]|r 骰子過濾
+## Notes-zhTW: BonusRollFilter |n讓你自行選擇，推倒首領後是否要顯示額外戰利品的骰子面板，每個首領、每種難度的團隊副本都可以單獨設定。|n可以將沒有裝備需求的首領或副本的骰子隱藏起來，避免不小心按到，以及提醒自己哪個首領需要骰。|n|cffffd200使用方法：|r從Esc>介面>插件>裝備-骰子過濾，進行設定。
+## DefaultState: disabled
+## SavedVariables: BRF_Data
+
+embeds.xml
+Core.lua

@@ -1,0 +1,19 @@
+## Interface: 70300
+## X-Min-Interface: 60200
+## Title: HandyNotes_AzerothsTopTunes
+## Notes: Displays the locations of Garrison music scrolls.
+## Title-zhTW: |cff4DFF4D[地圖]|r 地圖標記-要塞樂譜
+## Notes-zhTW: Handy Notes - Azeroths Top Tunes |n標示出要塞樂譜的位置。
+## DefaultState: disabled
+## Author: Ethan Centaurai
+## Version: v1.2.1
+## X-Category: Map & Minimap
+## SavedVariables: HandyNotes_AzerothsTopTunesDB
+## RequiredDeps: HandyNotes
+## X-Curse-Packaged-Version: v1.2.1
+## X-Curse-Project-Name: HandyNotes_AzerothsTopTunes
+## X-Curse-Project-ID: handynotes_azerothstoptunes
+## X-Curse-Repository-ID: wow/handynotes_azerothstoptunes/mainline
+
+Core.lua
+Data.lua

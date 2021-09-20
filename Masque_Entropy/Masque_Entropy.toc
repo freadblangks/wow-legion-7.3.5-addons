@@ -1,0 +1,15 @@
+## Interface: 70300
+## Title: Masque: |cffff8000Entropy|r
+## Version: 7.3.0
+## Author: StormFX
+## Dependencies: Masque
+## Notes: Entropy skins for Masque.
+## Title-zhTW: |cff00CCFF[快捷列]|r 按鈕外觀主題-熵
+## Notes-zhTW: Masque - |cffff8000Entropy|r |cffffffffIII|r |n熵的按鈕外觀佈景主題。
+## DefaultState: disabled
+## X-Website: https://www.wowace.com/projects/masque_entropy
+## X-Category: Interface Enhancements
+## X-Credits: Zeal
+## X-WoWI-ID: 8873
+
+Entropy.lua

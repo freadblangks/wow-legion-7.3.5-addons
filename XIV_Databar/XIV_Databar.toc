@@ -1,0 +1,15 @@
+## Interface: 70300
+## Title: XIV_Databar
+## Author: Mikeprod
+## Version: 2.0.16
+## Notes: Adds a bottombar by the request of |cffffffffu/sammojo|r on Reddit, Icons made by |cffffffffu/sammojo|r. Previously maintained by |cff00FF99Saxitoxin|r then |cffbbbbbbMille|cff990000XIV|r.
+## Title-zhTW: |cff0099FF[介面]|r 功能資訊列
+## Notes-zhTW: XIV_Databar |n在畫面最下方顯示一排遊戲功能小圖示，取代原本的微型選單和背包按鈕。還會顯示時間、耐久度、天賦、專業、兌換通貨、金錢、傳送和系統資訊等等。可以自行選擇要顯示哪些資訊、調整位置和顏色。|n|cffffd200使用方法：|r從Esc>介面>插件>資訊列，進行設定。
+## SavedVariables: TEST_CONFIG, XIVBarDB
+## X-Issues: https://github.com/Mikeprod/XIV_Databar/issues
+
+embeds.xml
+
+locales\locales.xml
+core.lua
+modules\load_modules.xml

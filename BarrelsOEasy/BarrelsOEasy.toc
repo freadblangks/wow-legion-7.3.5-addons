@@ -1,0 +1,17 @@
+## Interface: 70300
+## Title: Barrels o' Easy
+## Notes: Marks the Barrels o' Fun Barrels
+## Title-zhTW: |cff00FFFF[任務]|r 桶樂會爽爽玩
+## Notes-zhTW: Barrels o' Easy |n幫助你輕鬆完成世界任務：桶樂會。|n|cffffd200使用方法：|r請先開始玩第一輪，當桶子停止移動時，才能將滑鼠指向桶子來幫桶子上標記。
+## Version: 1.1.13
+## SavedVariables: BarrelsOEasyShowFrame, BarrelsOEasyX, BarrelsOEasyY, BarrelsOEasyFrom, BarrelsOEasyTo, BarrelsOEasyShowMessageCount
+## X-Curse-Packaged-Version: v1.1.1.11
+## X-Curse-Project-Name: BarrelsOEasy
+## X-Curse-Project-ID: barrelsoeasy
+## X-Curse-Repository-ID: wow/barrelsoeasy/mainline
+
+## Author: seraph1m
+## eMail: seraph1m.6000@gmail.com
+## X-email: none
+
+BarrelsOEasy.lua

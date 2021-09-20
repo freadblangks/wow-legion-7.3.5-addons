@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: Kaliel's Tracker
+## Notes: Improved Blizzard Objective Tracker
+## Title-zhTW: |cff00FFFF[任務]|r 目標清單增強
+## Notes-zhTW: Kaliel's Tracker |n增強畫面右方任務目標清單的功能。|n|cffffd200使用方法：|r從Esc>介面>插件>任務-目標清單，進行設定和移動位置。|n|cffFF2D2D特別注意：|r啟用插件後需要重新載入介面。
+## Version: 2.1.9
+## Author: Kaliel (Marouan Sabbagh)
+
+## SavedVariables: KalielsTrackerDB
+## Dependencies: Blizzard_ObjectiveTracker
+## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibSink-2.0, MSA-DropDownMenu-1.0, Masque, PetTracker, TomTom
+
+Libs.xml
+
+KalielsTracker.lua
+KalielsTracker.xml
+Options.lua
+
+Modules.xml

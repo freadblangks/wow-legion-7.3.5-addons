@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Include file="Reward.xml"/>
+	<Include file="Portrait.xml"/>
+	<Include file="DarkButton.xml"/>
+	<Include file="Record.xml"/>
+	<Include file="ModelEntry.xml"/>
+
+	<Script file="Map.lua"/>
+	<Script file="Record.lua"/>
+</Ui>

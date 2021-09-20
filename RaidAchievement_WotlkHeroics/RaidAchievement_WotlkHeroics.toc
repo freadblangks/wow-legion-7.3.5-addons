@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Wotlk Dungeons
+## Author: Shurshik
+## Notes: RaidAchievement Wotlk Dungeons Module
+## Title-zhTW: |cffFFCC99[成就]|r 巫妖王地城
+## Notes-zhTW: Raid|cff7fff7fAchievement|r - Wotlk Dungeons |n巫妖王之怒的英雄副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: whraspisokon
+RaidAchievement_WotlkHeroics.lua
+RaidAchievement_WotlkHeroicsbosses.lua
+RaidAchievement_WotlkHeroics.xml

@@ -1,0 +1,140 @@
+$Id: ChangeLog.txt 80 2018-04-24 09:44:47Z arith $
+
+Revision History:
+=================
+
+* v2.21 (Apr. 24, 2018)
+-----------------------
+- Lib update: LibUIDropDownMenu
+
+* v2.20 (Apr. 23, 2018)
+-----------------------
+- Fixed the menu of primary and secondary professions were not displayed properly when World Quest Tracker is disabled.
+
+* v2.19 (Apr. 23, 2018)
+-----------------------
+- Remove external
+- Lib Update: LibUIDropDownMenu
+
+* v2.18 (Mar. 30, 2018)
+-----------------------
+- Further integrate GatherMate2's filter feature. Now you can toggle the the GatherMate2 filters easier.
+
+* v2.17 (Mar. 28, 2018)
+-----------------------
+- Further integrate World Quest Tracker's filter feature
+  - Sync the filter status between WoW's built-in pet battle status and the one from World Quest Tracker
+
+* v2.16 (Mar. 27, 2018)
+-----------------------
+- Added menu item to toggle GatherMate2's config panel
+- Added HandyNotes config menu item's tooltip
+- Enhanced PetTracker's menu displaying
+
+* v2.15 (Mar. 22, 2018)
+-----------------------
+- Fixed the issue that HandyNotes' toggling will disappear in non Legion maps
+- Fixed the issue to wwrongly detect HandyNotes' enabling status
+
+* v2.14 (Mar. 20, 2018)
+-----------------------
+- Added World Quest Tracker's support
+- Fixed option toggling not working to enable / disable modules showing in menus
+
+* v2.13 (Mar. 07, 2018)
+-----------------------
+- Lib update: 
+  - AceConfig
+- Localization update:
+  - German (imna1975)
+- Remove SVN External links
+
+* v2.12 (Nov. 09, 2017)
+-----------------------
+- Lib update: AceConfigDialog
+
+* v2.11 (Aug. 31, 2017)
+-----------------------
+- Lib Update: LibUIDropDownMenu
+
+* v2.10 (Aug. 29, 2017)
+-----------------------
+- ToC update to support WoW 7.3.0
+- Lib Update: LibUIDropDownMenu, Ace3
+- Updated PlaySound API's usage method to support WoW 7.3.0
+- Localization update:
+  - German (pas06)
+
+* v2.09 (Jun. 10, 2017)
+-----------------------
+- Fixed HandyNotes' context menu won't show while user configure to have 
+  context menu and did not have GatherMate2 enabled
+
+* v2.08 (Jun. 04, 2017)
+-----------------------
+- Fixed HandyNotes' 2nd level menu won't show the plugins
+
+* v2.07 (Jun. 04, 2017)
+-----------------------
+- Fixed the issue when modules like GatherMate2 was not fully enabled (enabled
+  for some other characters but disabled for current character) and errors 
+  will pop-up during module loading.
+
+* v2.06 (Jun. 03, 2017)
+-----------------------
+- Added missing library: CallbackHandler-1.0
+
+* v2.05 (May 31, 2017)
+-----------------------
+- ToC update to add OptionalDeps
+
+* v2.04 (May 24, 2017)
+-----------------------
+- Added AceEvent-3.0
+- Lib update:
+  - Replace NoTaint_UIDropDownMenu with LibUIDropDownMenu
+- Enhanced dropdown menu's behavior when world map get closed
+
+* v2.03 (May 20, 2017)
+-----------------------
+- Lib update:
+  - NoTaint_UIDropDownMenu
+
+* v2.02 (May 12, 2017)
+-----------------------
+- Fixed issue in localization files
+- Localization update:
+  - German (pas06)
+
+* v2.01 (May 12, 2017)
+-----------------------
+- Lib update:
+  - NoTaint_UIDropDown
+
+* v2.00 (May 09, 2017)
+-----------------------
+- Added support to PetTracker
+- Added options' toggling
+- Added support to show HandyNotes' plugins in 2nd level of menu
+- Localization update:
+  - Korean (yuk6196)
+  - German (pas06)
+  - Russian (Blizzatron)
+
+* v1.02 (May 05, 2017)
+-----------------------
+- Added Korean translation (yuk6196)
+- Localization update:
+  - Simplified Chinese
+
+* v1.01 (May 02, 2017)
+-----------------------
+- Set libs to be external links
+- Localization update:
+  - German (pas06)
+  - Russian (Blizzatron)
+  - Traditional Chinese
+
+* v1.00 (Apr. 27, 2017)
+-----------------------
+- Initial version which support WoW 7.2.0

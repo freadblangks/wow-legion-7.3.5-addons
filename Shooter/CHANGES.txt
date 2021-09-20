@@ -1,0 +1,28 @@
+tag e6ec57f3b2952fea10145ce0c1f2c5928c8466c1 1.0.7
+Author:	Charles Sarrazin <charles@sarraz.in>
+Date:	Tue Jan 3 18:08:31 2017 +0100
+
+Release 1.0.7 (1.0.7)
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAABCAAGBQJYa9qPAAoJEMfnirdlHvPkliIP/04QUCHk/3S9coKEJmUYMUkT
+ISAgOYon8uNYPLJsBH3hbsVpTNMJdu8R1BjU1nVhuQgsyyLAW94omf0CDChD1uVQ
+KdJx0uR7RZTcWvPwLKaYEY3BEQrVgn+79oS8KxA3Cx5j8UrXnlILIbkNZU7ykpPA
+WstXummmUsInmC+bXgrWM3e0g0DoSOl8Ue8BIx6tAnZ7jgzYPpfPbUUNx35TTWA0
+AS+/vV9GTBb41DlLrzE2dBX8yGDPG6Yyrr4Bvd0Mx/n0jU2ruAuwyvGReJjrN6p8
+2gVw1Yd6XBQ08OMYP6u8zUdZ7oePRBunEtJoE3v46I47grrhQhjI8aOn/UBIRcbY
+A5WXGBN8kg0MRwXPDAccCFyez8ElNdCVkiNs9cbhtvv5smyDfn1x6Lha9seNU+Us
+viXk7lRIf4SNbc7UIKkDzH9THceTYh6+gQxaidc+Qjqi6OqvzMdWhwjutxS+JQq9
+Dfz4RIgclWtWLOSm9ADTvknLH/h74VdLmAOW48G9Y/dTyiFlYevzfUDy8SX5MWrY
+hO+NXkTaTQhZpcY4/sMYL0KlROUR9kK/4MNR/KtsHRa8W7ipmWuKzn4ZEXaNkPC0
+ChSuVvoWmmRwCmSwKd1dEzx8H3GZQQvCrEurSfr+ex4nr6xSZ2kxUFNMAYLWAHj1
+VbOsQBwIIn8EUV5HByM9
+=vtip
+-----END PGP SIGNATURE-----
+
+commit f1e068d0349766ab5f30a8d7b77a47674fb45d03
+Author: Charles Sarrazin <charles@sarraz.in>
+Date:   Tue Jan 3 18:07:33 2017 +0100
+
+    Fixed issuse with wrong event triggered for screenshot
+

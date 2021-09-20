@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: Dominos Encounter
+## Notes: Makes the PlayerPowerBarAlt movable
+## Title-zhTW: |cff00CCFF[快捷列]|r 達美樂-首領戰能量條
+## Notes-zhTW: Dominos Encounter |n讓首領戰時出現的玩家額外能量條可以移動。
+## Author: Tuller (with help from Goranaws)
+## Dependencies: Dominos
+bar.lua
+controller.lua

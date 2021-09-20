@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: OmniBar
+## Notes: Tracks enemy cooldowns
+## Title-zhTW: |cffFF0000[PVP]|r 敵方技能監控
+## Notes-zhTW: OmniBar |n監控敵人的技能冷卻時間。|n|cffffd200使用方法：|r從Esc>介面>插件>PVP敵方技能監控，進行設定。
+## DefaultState: disabled
+## Version: v8.1
+## Author: Jordon
+## SavedVariables: OmniBarDB
+## OptionalDeps: Masque, LibStub, CallbackHandler-1.0, Ace3, LibDualSpec-1.0
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+locale\locale.xml
+OmniBar.xml
+OmniBar.lua
+Options.lua

@@ -1,0 +1,24 @@
+tag fa7267ce92e77849528d70396c0ca3ffd6aa5121 1.7.6
+Author:	Hendrik Leppkes <h.leppkes@gmail.com>
+Date:	Wed Aug 30 08:50:34 2017 +0200
+
+Tag as 1.7.6
+
+commit dfbc5fe939a9e44a178fc3809d1bbe3932cb5a87
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Aug 30 08:50:21 2017 +0200
+
+    Update TOC for 7.3
+
+commit 2cf89455a858b49bc610cb3f52335e0fe597ffa4
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Aug 30 08:49:22 2017 +0200
+
+    Update FogClear data for Argus
+
+commit 6975e72c7760af7304132580b058d4844851799b
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Jul 12 14:16:38 2017 +0200
+
+    Switch to ignoring missing locale strings
+

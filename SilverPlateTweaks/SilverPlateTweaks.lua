@@ -1,0 +1,30 @@
+
+local function eventHandler(self,event,...)
+	SetCVar("nameplateMaxDistance", 45)
+	SetCVar("nameplateOverlapH", 0.3)
+	SetCVar("nameplateOtherTopInset", .12)
+	SetCVar("nameplateOtherBottomInset", -1)
+	SetCVar("nameplateLargeTopInset", .12) 
+	SetCVar("nameplateLargeBottomInset", -1)
+	SetCVar("nameplateOverlapV", 0.7)
+			-- SetCVar("nameplateMotion", 1)
+end
+
+local frame = CreateFrame("Frame","CVarSet")
+frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+frame:SetScript("OnEvent",eventHandler)
+
+
+local EventFrame = CreateFrame("Frame")
+EventFrame:RegisterEvent("PLAYER_LOGIN")
+EventFrame:SetScript("OnEvent", function(self,event,...) 
+	SetCVar("nameplateMaxDistance", 45)
+	SetCVar("nameplateOverlapH", 0.3)
+	SetCVar("nameplateOtherTopInset", .12)
+	SetCVar("nameplateOtherBottomInset", -1)
+	SetCVar("nameplateLargeTopInset", .12) 
+	SetCVar("nameplateLargeBottomInset", -1)
+	SetCVar("nameplateOverlapV", 0.7)
+		-- SetCVar("nameplateMotion", 1)
+-- print("SilverPlateTweaks Loaded.")
+end)

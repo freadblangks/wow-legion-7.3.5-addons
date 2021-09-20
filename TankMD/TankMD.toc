@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: TankMD
+## Notes: One button to always misdirect to the tank!
+## Title-zhTW: |cffFF7373[職業]|r 獵人誤導坦克/寵物
+## Notes-zhTW: TankMD |n只要一個按鈕或快捷鍵，有隊伍時會自動誤導給坦克，沒有隊伍時誤導給寵物。|n|cffffd200使用方法：|r從 Esc > 按鍵設定 > 插件 > 誤導給坦克/寵物，設定快捷鍵。|n或是新增一個巨集拉到快捷列上，巨集內容為 |n#showtooltip 誤導|n/click MisdirectTankButton
+## DefaultState: disabled
+## Author: Oppzippy
+## Version: 1.2
+
+Bindings.lua
+TankMD.lua

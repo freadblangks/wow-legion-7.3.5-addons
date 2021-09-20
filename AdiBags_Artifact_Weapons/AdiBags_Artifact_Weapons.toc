@@ -1,0 +1,8 @@
+## Interface: 70300
+## Title: AdiBags - Artifact Weapons
+## Notes: Adds an Artifact weapons filter to AdiBags.
+## Author: Glacials on Sargeras-US (github.com/glacials, twitter.com/glcls)
+## Version: 1.0
+## Dependencies: AdiBags
+Localization.lua
+AdiBags_Artifact_Weapons.lua

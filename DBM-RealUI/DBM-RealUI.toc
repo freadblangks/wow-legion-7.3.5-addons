@@ -1,0 +1,17 @@
+﻿## Interface: 70300
+## Title:|cffffe00a<|r|cffff7d0aDBM 外觀|r|cffffe00a>|r |cffffffffReal|r|cffbf3333UI|r |cff69ccf0計時條|r
+## Author: Gethe88
+## Version: v1.0.2
+## RequiredDeps: DBM-Core
+## X-DBM-Timer-Skin: 1
+## X-DBM-Timer-Skin-Name: RealUI
+## X-DBM-Timer-Skin-Textures: Interface\AddOns\DBM-RealUI\media\Plain.tga
+## X-DBM-Timer-Skin-Texture-Names: Plain
+## X-DBM-Timer-Skin-Fonts: Interface\AddOns\DBM-RealUI\media\pixel_small.ttf
+## X-DBM-Timer-Skin-Font-Names: Pixel Small
+## X-Curse-Packaged-Version: v1.0.2
+## X-Curse-Project-Name: DBM-RealUI
+## X-Curse-Project-ID: dbm-realui
+## X-Curse-Repository-ID: wow/dbm-realui/mainline
+TimerSkin.xml
+Skin.lua

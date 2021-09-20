@@ -1,0 +1,30 @@
+tag e5d889a8c460c4711b2af574068951e6add37f6a 1.41
+Author:	Hendrik Leppkes <h.leppkes@gmail.com>
+Date:	Wed Aug 30 12:35:09 2017 +0200
+
+Tag as 1.41
+
+commit 583fe97c096af018e6d335b32d8f7a7751a5006e
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Aug 30 12:34:40 2017 +0200
+
+    Fel-Encrusted Herb (Cluster) capitalization was changed everywhere
+
+commit 9eeffa196d21be7378c4b57afa3bdd4f9d289ff3
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Tue Aug 29 17:51:23 2017 +0200
+
+    Add an icon for empyrium
+
+commit 2992a618ae4aaa9475f80389258cfa7ba1b8c296
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Tue Aug 29 17:40:56 2017 +0200
+
+    Update TOC for 7.3
+
+commit 516cbf80fd8d6035845b8e8cc5bb9822b526b6c9
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Mon Aug 28 10:37:40 2017 +0200
+
+    Add new herbs and ore deposits for Argus
+

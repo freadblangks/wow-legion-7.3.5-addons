@@ -1,0 +1,14 @@
+## Interface: 70300
+## Title: |cff0088eeParagon|r Reputation
+## Author: |cffabd473Sev|r |cffbd87e7US-Drakkari|r
+## Version: 1.18
+## Notes: Switch Exalted Bars for Paragon Bars.
+## Title-zhTW: |cff0099FF[介面]|r 巔峰聲望條
+## Notes-zhTW: |cff0088eeParagon|r Reputation |n在聲望介面中，將崇拜之後的聲望條直接顯示為巔峰，不用點小袋子就可以看到聲望進度。
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: ParagonReputationDB
+
+core.lua
+options.lua
+localization.lua

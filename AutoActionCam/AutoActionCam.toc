@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: Auto Action-Cam
+## Version: 1.3.4
+## Author: Yukiko
+## Notes: Auto enables the ActionCam on login
+## Title-zhTW: |cffFF9900[進階]|r 動感鏡頭
+## Notes-zhTW: Auto Action-Cam |n登入時自動啟用遊戲內建的動感鏡頭功能，加大前方的視野並且自動聚焦到選取目標 (畫面會晃動)。|n在副本中會自動改為半動感模式 (畫面不會晃動)。|n|cffffd200使用方法：|r輸入 /aac full 手動開啟全動感鏡頭。|n輸入 /aac basic 加大前方可見範圍但不晃動畫面。|n輸入 /aac off 關閉動感鏡頭。|n輸入 /aac 查看更多指令。
+
+## SavedVariablesPerCharacter: CamSetting
+
+AutoActionCam.lua

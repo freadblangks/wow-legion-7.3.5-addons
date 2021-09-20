@@ -1,0 +1,19 @@
+## Interface: 70300
+## Version: 7.3.5.0
+
+## Title: OPie Masque
+## Notes: Adds Masque skinning support to OPie.
+## Title-zhTW: |cff00CCFF[快捷列]|r 環形快捷列-按鈕外觀
+## Notes-zhTW: OPie Masque |n讓環形快捷列可以套用按鈕外觀主題，需要和按鈕外觀插件以及外觀主題同時載入使用。|n|cffffd200使用方法：|r從Esc>介面>插件>按鈕外觀>插件>OPie，進行設定。
+## DefaultState: disabled
+
+## Author: Phanx
+## X-Email: addons@phanx.net
+## X-License: All rights reserved
+## X-Website: https://github.com/Phanx/OPieMasque
+## X-Curse-Project-ID: 55239
+## X-WoWI-ID: 22226
+
+## Dependencies: Masque, OPie
+
+Addon.lua

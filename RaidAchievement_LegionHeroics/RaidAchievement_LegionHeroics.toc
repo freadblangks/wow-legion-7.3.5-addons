@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Legion Dungeons
+## Author: Shurshik
+## Notes: RaidAchievement Legion Dungeons Module
+## Title-zhTW: |cffFFCC99[成就]|r 軍臨天下地城
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Legion Dungeons |n軍臨天下的英雄副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: legionhraspisokon
+RaidAchievement_LegionHeroics.lua
+RaidAchievement_LegionHeroicsbosses.lua
+RaidAchievement_LegionHeroics.xml

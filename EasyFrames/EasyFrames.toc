@@ -1,0 +1,42 @@
+## Title: Easy Frames
+## Interface: 70300
+## Notes: Make your unit frames colored and glorious.
+## Title-zhTW: |cff4DD2FF[頭像]|r 暴雪風格頭像
+## Notes-zhTW: Easy Frames |n喜歡遊戲內建的頭像推薦使用這個插件，讓內建頭像變得比較漂亮，還額外提供了許多自訂化的選項。|n|cffffd200使用方法：|r從Esc>介面>插件>頭像，進行設定。|n要移動頭像，在頭像上面點右鍵>移動框架>解鎖框架，然後便可拖曳移動。|n|cffFF2D2D特別注意：|r請勿和 "Stuf頭像框架" 同時載入使用。
+## DefaultState: disabled
+## Author: Usoltsev
+## SavedVariables: EasyFramesDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceHook-3.0\AceHook-3.0.xml
+
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+#@end-no-lib-strip@
+
+Localization\enUS.lua
+Localization\zhTW.lua
+
+
+EasyFrames.lua
+
+Config.lua
+
+Modules\Core.lua
+Modules\General.lua
+Modules\Player.lua
+Modules\Target.lua
+Modules\Focus.lua
+Modules\Pet.lua
+Modules\Party.lua

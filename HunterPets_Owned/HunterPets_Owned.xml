@@ -1,0 +1,474 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	<Script file="HunterPets_Owned.lua"/>
+
+	<Button name="HunterPetsOwnedSlotTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="37" y="37"/>
+		</Size>
+		<Layers>
+			<Layer level="BORDER">
+				<Texture name="$parentIconTexture"/>
+			</Layer>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentBackground" inherits="PetStable-StableSlot" parentKey="Background">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="-2" y="2"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parentChecked" parentKey="Checked" file="Interface\Buttons\CheckButtonHilight" alphaMode="ADD" hidden="true"/>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnEnter>
+				if (self.tooltip) then
+					HunterPetsOwned_GenerateTooltip(self, self.tooltip, self.tooltipSubtext, self.displayId, self.npc);
+					<!--HunterPetsOwned_SetText(self.displayId, self.tooltip, self.tooltipSubtext);
+					HunterPetsOwnedTooltip:ClearAllPoints()
+					HunterPetsOwnedTooltip:SetPoint("BOTTOMLEFT", self, "RIGHT", 0,0);
+					HunterPetsOwnedTooltip:Show()-->
+				end
+			</OnEnter>
+			<OnLeave>
+				HunterPetsOwned_ReleaseTooltip(self);
+				HunterPetsOwnedTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+		<PushedTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>
+		<HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>
+	</Button>
+	<Frame name="HunterPetsOwnedTooltip" frameStrata="TOOLTIP" parent="UIParent" hidden="true">
+		<Size x="200" y="220"/>
+		<Anchors>
+			<Anchor point="TOP" x="0" y="-200"/>
+		</Anchors>
+
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTextLeft1" inherits="GameTooltipHeaderText" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="10" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentTextRight1" inherits="GameTooltipHeaderText" hidden="true">
+					<Anchors>
+						<Anchor point="RIGHT" relativeTo="$parentTextLeft1" relativePoint="LEFT">
+							<Offset>
+								<AbsDimension x="40" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentTextLeft2" inherits="GameTooltipText" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parentTextLeft1" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<PlayerModel parentKey="ModelFrame" useParentLevel="true" inherits="ModelTemplate">
+			<Size x="200" y="170"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="HunterPetsOwnedTooltip" x="-10" y="-50"/>
+				</Anchors>
+				<OnLoad>
+					self:SetCamDistanceScale(1.3);
+				</OnLoad>
+			</PlayerModel>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				HunterPetsOwnedTooltip:SetBackdropBorderColor(0.25,0.25,0.25,1);
+				HunterPetsOwnedTooltip:SetBackdropColor(0,0,0,1);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+	<Frame name="HunterPetsOwned" movable="true" parent="UIParent" enableMouse="true" hidden="true" inherits="ButtonFrameTemplate">
+		<Size x="480" y="435"/>
+		<Anchors>
+			<Anchor point="TOP" x="0" y="-200"/>
+		</Anchors>
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="ActivePetsString" inherits="GameFontNormalSmall" text="攜帶的寵物" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="15" y="-85"/>
+					</Anchors>
+				</FontString>
+				<FontString name="StabledPetsString1" inherits="GameFontNormalSmall" text="獸欄寵物 #1" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="250" y="-65"/>
+					</Anchors>
+				</FontString>
+				<FontString name="StabledPetsString2" inherits="GameFontNormalSmall" text="獸欄寵物 #2" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="15" y="-180"/>
+					</Anchors>
+				</FontString>
+				<FontString name="StabledPetsString3" inherits="GameFontNormalSmall" text="獸欄寵物 #3" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="250" y="-180"/>
+					</Anchors>
+				</FontString>
+				<FontString name="StabledPetsString4" inherits="GameFontNormalSmall" text="獸欄寵物 #4" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="15" y="-295"/>
+					</Anchors>
+				</FontString>
+				<FontString name="StabledPetsString5" inherits="GameFontNormalSmall" text="獸欄寵物 #5" justifyH="CENTER" justifyV="MIDDLE">
+					<Size x="220" y="20"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="250" y="-295"/>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentStats" inherits="GameFontNormalSmall" text="統計: " justifyH="LEFT" justifyV="MIDDLE">
+					<Size x="300" y="20"/>
+					<Anchors>
+						<Anchor point="BOTTOMLEFT" relativeTo="$parent" x="12" y="5"/>
+					</Anchors>
+				</FontString>
+
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="HunterPetsOwnedCharacterListButton" inherits="UIDropDownMenuTemplate" text="Characters">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="HunterPetsOwned" x="-120" y="-28"/>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						UIDropDownMenu_Initialize(self, HunterPetsOwnedCharacterMenu_OnLoad);
+					</OnLoad>
+					<OnClick> 
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
+						ToggleDropDownMenu(1, nil, HunterPetsOwnedCharacterMenu, "HunterPetsOwnedCharacterListButton", 0, 0);
+					</OnClick>	
+				</Scripts>						
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet1" inherits="HunterPetsOwnedSlotTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ActivePetsString" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet2" inherits="HunterPetsOwnedSlotTemplate" id="2">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet1" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet3" inherits="HunterPetsOwnedSlotTemplate" id="3">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet2" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet4" inherits="HunterPetsOwnedSlotTemplate" id="4">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet3" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet5" inherits="HunterPetsOwnedSlotTemplate" id="5">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet4" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+
+			
+			<Button name="HunterPetsOwnedStabledPet6" inherits="HunterPetsOwnedSlotTemplate" id="6">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StabledPetsString1" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet7" inherits="HunterPetsOwnedSlotTemplate" id="7">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet6" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet8" inherits="HunterPetsOwnedSlotTemplate" id="8">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet7" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet9" inherits="HunterPetsOwnedSlotTemplate" id="9">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet8" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet10" inherits="HunterPetsOwnedSlotTemplate" id="10">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet9" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet11" inherits="HunterPetsOwnedSlotTemplate" id="11">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="HunterPetsOwnedStabledPet6" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet12" inherits="HunterPetsOwnedSlotTemplate" id="12">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet11" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet13" inherits="HunterPetsOwnedSlotTemplate" id="13">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet12" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet14" inherits="HunterPetsOwnedSlotTemplate" id="14">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet13" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet15" inherits="HunterPetsOwnedSlotTemplate" id="15">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet14" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			
+			
+			<Button name="HunterPetsOwnedStabledPet16" inherits="HunterPetsOwnedSlotTemplate" id="16">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StabledPetsString2" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet17" inherits="HunterPetsOwnedSlotTemplate" id="17">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet16" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet18" inherits="HunterPetsOwnedSlotTemplate" id="18">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet17" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet19" inherits="HunterPetsOwnedSlotTemplate" id="19">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet18" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet20" inherits="HunterPetsOwnedSlotTemplate" id="20">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet19" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet21" inherits="HunterPetsOwnedSlotTemplate" id="21">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="HunterPetsOwnedStabledPet16" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet22" inherits="HunterPetsOwnedSlotTemplate" id="22">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet21" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet23" inherits="HunterPetsOwnedSlotTemplate" id="23">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet22" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet24" inherits="HunterPetsOwnedSlotTemplate" id="24">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet23" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet25" inherits="HunterPetsOwnedSlotTemplate" id="25">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet24" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			
+			<Button name="HunterPetsOwnedStabledPet26" inherits="HunterPetsOwnedSlotTemplate" id="26">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StabledPetsString3" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet27" inherits="HunterPetsOwnedSlotTemplate" id="27">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet26" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet28" inherits="HunterPetsOwnedSlotTemplate" id="28">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet27" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet29" inherits="HunterPetsOwnedSlotTemplate" id="29">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet28" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet30" inherits="HunterPetsOwnedSlotTemplate" id="30">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet29" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet31" inherits="HunterPetsOwnedSlotTemplate" id="31">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="HunterPetsOwnedStabledPet26" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet32" inherits="HunterPetsOwnedSlotTemplate" id="32">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet31" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet33" inherits="HunterPetsOwnedSlotTemplate" id="33">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet32" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet34" inherits="HunterPetsOwnedSlotTemplate" id="34">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet33" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet35" inherits="HunterPetsOwnedSlotTemplate" id="35">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet34" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			
+			<Button name="HunterPetsOwnedStabledPet36" inherits="HunterPetsOwnedSlotTemplate" id="36">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StabledPetsString4" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet37" inherits="HunterPetsOwnedSlotTemplate" id="37">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet36" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet38" inherits="HunterPetsOwnedSlotTemplate" id="38">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet37" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet39" inherits="HunterPetsOwnedSlotTemplate" id="39">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet38" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet40" inherits="HunterPetsOwnedSlotTemplate" id="40">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet39" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet41" inherits="HunterPetsOwnedSlotTemplate" id="41">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="HunterPetsOwnedStabledPet36" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet42" inherits="HunterPetsOwnedSlotTemplate" id="42">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet41" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet43" inherits="HunterPetsOwnedSlotTemplate" id="43">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet42" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet44" inherits="HunterPetsOwnedSlotTemplate" id="44">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet43" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet45" inherits="HunterPetsOwnedSlotTemplate" id="45">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet44" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			
+			<Button name="HunterPetsOwnedStabledPet46" inherits="HunterPetsOwnedSlotTemplate" id="46">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StabledPetsString5" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet47" inherits="HunterPetsOwnedSlotTemplate" id="47">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet46" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet48" inherits="HunterPetsOwnedSlotTemplate" id="48">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet47" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet49" inherits="HunterPetsOwnedSlotTemplate" id="49">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet48" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet50" inherits="HunterPetsOwnedSlotTemplate" id="50">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet49" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+
+			<Button name="HunterPetsOwnedStabledPet51" inherits="HunterPetsOwnedSlotTemplate" id="51">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="HunterPetsOwnedStabledPet46" relativePoint="BOTTOMLEFT" x="0" y="-5"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet52" inherits="HunterPetsOwnedSlotTemplate" id="52">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet51" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet53" inherits="HunterPetsOwnedSlotTemplate" id="53">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet52" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet54" inherits="HunterPetsOwnedSlotTemplate" id="54">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet53" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="HunterPetsOwnedStabledPet55" inherits="HunterPetsOwnedSlotTemplate" id="55">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="HunterPetsOwnedStabledPet54" relativePoint="RIGHT" x="7" y="0"/>
+				</Anchors>
+			</Button>
+
+		</Frames>
+		<Scripts>
+			<OnShow>
+				PlaySound(SOUNDKIT.IG_CHARACTER_INFO_OPEN);
+			</OnShow>
+			<OnHide>
+				PlaySound(SOUNDKIT.IG_CHARACTER_INFO_CLOSE);
+			</OnHide>
+			<OnLoad>self:RegisterForDrag("LeftButton"); HunterPetsOwned_OnLoad()</OnLoad>
+			<OnDragStart>self:StartMoving();</OnDragStart>
+			<OnDragStop>self:StopMovingOrSizing();</OnDragStop>
+			<OnEvent function="HunterPetsOwned_OnEvent"/>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,8 @@
+## Interface: 70300
+## Author: p3lim
+## Version: 79b15e6
+## Title: Lib: DropDown
+## Notes: Library that allows easy creation of DropDown menus
+## OptionalDeps: LibStub
+
+embed.xml

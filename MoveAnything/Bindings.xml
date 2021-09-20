@@ -1,0 +1,35 @@
+<Bindings>
+	<Binding name="切換版面配置插件視窗" header="MOVEANYTHING" category="ADDONS">
+		MovAny:ToggleGUI()
+	</Binding>
+	<Binding name="移動框架 - 安全" category="ADDONS">
+		MovAny:SafeMoveFrameAtCursor()
+	</Binding>
+	<Binding name="編輯框架 - 安全" category="ADDONS">
+		MovAny:SafeMAFEFrameAtCursor()
+	</Binding>
+	<Binding name="隱藏框架 - 安全" category="ADDONS">
+		MovAny:SafeHideFrameAtCursor()
+	</Binding>
+	<Binding name="重置框架 - 安全" category="ADDONS">
+		MovAny:SafeResetFrameAtCursor()
+	</Binding>
+	<Binding name="移動框架 - 精確" category="ADDONS">
+		MovAny:MoveFrameAtCursor()
+	</Binding>
+	<Binding name="編輯框架 - 精確" category="ADDONS">
+		MovAny:MAFEFrameAtCursor()
+	</Binding>
+	<Binding name="隱藏框架 - 精確" category="ADDONS">
+		MovAny:HideFrameAtCursor()
+	</Binding>
+	<Binding name="重置框架 - 精確" category="ADDONS">
+		MovAny:ResetFrameAtCursor()
+	</Binding>
+	<Binding name="同步所有元素" category="ADDONS">
+		MovAny:SyncAllFrames()
+	</Binding>
+	<Binding name="顯示框架資訊" category="ADDONS">
+		MovAny:DebugFrameAtCursor()
+	</Binding>
+</Bindings>

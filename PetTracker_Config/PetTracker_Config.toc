@@ -1,0 +1,18 @@
+## Interface: 70300
+## Title: PetTracker Config
+## Notes: Load on demand options and tutorial.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵助手-設定選項
+## Notes-zhTW: PetTracker Config |n依據需求載入的選項和教學內容。
+## DefaultState: disabled
+## Author: Jaliborc (João Cardoso)
+## X-Category: Battle Pets
+## Version: 7.3.0
+
+## Dependencies: PetTracker
+## LoadOnDemand: 1
+
+..\PetTracker\Libs\CustomTutorials-2.1\CustomTutorials-2.1.lua
+..\PetTracker\Libs\Sushi-3.0\Sushi-3.0.xml
+
+Tutorial.lua
+Menus.lua

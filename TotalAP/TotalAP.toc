@@ -1,0 +1,80 @@
+## Interface: 70300
+## Version: 1.5.5 (r28-release-6)
+## Author: Cakechart
+
+## Title: TotalAP - Artifact Power Tracker
+## Notes: Summarizes and displays artifact power-related information in a variety of ways
+## Notes-zhCN: 只要按一个键或按钮就能使用背包中所有的神器能量、显示每个专精的神器能量进度。供多种方式显示神器能量相关的资讯和统计摘要。
+## Title-zhTW: |cffB973CC[物品]|r 一鍵神兵之力
+## Notes-zhTW: TotalAP - Artifact Power Tracker |n只要按一個按鈕或快速鍵，就能一個接著一個使用背包中所有的神兵之力物品，不用在背包中到處翻找，不會漏掉任何一個。|n還會顯示每個專精的神兵之力進度，按下專精圖示可以在使用前切換專精。|n|cffffd200使用方法：|r從Esc>按鍵設定>插件，設定快速鍵來使用神兵之力和切換顯示插件介面。|n輸入 /ap 查看更多指令用法。
+## DefaultState: disabled
+
+## LoadOnDemand: 0
+## SavedVariables: TotalArtifactPowerSettings, TotalArtifactPowerCache
+
+## X-Revision: r28-release-6
+## X-Date: 2018-03-19T9:03:39Z
+## X-License: GPL3
+## X-Embeds: LibStub, AceAddon-3.0, AceConsole-3.0, AceDB-3.0, AceEvent-3.0, AceLocale-3.0
+## X-Website: http://www.curse.com/addons/wow/totalap
+
+## OptionalDeps: LibStub, AceAddon-3.0, AceConsole-3.0, AceDB-3.0, AceEvent-3.0, AceLocale-3.0, Masque
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\LibButtonGlow-1.0\LibButtonGlow-1.0.lua
+#@end-no-lib-strip@
+
+## DB - needs to be loaded first ##
+DB\Init.lua
+DB\Artifacts.lua
+DB\ItemEffects.lua
+#DB\UnderlightAngler.lua
+DB\RelicTraits.lua
+DB\ResearchTomes.lua
+
+## Localization - needs to be loaded before the initialisation routine ##
+Locales\Locales.xml
+Locales\NumberFormats.lua
+
+## Setup - needs to be loaded before other modules become usable ##
+Core\Init.lua
+
+## Utils ##
+Core\Utils\Colours.lua
+Core\Utils\Format.lua
+Core\Utils\FQCN.lua
+Core\Utils\Masque.lua
+Core\Utils\TableFunctions.lua
+
+## Core ##
+Core\ArtifactInterface.lua
+Core\Cache.lua
+Core\DB.lua
+Core\Scanner.lua
+Core\Settings.lua
+
+## GUI ##
+Core\GUI\WidgetTypes\DisplayFrame.lua
+Core\GUI\WidgetTypes\BackgroundFrame.lua
+Core\GUI\WidgetTypes\ItemUseButton.lua
+Core\GUI\WidgetTypes\ProgressBar.lua
+Core\GUI\WidgetTypes\SpecIcon.lua
+Core\GUI\WidgetTypes\TextDisplay.lua
+Core\GUI\Views\Prototype.lua
+Core\GUI\Views\DefaultView.lua
+Core\GUI\Tooltips.lua
+
+## Controllers ##
+Core\Controllers\EventHandlers.lua
+Core\Controllers\GUI.lua
+Core\Controllers\Keybinds.lua
+Core\Controllers\SlashCommands.lua
+
+## Addon loader - needs to be the last item ##
+TotalAP.lua

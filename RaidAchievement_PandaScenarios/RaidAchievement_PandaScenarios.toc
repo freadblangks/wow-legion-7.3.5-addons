@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Pandaria Scenarios
+## Author: Shurshik
+## Notes: RaidAchievement Pandaria Scenarios Module
+## Title-zhTW: |cffFFCC99[成就]|r 潘達利亞事件
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Pandaria Scenarios |n潘達利亞的事件成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: pzraspisokon
+RaidAchievement_PandaScenarios.lua
+RaidAchievement_PandaScenariosbosses.lua
+RaidAchievement_PandaScenarios.xml

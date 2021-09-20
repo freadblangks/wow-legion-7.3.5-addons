@@ -1,0 +1,13 @@
+## Interface: 70300
+## Title: |cFF74D06CRE|rFlex
+## Notes: Collect statistics of played arena matches and battlegrounds.
+## Title-zhTW: |cffFF0000[PVP]|r 戰績記錄
+## Notes-zhTW: |cFF74D06CRE|rFlex |n競技場和戰場的對戰歷史記錄。|n|cffffd200使用方法：|r點小地圖按鈕開啟主視窗，從 Esc > 介面 > 插件 > PVP戰績記錄，進行設定。
+## DefaultState: disabled
+## Version: 2.4.0
+## Author: AcidWeb
+## SavedVariablesPerCharacter: REFlexSettings, REFlexDatabase, REFlexHonorDatabase
+
+Embeds.xml
+Locale\Locale.xml
+REFlex.xml

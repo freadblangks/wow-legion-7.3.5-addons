@@ -1,0 +1,16 @@
+## Interface: 70300
+## Title: CollectionShop
+## Version: 2.06
+## Author: Clinton Caldwell
+## Notes: Find and buy the lowest buyout Mounts, Pets, Toys, and Appearances.
+## Title-zhTW: |cffFFFF99[拍賣]|r 收藏專賣店
+## Notes-zhTW: CollectionShop |n專門搜尋和購買坐騎、寵物、玩具、塑形外觀，保證最低價!|n|cffffd200使用方法：|r打開拍賣場，點右下角的 "收藏專賣店" 標籤頁面。
+## SavedVariables: COLLECTIONSHOP_SAVEDVARIABLES
+## SavedVariablesPerCharacter: COLLECTIONSHOP_SAVEDVARIABLESPERCHARACTER
+
+Templates.xml
+Localization.lua
+Base.lua
+CollectionShop.lua
+OptionsConfig.lua
+OptionsCreate.lua

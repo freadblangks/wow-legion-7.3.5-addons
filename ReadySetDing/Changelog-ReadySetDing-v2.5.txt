@@ -1,0 +1,12 @@
+tag v2.5
+e2d4531143976e7446d0b0b90fbba8aa84dacc59
+Ketho <sghs17@outlook.com>
+2016-07-18 10:42:35 +0200
+
+Tagging as v2.5
+
+
+--------------------
+
+Ketho:
+	- Updated for Legion

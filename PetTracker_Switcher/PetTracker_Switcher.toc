@@ -1,0 +1,20 @@
+## Interface: 70300
+## Title: PetTracker Switcher
+## Notes: Displays all battle information at a glance.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵助手-資訊
+## Notes-zhTW: PetTracker Switcher |n一目瞭然顯示所有對戰資訊。
+## DefaultState: disabled
+## Author: Jaliborc (João Cardoso)
+
+## Dependencies: PetTracker
+## X-Category: Battle Pets
+## Version: 7.3.0
+
+..\PetTracker\Combat\StatusBar.xml
+
+..\PetTracker\Combat\SlotHighlight.xml
+..\PetTracker\Combat\SlotBorder.xml
+..\PetTracker\Combat\Slot.xml
+..\PetTracker\Combat\Slot.lua
+
+Switcher.lua

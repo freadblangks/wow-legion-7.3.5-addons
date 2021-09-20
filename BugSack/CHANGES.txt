@@ -1,0 +1,18 @@
+tag 5038feafd30a53d2cc2c2420b5fe490257ec92c1 v7.3.3
+Author:	funkydude <funkydude@users.noreply.github.com>
+Date:	Sun Apr 22 15:14:39 2018 +0100
+
+Tagging as v7.3.3
+
+commit 6c65932c4197c49bfe55131adb3ff1e45150a4ab
+Author: funkydude <funkydude@users.noreply.github.com>
+Date:   Sun Apr 22 15:08:27 2018 +0100
+
+    update travis file
+
+commit e809006c7665e1ee9596c4baa3961a49489dd683
+Author: Resike <resike@gmail.com>
+Date:   Tue Dec 12 19:53:05 2017 +0100
+
+    Force display refresh, closes #3 (#4)
+

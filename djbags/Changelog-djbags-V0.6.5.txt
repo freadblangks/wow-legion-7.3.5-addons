@@ -1,0 +1,17 @@
+tag V0.6.5
+7e1939dfd868d77c4d550a9663ca20e1f692d46e
+Brandon Talbot <bjtal91@gmail.com>
+2016-08-06 10:01:38 +0200
+
+Bumping version
+
+
+--------------------
+
+Brandon Talbot:
+	- V0.6.5: * Added back the clear new items on bag close * Preliminary work for hiding containers
+Brandon James Talbot:
+	- Update README.md
+bullsei:
+	- Update contstants.lua
+	German Translation

@@ -1,0 +1,9 @@
+<Bindings>
+	<Binding name="切換性感小地圖" header="SexyMap" category="ADDONS">
+		if HudMapCluster:IsVisible() then
+			HudMapCluster:Hide()
+		else
+			HudMapCluster:Show()
+		end
+	</Binding>
+</Bindings>

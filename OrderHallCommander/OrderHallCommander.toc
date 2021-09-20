@@ -1,0 +1,42 @@
+## Interface: 70300
+## Title: OrderHallCommander
+## Notes: Sending all follower to missions with just one click and more
+## Notes-zhCN: 發送所有的追隨者與點擊多任務
+## Title-zhTW: |cff00FFFF[任務]|r 職業大廳指揮官
+## Notes-zhTW: OrderHallCommander |n自動幫你挑選出最佳的隊伍組合，讓你可以輕鬆的一鍵派出職業大廳追隨者任務，還有更多功能。
+## Author: Alar of Runetotem
+## Version: 1.5.14 70300
+## X-Revision: dd040db
+## eMail: alar@aspide.it
+## URL: http://wow.aspide.it
+## OptionalDeps: Ace3,LibInit
+## Dependencies: Blizzard_OrderHallUI
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## LoadWith: Blizzard_OrderHallUI
+## SavedVariables: dbOHC
+## SavedVariablesPerCharacter: dbOHCperChar
+## X-ID: OHC
+## X-Database:dbOHC
+## X-Category: Garrison
+## X-License: GPL v3
+## X-eMail: alar@aspide.it
+## X-Date: 2018-02-16T18:01:02Z
+## X-Embeds: LibInit
+embeds.xml
+forcelocale.lua
+localization.lua
+OrderHallCommander.xml
+core.lua
+autocomplete.lua
+autopilot.lua
+cache.lua
+followerpage.lua
+matchmaker.lua
+missionlist.lua
+tutorials.lua
+missionpage.lua
+widgets.xml
+RelNotes.lua
+wowhead.lua
+data.lua

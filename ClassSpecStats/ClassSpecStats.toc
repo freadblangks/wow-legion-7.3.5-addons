@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: ClassSpecStats
+## Notes: Displays classes and specialisation dependent stat priorities provided by icy-veins.com
+## Title-zhTW: |cffB973FF[裝備]|r 屬性選擇建議
+## Notes-zhTW: ClassSpecStats |n根據職業和專精，在角色資訊視窗上方顯示裝備屬性選擇優先順序的建議。|n適用於大部分的情況，若你玩的流派需求不同，此建議僅供參考。|n也可以自訂修改屬性順序，請用記事本編輯 AddOns\ClassSpecStats\stats.lua。|n資料來源：icy-veins.com
+## Author: Reglohpri
+## Version: 1.24
+
+locale.lua
+ClassSpecStats.lua
+stats.lua

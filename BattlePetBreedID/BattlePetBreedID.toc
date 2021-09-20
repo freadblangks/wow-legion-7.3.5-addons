@@ -1,0 +1,17 @@
+## Interface: 70300
+## Title: Battle Pet BreedID
+## Author: Simca@Malfurion and Hugh@Burning Blade
+## Notes: Battle Pet BreedID displays the BreedID of pets in your journal, in battle, in chat links, and in AH tooltips.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵品級提示
+## Notes-zhTW: Battle Pet BreedID |n在寵物日誌、對戰、聊天視窗連結和拍賣場的滑鼠提示中顯示戰寵的屬性品級資訊。|n|cffffd200使用方法：|r從Esc>介面>插件>戰寵-品級，進行設定。|n中文化: 彩虹ui
+## DefaultState: disabled
+## Version: r168
+## X-Date: 2018-04-01T5:56:07Z
+## X-Category: Pet Battles
+## X-Localizations: enUS
+## SavedVariables: BPBID_Options
+
+BattlePetBreedID.lua
+PetData.lua
+BreedTooltips.lua
+OptionsPanel.lua

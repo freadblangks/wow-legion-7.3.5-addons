@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: QuickJoinNotifications
+## Notes: Shows notifications when a new group becomes available for quick join.
+## Title-zhTW: |cffFF9999[聊天]|r 快速加入通知
+## Notes-zhTW: QuickJoinNotifications |n取代遊戲內建的快速加入彈出通知，可以自訂位置、大小、持續時間，以及是否要在聊天視窗顯示通知的內容。|n|cffffd200使用方法：|r從Esc>介面>插件>快速加入，開啟設定。
+## SavedVariables: QJN_Options
+## Version: 1.14
+## Author: Zippy
+
+QuickJoinNotifications.lua
+QuickJoinNotifications_Options.lua

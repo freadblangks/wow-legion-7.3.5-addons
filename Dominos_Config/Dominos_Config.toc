@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: Dominos Config
+## Title-zhCN: Dominos 设置
+## Notes: GUI based configuration for Dominos
+## Title-zhTW: |cff00CCFF[快捷列]|r 達美樂-設定選項
+## Notes-zhTW: Dominos Config |n提供快捷列圖形介面的設定選項功能。
+## Author: Tuller
+## Dependencies: Dominos
+## LoadOnDemand: 1
+localization.xml
+widgets\include.xml
+panels\include.xml

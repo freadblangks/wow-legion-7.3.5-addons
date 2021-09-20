@@ -1,0 +1,31 @@
+[Change Masque settings as follows]
+
+
+[Gloss Settings]
+
+-- Color: White
+-- Opacity: 20% (recommended but use your own judgement)
+
+
+[Backdrop Settings]
+
+-- Color: White
+-- Full Transparency
+-- Enabled [x]
+
+
+[State Colors]
+
+-- Normal: White, set color slider down towards black until desired look is reached.
+-- Highlight: White
+-- Checked: White
+-- Flash: White
+-- Pushed: White
+-- Disabled: 
+
+All Transparency set to full
+
+
+
+-- If you see something I could improve feel free to leave a comment.
+

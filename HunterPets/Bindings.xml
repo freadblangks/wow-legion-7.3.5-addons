@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="Toggle Hunter Pets" header="TOGGLECOLLECTIONSTOYBOX" category="BINDING_HEADER_INTERFACE">
+		HunterPetJournal_Toggle()
+	</Binding>
+	<Binding name="Toggle Stabled Pets" category="BINDING_HEADER_INTERFACE">
+		HunterPetsOwned_Toggle()
+	</Binding>
+</Bindings>

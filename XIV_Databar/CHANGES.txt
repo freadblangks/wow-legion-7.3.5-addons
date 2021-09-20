@@ -1,0 +1,110 @@
+Changes since tag b2.0.16
+
+commit b78bc364f3de8d8df3abb7bb8f417928e2de8818
+Author: Mikeprod <Mikeprod@users.noreply.github.com>
+Date:   Fri Nov 3 19:27:32 2017 +0100
+
+    Link to lib databroker
+
+commit b78bc364f3de8d8df3abb7bb8f417928e2de8818
+Author: Mikeprod <Mikeprod@users.noreply.github.com>
+Date:   Fri Nov 3 19:27:32 2017 +0100
+
+    Link to lib databroker
+
+commit 531cf7a7e3a7588bda46fad6b6b8d140368b8d3a
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Tue Oct 3 20:04:22 2017 +0200
+
+    Update LibArtifact + fixing #48 + improving #37
+
+commit 531cf7a7e3a7588bda46fad6b6b8d140368b8d3a
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Tue Oct 3 20:04:22 2017 +0200
+
+    Update LibArtifact + fixing #48 + improving #37
+
+commit c684722596797f0bb4a504096a9a76b640fa2661
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Tue Aug 29 21:44:54 2017 +0200
+
+    update Ace3 for 7.3
+
+commit c684722596797f0bb4a504096a9a76b640fa2661
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Tue Aug 29 21:44:54 2017 +0200
+
+    update Ace3 for 7.3
+
+commit 0286dd4eed52d791524c102067e128d57806d7e7
+Author: Mikeprod <Mikeprod@users.noreply.github.com>
+Date:   Tue Aug 29 21:16:34 2017 +0200
+
+    Update XIV_Databar.toc
+
+commit 0286dd4eed52d791524c102067e128d57806d7e7
+Author: Mikeprod <Mikeprod@users.noreply.github.com>
+Date:   Tue Aug 29 21:16:34 2017 +0200
+
+    Update XIV_Databar.toc
+
+commit cbc2196672b90af2a9f3e7a759e00cba508abc65
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Sun Jul 23 13:15:51 2017 +0200
+
+    update libartifact
+
+commit 183ebe2ad1e90367958a092501e34405ab52b1ab
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Sun Jul 9 19:17:56 2017 +0200
+
+    Added short gold values in tooltip and fixed bugs with artifact bar
+
+commit 183ebe2ad1e90367958a092501e34405ab52b1ab
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Sun Jul 9 19:17:56 2017 +0200
+
+    Added short gold values in tooltip and fixed bugs with artifact bar
+
+commit 930ee46673e37bc37fe99279caad43796f42530d
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Mon Jul 3 20:11:41 2017 +0200
+
+    Fix error with gold strings with too big values
+
+commit 930ee46673e37bc37fe99279caad43796f42530d
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Mon Jul 3 20:11:41 2017 +0200
+
+    Fix error with gold strings with too big values
+
+commit 42c850c187906dbd403e733de63abc51d61f5dc5
+Author: Mikeprod <Mikeprod@users.noreply.github.com>
+Date:   Mon Jul 3 13:25:50 2017 +0200
+
+    Update frFR.lua
+
+commit 20d1e4a6a45bd74c7c422233e5aadea797d88b10
+Author: Merathilis <neo0608@gmail.com>
+Date:   Mon Jul 3 10:51:24 2017 +0200
+
+    Add locale support for the recent gold changes.
+
+commit 20d1e4a6a45bd74c7c422233e5aadea797d88b10
+Author: Merathilis <neo0608@gmail.com>
+Date:   Mon Jul 3 10:51:24 2017 +0200
+
+    Add locale support for the recent gold changes.
+
+commit 75cc6adff4dd38c73a13d9e4fedb8d71538f7b2c
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Sun Jul 2 16:35:00 2017 +0200
+
+    Added daily and session gold status
+
+commit 75cc6adff4dd38c73a13d9e4fedb8d71538f7b2c
+Author: Mikeprod <mikeprod.tm@gmail.com>
+Date:   Sun Jul 2 16:35:00 2017 +0200
+
+    Added daily and session gold status
+

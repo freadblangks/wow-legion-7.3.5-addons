@@ -1,0 +1,27 @@
+﻿## Interface: 70300
+## Title: CursorCDtimer
+## Notes: Displays and tracks spellcds around the cursor & more
+## Title-zhTW: |cffFF9900[進階]|r 滑鼠施法條
+## Notes-zhTW: CursorCDtimer |n在滑鼠游標的位置顯示圓形的施法條，還可以顯示GCD、施法時間和冷卻時間。方便在戰鬥中觀看施法條、找到滑鼠的位置、監控技能冷卻。|n|cffffd200使用方法：|r從Esc>介面>插件>滑鼠施法條，進行設定。
+## DefaultState: disabled
+## Author: 
+## Version: 7.0.3a-release 
+## OptionalDeps: Ace3, LibStub, LibSharedMedia-3.0
+## X-Embeds: Ace3, LibStub, LibSharedMedia-3.0
+## X-Category: Interface Enhancement
+## X-License: GPL v3
+## X-Credits: Nymbia, Nevcairiel (copied parts of Quartz), bakahar (author of GCD), Finghin (former author of GCD), StrifeCUK, unpsofable
+## SavedVariables: GCDDB
+
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+Localization\enUS.lua
+Localization\zhCN.lua
+Localization\zhTW.lua
+
+CursorCDtimer.lua
+donut.lua
+modules.xml

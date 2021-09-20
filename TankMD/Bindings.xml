@@ -1,0 +1,3 @@
+<Bindings>
+    <Binding name="CLICK MisdirectTankButton:LeftButton" header="TANKMD" category="ADDONS" runOnUp="false" />
+</Bindings>

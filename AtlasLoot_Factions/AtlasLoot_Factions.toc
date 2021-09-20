@@ -1,0 +1,38 @@
+## Interface: 70300
+## Author: Lag, Proteyer, Arith	
+## Version: v8.07.13
+## Dependencies: AtlasLoot
+## LoadOnDemand: 1
+
+#@non-debug@
+## Title: AtlasLoot |cFF0099FF[Factions]|r
+## Title-zhCN: AtlasLoot |cFF0099FF[阵营]|r
+## Notes: AtlasLoot loot tables from factions
+## Notes-zhCN: AtlasLoot 《阵营》物品信息
+## Title-zhTW: |cffB973FF[裝備]|r 副本戰利品查詢-陣營
+## Notes-zhTW: AtlasLoot Enhanced - Factions |n陣營物品資料庫。
+## DefaultState: disabled
+#@end-non-debug@
+#@debug@
+# ## Title: AtlasLoot |cFF0099FF[Factions]|r
+# ## Title-deDE: AtlasLoot |cFF0099FF[Fraktionen]|r
+# ## Title-koKR: AtlasLoot |cFF0099FF[평판]|r
+# ## Title-ruRU: AtlasLoot |cFF0099FF[Фракции]|r
+# ## Title-zhCN: AtlasLoot |cFF0099FF[阵营]|r
+# ## Title-zhTW: AtlasLoot |cFF0099FF[陣營]|r
+# 
+# ## Notes: AtlasLoot loot tables from factions
+# ## Notes-deDE: AtlasLoot Beuteverzeichnisse für Fraktionen
+# ## Notes-koKR: AtlasLoot 평판 전리품 목록
+# ## Notes-zhCN: AtlasLoot 《阵营》物品信息
+# ## Notes-zhTW: AtlasLoot 陣營物品資料庫
+#@end-debug@
+
+## X-eMail: manager@atlasloot.net
+## X-Category: Map
+## X-License: GPL v2
+## X-Website: http://www.atlasloot.net
+
+## X-AtlasLoot-LootModule: 1
+
+data.lua

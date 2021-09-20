@@ -1,0 +1,34 @@
+## Interface: 70300
+## Version: 2.5
+## Title: ReadySetDing
+## Notes: Ding!
+## Title-zhTW: |cff00FFFF[任務]|r 升級的點點滴滴
+## Notes-zhTW: ReadySetDing |n叮! 升級囉! 發佈升級訊息公告，以及記錄每個等級遊玩的時間。|n|cffffd200使用方法：|r從Esc>介面>插件>升級，或輸入 /rsd 開啟設定和升級歷史記錄。
+## Author: Ketho @ EU-Boulderfist
+## SavedVariables: ReadySetDingDB
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+## X-Category: Leveling
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+#@end-no-lib-strip@
+
+Libs\LibGraph-2.0\LibGraph-2.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Locales.lua
+
+ReadySetDing.lua
+Options.lua
+Core.lua
+Broker.lua

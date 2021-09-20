@@ -1,0 +1,27 @@
+## Interface: 70300
+## Title: PetTracker
+## Notes: Tracking pets in and out of combat since 2012.
+## Title-zhTW: |cff96FF73[寵物]|r 戰寵助手-主程式
+## Notes-zhTW: PetTracker |n追蹤你在該區域已有和缺少的戰寵。
+## DefaultState: disabled
+## Author: Jaliborc (João Cardoso)
+## Version: 7.3.0
+
+## SavedVariables: PetTracker_Sets
+## SavedVariablesPerCharacter: PetTracker_State
+## X-Category: Battle Pets
+## OptionalDeps: WoWUnit
+
+Libs\Libs.xml
+Localization\Include.xml
+
+PetTracker.lua
+
+Core\Include.xml
+Core\Tests\Include.xml
+
+Map\Include.xml
+Combat\Include.xml
+Tracking\Include.xml
+
+Features\Include.xml

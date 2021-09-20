@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Pandaria Dungeons
+## Author: Shurshik
+## Notes: RaidAchievement Pandaria Dungeons Module
+## Title-zhTW: |cffFFCC99[成就]|r 潘達利亞地城
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Pandaria Dungeons |n潘達利亞的英雄副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: phraspisokon
+RaidAchievement_PandaHeroics.lua
+RaidAchievement_PandaHeroicsbosses.lua
+RaidAchievement_PandaHeroics.xml

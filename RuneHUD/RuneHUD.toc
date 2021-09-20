@@ -1,0 +1,11 @@
+## Title: Rune|cffFFFFFFHUD|r
+## Interface: 70300
+## Version: 7.3.7
+## Author: Flundrine
+## Notes: Moves the rune into a HUD.
+## Title-zhTW: |cffFF7373[職業]|r 死亡騎士符文條
+## Notes-zhTW: Rune|cffFFFFFFHUD|r |n可移動縮放的符文和符能條。|n|cffffd200使用方法：|r從Esc>介面>插件>死亡騎士，進行設定。
+## DefaultState: disabled
+## SavedVariables: RHScale, RHNoCombatAlpha, RHCombatAlpha, RHBarWidth, RHBarHeight, RHBarEnable, RHBarPosition, RHBarNoCombat, RHBarNoCombatAlpha, RHBarCombatAlpha, RHName
+
+RuneHUD.lua

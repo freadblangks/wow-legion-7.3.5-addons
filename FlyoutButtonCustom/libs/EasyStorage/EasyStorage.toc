@@ -1,0 +1,5 @@
+## Interface: 50100
+## Title: EasyStorage
+## Author: another
+## Version: 1.4
+## Dependencies: LibStub

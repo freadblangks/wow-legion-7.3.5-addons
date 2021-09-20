@@ -1,0 +1,13 @@
+## Version: 5.3.1
+## Interface: 70300
+## Title: Dominos_Auras
+## Author: Goranaws
+## Notes: Configurable buff and debuff bars for Dominos. Replicates the default buff and debuffs, just allowing Dominos to manipulate them.
+## Title-zhTW: |cff00CCFF[快捷列]|r 達美樂-增益和減益效果
+## Notes-zhTW: Dominos_Auras |n讓玩家的增益和減益效果圖示可以移動和縮放。
+## Dependencies: Dominos
+## OptionalDeps: LibSharedMedia-3.0
+
+template.xml
+buffs.lua
+debuffs.lua

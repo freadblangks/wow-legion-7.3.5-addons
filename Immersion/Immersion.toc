@@ -1,0 +1,46 @@
+## Interface: 70300
+## Title: Immersion
+## Notes: Immersive replacement for quest & gossip
+## Title-zhTW: |cff00FFFF[任務]|r 內容對話劇情
+## Notes-zhTW: Immersion |n與NPC對話、接受/交回任務時，會使用軍臨天下 "說話的頭" 風格的對話方式，取代傳統的任務說明，讓你更能享受並融入任務內容的對話劇情。|n|cffffd200使用方法：|r按空白鍵接受任務和繼續下一段對話，按Esc取消對話，按1~9數字鍵選擇對話選項。|n從Esc>介面>插件>任務-對話，進行設定。
+## Version: 0.7.3
+## Author: Sebastian Lindfors
+## SavedVariables: ImmersionSetup
+## OptionalDeps: ConsolePort
+
+# Locale
+Locale\Locale.xml
+
+# Libs
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+
+# Extra stuff & config
+Extras.lua
+Config.lua
+
+# Compatibility scripts
+Compat.lua
+
+# Mixins
+Mixins\Scaler.lua
+Mixins\Titles.lua
+Mixins\Text.lua
+Mixins\Model.lua
+Mixins\Button.lua
+Mixins\Tooltip.lua
+Mixins\Elements.lua
+
+# Display
+Display\Animation.lua
+Display\Frame.xml
+Display\Onload.lua
+Display\Fademgr.lua
+
+# Logic
+Logic\Logic.lua
+Logic\Events.lua
+Logic\Controller.lua
+Logic\Toast.lua

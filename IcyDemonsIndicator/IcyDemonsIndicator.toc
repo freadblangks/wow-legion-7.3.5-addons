@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: IcyDemonsIndicator
+## Notes: Indicate demon expire time for demonology warlock
+## Title-zhTW: |cffFF7373[職業]|r 術士惡魔監控
+## Notes-zhTW: IcyDemonsIndicator |n監控術士的惡魔，以進度條的方式顯示各種惡魔存在的時間。惡魔專精專用。|n|cffffd200使用方法：|r輸入 /idi 查看指令說明。
+## DefaultState: disabled
+## Version: 0.1.3
+## Author: Icyblade
+## SavedVariables: IDI_SETTINGS
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\LibCandyBar-3.0\LibCandyBar-3.0.lua
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceHook-3.0\AceHook-3.0.xml
+libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+
+IcyDemonsIndicator.lua

@@ -1,0 +1,24 @@
+------------------------------------------------------------------------
+r202 | Tuhljin | 2017-11-08 17:41:25 -0600 (Wed, 08 Nov 2017) | 1 line
+Changed paths:
+   M /trunk/Options.lua
+   M /trunk/Overachiever.lua
+   M /trunk/Overachiever.toc
+   M /trunk/localization.lua
+   M /trunk/readme.txt
+
+- Added option "Startup: Throttle achievement lookup" to replace the special variable THROTTLE_ACHLOOKUP. (For details on its purpose, see notes for v0.99.9.)
+------------------------------------------------------------------------
+r201 | Tuhljin | 2017-11-05 17:43:59 -0600 (Sun, 05 Nov 2017) | 1 line
+Changed paths:
+   M /trunk/AchieveID.lua
+   M /trunk/GameTip.lua
+   M /trunk/Overachiever.toc
+   M /trunk/Overachiever_Tabs/Overachiever_Tabs.toc
+   M /trunk/Overachiever_Tabs/Suggestions.lua
+   M /trunk/Overachiever_Trade/Overachiever_Trade.toc
+   M /trunk/readme.txt
+
+- Change the way consumed item tracking works in an attempt to improve performance when bag contents change.
+------------------------------------------------------------------------
+

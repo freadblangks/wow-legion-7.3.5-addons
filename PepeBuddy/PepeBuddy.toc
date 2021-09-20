@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: PepeBuddy
+## SavedVariablesPerCharacter: CurrentPepe, CurrentSize, IsMovable
+## Notes: Usage: type "/pepe <default", ninja, pirate, traveler, knight or viking> to change the pepe.\n"/pepeset ###" to change the size of Pepe
+## Title-zhTW: |cff0099FF[介面]|r 皮皮好夥伴
+## Notes-zhTW: PepeBuddy |n人見人愛的皮皮，會一直在畫面上陪伴著你呦!|n|cffffd200使用方法：|r左鍵拖曳移動位置，右鍵變換造型。|n輸入 /pepeset 101 或其他數字更改大小，輸入 /pepereset 重置或找回皮皮。|n輸入 /pepe 查看更多指令用法。
+## DefaultState: disabled
+## Author: Lockspanner
+## Version: 2.01
+
+PepeBuddy.lua

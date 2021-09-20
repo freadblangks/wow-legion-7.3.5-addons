@@ -1,0 +1,18 @@
+## Interface: 70300
+## Title: World Quest Tracker
+## Notes: Make more easy to see world quests
+## Title-zhTW: |cff00FFFF[任務]|r 世界任務追蹤
+## Notes-zhTW:  World Quest Tracker |n加強地圖上世界任務圖示的相關功能、提供世界任務追蹤清單，更容易找到和追蹤你要的世界任務。
+## SavedVariables: WQTrackerDB
+## SavedVariablesPerCharacter: WQTrackerDBChr
+
+
+#@no-lib-strip@
+libs\libs.xml
+#@end-no-lib-strip@
+
+locales\enUS.lua
+locales\zhCN.lua
+locales\zhTW.lua
+
+WorldQuestTracker.lua

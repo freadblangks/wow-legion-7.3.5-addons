@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Cataclysm Dungeons
+## Author: Shurshik
+## Notes: RaidAchievement Cataclysm Dungeons Module
+## Title-zhTW: |cffFFCC99[成就]|r 浩劫與重生地城
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Cataclysm Dungeons |n浩劫與重生的英雄副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: chraspisokon
+RaidAchievement_CataHeroics.lua
+RaidAchievement_CataHeroicsbosses.lua
+RaidAchievement_CataHeroics.xml

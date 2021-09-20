@@ -1,0 +1,11 @@
+## Interface: 70300
+## Title: Best In Slot Redux [|cffff975bLegion Dungeons|r]
+## Notes: Legion Dungeons Module for BestInSlotRedux
+## Title-zhTW: |cffB973FF[裝備]|r 欄位最佳裝備-軍臨天下地城
+## Notes-zhTW: Best In Slot Redux [|cffff975bLegion Dungeons|r] |n欄位最佳裝備的軍臨天下地城資料模組。
+## DefaultState: disabled
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU
+## Version: v7.3.16
+## Dependencies: BestInSlotRedux, BestInSlotRedux_Legion
+
+BestInSlotRedux_LegionDungeons.lua

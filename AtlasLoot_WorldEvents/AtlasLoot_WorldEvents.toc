@@ -1,0 +1,38 @@
+## Interface: 70300
+## Author: Lag, Proteyer, Arith	
+## Version: v8.07.13
+## Dependencies: AtlasLoot
+## LoadOnDemand: 1
+
+#@non-debug@
+## Title: AtlasLoot |cFF0099FF[World Events]|r
+## Title-zhCN: AtlasLoot |cFF0099FF[世界事件]|r
+## Notes: AtlasLoot loot tables from world events
+## Notes-zhCN: AtlasLoot 《世界事件》物品信息
+## Title-zhTW: |cffB973FF[裝備]|r 副本戰利品查詢-世界事件
+## Notes-zhTW: AtlasLoot Enhanced - World Events |n世界事件物品掉落資料庫。
+## DefaultState: disabled
+#@end-non-debug@
+#@debug@
+# ## Title: AtlasLoot |cFF0099FF[World Events]|r
+# ## Title-deDE: AtlasLoot |cFF0099FF[Weltereignisse]|r
+# ## Title-koKR: AtlasLoot |cFF0099FF[전역 이벤트]|r
+# ## Title-ruRU: AtlasLoot |cFF0099FF[Мировые события]|r
+# ## Title-zhCN: AtlasLoot |cFF0099FF[世界事件]|r
+# ## Title-zhTW: AtlasLoot |cFF0099FF[世界事件]|r
+# 
+# ## Notes: AtlasLoot loot tables from world events
+# ## Notes-deDE: AtlasLoot Beuteverzeichnisse für Weltereignisse
+# ## Notes-koKR: AtlasLoot 전역 이벤트 전리품 목록
+# ## Notes-zhCN: AtlasLoot 《世界事件》物品信息
+# ## Notes-zhTW: AtlasLoot 世界事件物品掉落資料庫
+#@end-debug@
+
+## X-eMail: manager@atlasloot.net
+## X-Category: Map
+## X-License: GPL v2
+## X-Website: http://www.atlasloot.net
+
+## X-AtlasLoot-LootModule: 1
+
+data.lua

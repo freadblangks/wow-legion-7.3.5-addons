@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Naxxramas
+## Author: Shurshik
+## Notes: RaidAchievement Naxxramas Module
+## Title-zhTW: |cffFFCC99[成就]|r 納克薩瑪斯
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Naxxramas |nNAXX 納克薩瑪斯的副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: nxraspisokon
+RaidAchievement_Naxxramas.lua
+RaidAchievement_Naxxramasbosses.lua
+RaidAchievement_Naxxramas.xml

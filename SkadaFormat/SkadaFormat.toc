@@ -1,0 +1,8 @@
+## Interface: 70300
+## Author: somebody
+## Title: Skada中文單位
+## Title-zhTW: |cffFF2D2D[戰鬥]|r 傷害統計-中文單位
+## Notes-zhTW: Skada |n將傷害統計數字的單位改為中文。
+## Dependencies: Skada
+## X-Part-Of: Skada
+SkadaFormat.lua

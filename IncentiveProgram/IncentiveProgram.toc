@@ -1,0 +1,26 @@
+## Interface: 70300
+## Title: Incentive Program
+## Notes: Notifies when there are LFG Incentives waiting for you.
+## Title-zhTW: |cffFF7F00[副本]|r 隨機獎勵通知
+## Notes-zhTW: Incentive Program |n隨機隊伍搜尋器有額外獎勵，在等你加入的時候顯示通知。|n|cffffd200使用方法：|r拖曳小圖示可以移動位置，在小圖示上點左鍵加入隊伍，點右鍵調整設定和關閉通知。|n從Esc>介面>插件>隨機獎勵通知，設定通知音效。
+## DefaultState: disabled
+## Author: Xubera
+## Version: r16
+## SavedVariables: IncentiveProgramDB
+
+libs/LibStub.lua
+libs/CallbackHandler-1.0.lua
+libs/LibDataBroker-1.1.lua
+libs/DropDownMenu/UIDropDownMenuTemplates.xml
+libs/DropDownMenu/EasyMenu.lua
+libs/DropDownMenu/UIDropDownMenu.lua
+
+constants.lua
+menu.lua
+settings.lua
+frame.lua
+toast.lua
+dungeon.lua
+databroker.lua
+interfacePanel.lua
+core.lua

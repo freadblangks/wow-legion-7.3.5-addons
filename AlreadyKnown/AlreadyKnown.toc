@@ -1,0 +1,10 @@
+## Interface: 70300
+## Author: Sanex (Arathor EU)
+## Title: Already Known?
+## Version: 1.17
+## Notes: Puts green/blue/yellow/cyan/purple tint on already known scrolls/pets/other learnable items on vendors
+## Title-zhTW: |cffFFFF99[商人]|r 已入荷?
+## Notes-zhTW: Already Known? |n和商人交易或在逛拍賣時，已經學會和擁有的物品會顯示為綠色，讓你不用重複購買。|n包括配方/寵物/坐騎/玩具，和其他可以學習的物品。
+## SavedVariables: AlreadyKnownSettings
+
+AlreadyKnown.lua

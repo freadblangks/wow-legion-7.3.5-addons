@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - WoD Dungeons
+## Author: Shurshik
+## Notes: RaidAchievement WoD Dungeons Module
+## Title-zhTW: |cffFFCC99[成就]|r 德拉諾地城
+## Notes-zhTW: Raid|cff7fff7fAchievement|r - WoD Dungeons |n德拉諾的英雄副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: wodhraspisokon
+RaidAchievement_WoDHeroics.lua
+RaidAchievement_WoDHeroicsbosses.lua
+RaidAchievement_WoDHeroics.xml

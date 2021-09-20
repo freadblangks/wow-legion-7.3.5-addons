@@ -1,0 +1,12 @@
+﻿## Interface: 70300
+## Title: Raid|cff7fff7fAchievement|r - Ulduar
+## Author: Shurshik
+## Notes: RaidAchievement Ulduar Module
+## Title-zhTW: |cffFFCC99[成就]|r 奧杜亞
+## Notes-zhTW: Raid|cff7fff7fAchievement|r Ulduar |nUlduar 奧杜亞的團隊副本成就模組。
+## Dependencies: RaidAchievement
+## LoadOnDemand: 1
+## SavedVariablesPerCharacter: preaspisokon
+RaidAchievement_Ulduar.lua
+RaidAchievement_Uldabosses.lua
+RaidAchievement_Ulduar.xml

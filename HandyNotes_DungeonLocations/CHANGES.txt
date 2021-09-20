@@ -1,0 +1,10 @@
+------------------------------------------------------------------------
+r66 | Caliaha | 2018-04-27 21:13:03 +0000 (Fri, 27 Apr 2018) | 2 lines
+Changed paths:
+   M /trunk/locales/Locales.xml
+   A /trunk/locales/ruRU.lua
+
+Added russian localization
+
+------------------------------------------------------------------------
+

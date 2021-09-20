@@ -1,0 +1,19 @@
+## Interface: 70300
+## Title: Angry World Quests
+## Notes: Adds World Quests to the quest list
+## Title-zhTW: |cff00FFFF[任務]|r 世界任務清單
+## Notes-zhTW:  Angry World Quests |n在世界地圖旁的任務記錄中顯示世界任務，可以過濾任務和加入追蹤，操作方式和一般的任務完全相同!|n|cffffd200使用方法：|r從Esc>介面>插件>任務-世界任務，進行設定。
+## DefaultState: disabled
+## Author: Ermad
+## SavedVariables: AngryWorldQuests_Config
+## SavedVariablesPerCharacter: AngryWorldQuests_CharacterConfig
+## X-Packaged-Version: v0.18.3
+
+Core.lua
+
+Config.lua
+Locale.lua
+
+QuestFrame.lua
+Data.lua
+FlightMap.lua

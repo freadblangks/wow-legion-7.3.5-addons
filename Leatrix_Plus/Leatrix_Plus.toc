@@ -1,0 +1,15 @@
+## Interface: 70300
+
+## Title: Leatrix Plus
+## Title-zhCN: Leatrix Plus [|cffeda55f功能百宝箱|r]
+## Notes: Quality of life addon.
+## Notes-zhCN: 哆啦A梦的百宝袋
+## Title-zhTW: |cff0099FF[介面]|r 功能百寶箱
+## Notes-zhTW: Leatrix Plus |n讓生活更美好的插件，提供多種各式各樣的遊戲功能設定。|n|cffffd200使用方法：|r左鍵點小地圖按鈕的藍色閃電，或輸入 /百寶箱，或 /ltp 開啟設定。
+
+## Version: 7.3.33
+## Author: Leatrix
+## SavedVariables: LeaPlusDB
+
+Leatrix_Plus_Locale.lua
+Leatrix_Plus.lua
